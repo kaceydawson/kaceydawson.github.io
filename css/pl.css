@@ -104,12 +104,19 @@ nav {
     background-size: cover; 
     background: #ffffff url("../images/leverage-background.jpg") no-repeat 50% 0%;
 }
+.container-fluid#leverage {
+    margin: 0;
+    padding: 0;
+}
+#leverage .container {
+    margin: 0 auto;
+    padding: 0;  
+}
 #leverage .col {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    
+    justify-content: end;  
 }
 #leverage .alphaCover {
     width: 100%;
@@ -251,6 +258,14 @@ footer li a {
     #twentyFiveYears .col-4 h3 {
         font-size: calc(1.1rem + .6vw);        
     } 
+    .container-fluid#leverage {
+        margin: inherit;
+        padding: inherit;
+    }
+    #leverage .container {
+        margin: 0 auto;
+        padding: inherit;
+    }
 }
 
 /*`lg` applies to medium devices (tablets, less than 992px)*/
