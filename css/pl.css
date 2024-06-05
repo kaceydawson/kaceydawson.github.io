@@ -105,7 +105,7 @@ nav {
     background: #ffffff url("../images/leverage-background.jpg") no-repeat 50% 0%;
 }
 .container-fluid#leverage {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 #leverage .container {
@@ -128,7 +128,7 @@ nav {
     background-color: rgba(255, 255, 255, .8);
 }
 #leverage h1 {
-    font-size: 3em!important;
+    font-size: 2.5em!important;
 }
 
 #twoCoreSolutions {
@@ -215,6 +215,9 @@ footer li a {
         right: 21px;
 
     }
+    #leverage h1 {
+        font-size: 2.6em!important;
+    }
     #veterinary-header h1 {
         font-size: 2em;
         line-height: 1em;
@@ -229,6 +232,9 @@ footer li a {
 
 /*`md` applies to small devices (landscape phones, less than 768px)*/
 @media (min-width: 767.98px) {
+    #leverage h1 {
+        font-size: 2.7em!important;
+    }
     #twoCoreSolutions .left, #twoCoreSolutions .right {
         background-color: rgba(255, 255, 255, 0);
     }
@@ -258,14 +264,14 @@ footer li a {
     #twentyFiveYears .col-4 h3 {
         font-size: calc(1.1rem + .6vw);        
     } 
-    .container-fluid#leverage {
-        margin: inherit;
+    /*.container-fluid#leverage {
+        margin: 0 auto;
         padding: inherit;
     }
     #leverage .container {
         margin: 0 auto;
         padding: inherit;
-    }
+    }*/
 }
 
 /*`lg` applies to medium devices (tablets, less than 992px)*/
@@ -275,6 +281,9 @@ footer li a {
         right: 150px;
         top: 54px;
 
+    }
+    #leverage h1 {
+        font-size: 2.8em!important;
     }
     #twoCoreSolutions h1 {
         font-size: 3.5em;
@@ -293,6 +302,9 @@ footer li a {
 
 /*`xl` applies to large devices (desktops, less than 1200px)*/
 @media (min-width: 1199.98px) {
+    #leverage h1 {
+        font-size: 2.9em!important;
+    }
     #twoCoreSolutions h1 {
         font-size: 4em;
     }
@@ -311,6 +323,9 @@ footer li a {
 
 /*`xxl` applies to x-large devices (large desktops, less than 1400px)*/
 @media (min-width: 1399.98px) {
+    #leverage h1 {
+        font-size: 3em!important;
+    }
     #twoCoreSolutions h1 {
         font-size: 4em;
     }
