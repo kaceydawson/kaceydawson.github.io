@@ -31,7 +31,10 @@ a {
 }
 .poppins {font-family: "Poppins", sans-serif;}
 
-main {margin-top:150px;}
+main {
+    margin:150px 0 0 0;
+    padding: 0 0 0 0;
+}
 
 /*plBlue {background-color:#2C386E;}*/
 .plBlue {background-color:rgba(30, 51, 91, 1);}
@@ -106,7 +109,7 @@ nav {
 }
 .container-fluid#leverage {
     margin: 0 auto;
-    padding: 0;
+    padding: 0 0 0 0;
 }
 #leverage .container {
     margin: 0 auto;
@@ -145,7 +148,8 @@ nav {
     font-size: 2em;
 }
 #twoCoreSolutions h2 {
-    margin: 25px auto;
+    margin: 0px auto 5px auto;
+    padding: 0 0 1em 0;
 }
 
 #cos-neu .accordion-item button {
@@ -208,8 +212,15 @@ footer li a {
 @media (min-width: 575.98px) {
     
     .navbar-brand {width:50%;}
+    main {
+        padding: 0 0 0 0;
+    }
     #twoCoreSolutions h1 {
         font-size: 2.5em;
+    }
+    #twoCoreSolutions h2 {
+        margin: 0px auto 25px auto;
+        padding: 0 0 1em 0;
     }
     .navbar-toggler {
         right: 21px;
@@ -232,6 +243,9 @@ footer li a {
 
 /*`md` applies to small devices (landscape phones, less than 768px)*/
 @media (min-width: 767.98px) {
+    main {
+        padding: 0;
+    }
     #leverage h1 {
         font-size: 2.7em!important;
     }
@@ -240,6 +254,10 @@ footer li a {
     }
     #twoCoreSolutions h1 {
         font-size: 3em;
+    }
+    #twoCoreSolutions h2 {
+        margin: 0px auto 145px auto;
+        padding: 0 0 1em 0;
     }
     .navbar-brand {width:39%;}
     .navbar-brand img {max-height: 148px;}
@@ -288,6 +306,11 @@ footer li a {
     #twoCoreSolutions h1 {
         font-size: 3.5em;
     }
+    #twoCoreSolutions h2 {
+        margin: 0px auto 215px auto;
+        padding: 0 0 1em 0;
+    }
+
     #veterinary-header h1 {
         font-size: 2em;
         line-height: 1em;
@@ -307,6 +330,10 @@ footer li a {
     }
     #twoCoreSolutions h1 {
         font-size: 4em;
+    }
+    #twoCoreSolutions h2 {
+        margin: 0px auto 235px auto;
+        padding: 0 0 1em 0;
     }
     #veterinary-header h1 {
         font-size: 2.75em;
@@ -328,6 +355,10 @@ footer li a {
     }
     #twoCoreSolutions h1 {
         font-size: 4em;
+    }
+    #twoCoreSolutions h2 {
+        margin: 0px auto 140px auto;
+        padding: 0 0 180px 0;
     }
     #veterinary-header h1 {
         font-size: 3em;

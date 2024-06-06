@@ -27,10 +27,10 @@
     -o-transition: all .55s ease-in;
     transition: all .55s ease-in;
   }
-  .animBlock[data-position="left"] { left: -20%; overflow-x:hidden;}
-  .animBlock[data-position="right"] { right: -20%; overflow-x:hidden;}
-  .animBlock[data-position="top"] { top: -20%; overflow-x:hidden;}
-  .animBlock[data-position="bottom"] { bottom: -20%; overflow-x:hidden;}
+  .animBlock[data-position="left"] { left: -5%; overflow-x:hidden;}
+  .animBlock[data-position="right"] { right: -5%; overflow-x:hidden;}
+  .animBlock[data-position="top"] { top: -5%; overflow-x:hidden;}
+  .animBlock[data-position="bottom"] { bottom: -5%; overflow-x:hidden;}
   
   .animBlock[data-position="left"].viewed {
     left: 0%;
