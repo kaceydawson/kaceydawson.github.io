@@ -39,6 +39,7 @@ main {
 /*plBlue {background-color:#2C386E;}*/
 .plBlue {background-color:rgba(30, 51, 91, 1);}
 .plBlue-text {color:rgba(30, 51, 91, 1);}
+.plLtBlue-text {color:rgba(30, 51, 91, .8);}
 /*plBurnt {background-color:#AE360E;}*/
 .plBurnt {background-color:rgba(174, 54, 14, 1);}
 .plBurnt-text {color:rgba(174, 54, 14, 1);}
