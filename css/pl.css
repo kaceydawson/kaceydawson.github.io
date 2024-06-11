@@ -167,8 +167,16 @@ nav {
 #twentyFiveYears .col-4 h3 {
     font-size: calc(.9rem + .6vw);        
 }   
+.specialties-served p {
+    color: white;
+    text-shadow: 0px 0px 7px rgba(150,150,150,0.75);
+}
+.specialties-served a {
+    text-shadow: none;
+}
+#med-spec-serv p {
 
-#med-spec-serv p { color: white; }
+}
 #dental-header h1{
     font-size: 3.5em;
     line-height: 1.5em;
