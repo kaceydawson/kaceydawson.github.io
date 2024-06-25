@@ -102,7 +102,6 @@ nav {
 }
 
 
-
 #leverage {
     height: 700px;
     background-size: cover; 
@@ -185,7 +184,7 @@ nav {
     padding: 1em 0 0 0;    
 }
 .indHead h1 {
-    padding: 1em 0;
+    padding: 1.5em 0;
     color:rgba(30, 51, 91, 1);
 }
 
@@ -237,7 +236,9 @@ footer li a {
     #leverage h1 {
         font-size: 2.6em!important;
     }
-  
+    .indHead h1 {
+        color:rgba(30, 51, 91, 1);
+    }
 
     #cos-neu .accordion-item button {
         width: 100%;
@@ -283,7 +284,7 @@ footer li a {
         margin-top: 80px;
     }
     .indHead h1 {
-        padding: 0;
+        color:rgba(30, 51, 91, 1);
     }
     #cos-neu .accordion-item button {
         width: 80%;
@@ -319,6 +320,9 @@ footer li a {
         margin: 0px auto 215px auto;
         padding: 0 0 1em 0;
     }
+    .indHead h1 {
+        color:rgba(30, 51, 91, 1);
+    }
     #cos-neu .accordion-item button {
         width: 70%;
     }
@@ -338,6 +342,9 @@ footer li a {
     #twoCoreSolutions h2 {
         margin: 0px auto 235px auto;
         padding: 0 0 1em 0;
+    }
+    .indHead h1 {
+        color:rgba(30, 51, 91, 1);
     }
     #cos-neu .accordion-item button {
         width: 60%;
@@ -359,6 +366,9 @@ footer li a {
     #twoCoreSolutions h2 {
         margin: 0px auto 140px auto;
         padding: 0 0 180px 0;
+    }
+    .indHead h1 {
+        color:rgba(30, 51, 91, 1);
     }
     #cos-neu .accordion-item button {
         width: 50%;
