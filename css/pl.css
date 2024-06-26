@@ -60,8 +60,8 @@ nav {
     background-color:rgba(255, 255, 255, .9);
     border-bottom:#AE360E 10px solid;
 }
-.navbar-brand {width:60%;}
-.navbar-brand img {max-height: 148px;}
+.navbar-brand {min-width:40%;}
+.navbar-brand img {max-height: 130px;}
 
 .navbar-nav .nav-link {
     padding-left: 1em;
@@ -100,8 +100,6 @@ nav {
     transition: all 0.3s ease 0s;
     background:rgba(108, 117, 74, .5);
 }
-
-
 #leverage {
     height: 700px;
     background-size: cover; 
@@ -216,8 +214,7 @@ footer li a {
 }
 
 /*`sm` applies to x-small devices (portrait phones, less than 576px)*/
-@media (min-width: 575.98px) {
-    
+@media (min-width: 575.98px) { 
     .navbar-brand {width:50%;}
     main {
         padding: 0 0 0 0;
@@ -250,6 +247,7 @@ footer li a {
 
 /*`md` applies to small devices (landscape phones, less than 768px)*/
 @media (min-width: 767.98px) {
+    .navbar-brand {width:47.5%;}
     main {
         padding: 0;
     }
@@ -304,7 +302,7 @@ footer li a {
 
 /*`lg` applies to medium devices (tablets, less than 992px)*/
 @media (min-width: 991.98px) {
-    .navbar-brand {width:50%;}
+    .navbar-brand {width:45%;}
     .navbar-toggler {
         right: 150px;
         top: 54px;
@@ -333,6 +331,7 @@ footer li a {
 
 /*`xl` applies to large devices (desktops, less than 1200px)*/
 @media (min-width: 1199.98px) {
+    .navbar-brand {width:42.5%;}
     #leverage h1 {
         font-size: 2.9em!important;
     }
@@ -357,6 +356,7 @@ footer li a {
 
 /*`xxl` applies to x-large devices (large desktops, less than 1400px)*/
 @media (min-width: 1399.98px) {
+    .navbar-brand {width:40%;}
     #leverage h1 {
         font-size: 3em!important;
     }
