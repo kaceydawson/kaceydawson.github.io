@@ -1,82 +1,82 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
-  <loc>https://thepracticeconsultant.com/</loc>
-  <lastmod>2024-06-06T01:08:18+00:00</lastmod>
-  <priority>1.00</priority>
+  <loc>http://thepracticeconsultant.com/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2024-08-14</lastmod>
 </url>
 <url>
-  <loc>https://thepracticeconsultant.com/index.html</loc>
-  <lastmod>2024-06-06T01:08:18+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://thepracticeconsultant.com/industries.html</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2024-08-14</lastmod>
 </url>
 <url>
-  <loc>https://thepracticeconsultant.com/dental.html</loc>
-  <lastmod>2024-05-31T01:48:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://thepracticeconsultant.com/dental.html</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2024-08-14</lastmod>
 </url>
 <url>
-  <loc>https://thepracticeconsultant.com/medical.html</loc>
-  <lastmod>2024-05-30T23:59:06+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://thepracticeconsultant.com/medical.html</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2024-08-14</lastmod>
 </url>
 <url>
-  <loc>https://thepracticeconsultant.com/veterinary.html</loc>
-  <lastmod>2024-05-31T01:48:34+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://thepracticeconsultant.com/veterinary.html</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2024-08-14</lastmod>
 </url>
 <url>
-  <loc>https://thepracticeconsultant.com/optometry.html</loc>
-  <lastmod>2024-05-30T23:59:00+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://thepracticeconsultant.com/optometry.html</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2024-08-14</lastmod>
 </url>
 <url>
-  <loc>https://thepracticeconsultant.com/consulting.html</loc>
-  <lastmod>2024-06-06T01:08:13+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://thepracticeconsultant.com/fiveMilestones.html</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2024-08-14</lastmod>
 </url>
 <url>
-  <loc>https://thepracticeconsultant.com/loan-advisory.html</loc>
-  <lastmod>2024-06-06T01:08:23+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://thepracticeconsultant.com/consulting.html</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2024-08-14</lastmod>
 </url>
 <url>
-  <loc>https://thepracticeconsultant.com/about.html</loc>
-  <lastmod>2024-05-30T00:54:09+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://thepracticeconsultant.com/loan-advisory.html</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2024-08-14</lastmod>
 </url>
 <url>
-  <loc>https://thepracticeconsultant.com/form.html</loc>
-  <lastmod>2024-05-30T00:54:10+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://thepracticeconsultant.com/about.html</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2024-08-14</lastmod>
 </url>
 <url>
-  <loc>https://thepracticeconsultant.com/fiveMilestones.html</loc>
-  <lastmod>2024-05-30T23:32:16+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://thepracticeconsultant.com/form.html</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2024-08-14</lastmod>
 </url>
 <url>
-  <loc>https://thepracticeconsultant.com/terms-of-service.html</loc>
-  <lastmod>2024-05-30T00:54:11+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://thepracticeconsultant.com/terms-of-service.html</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2024-08-14</lastmod>
 </url>
 <url>
-  <loc>https://thepracticeconsultant.com/privacy-policy.html</loc>
-  <lastmod>2024-05-30T00:54:11+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://thepracticeconsultant.com/privacy-policy.html</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2024-08-14</lastmod>
 </url>
 <url>
-  <loc>https://thepracticeconsultant.com/sms.html</loc>
-  <lastmod>2024-05-30T00:54:11+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://thepracticeconsultant.com/sms.html</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2024-08-14</lastmod>
 </url>
-
-
-</urlset>
+<url>
+  <loc></loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2024-08-14</lastmod>
+</url>
+<url>
+  <loc>http://thepracticeconsultant.com/terms-of-service.html#sms</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2024-08-14</lastmod>
+</url>
