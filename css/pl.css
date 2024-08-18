@@ -100,38 +100,78 @@ nav {
     transition: all 0.3s ease 0s;
     background:rgba(108, 117, 74, .5);
 }
-#leverage {
-    height: 700px;
-    background-size: cover; 
-    background: #ffffff url("../images/leverage-background.jpg") no-repeat 50% 0%;
+
+/* Style the video: 100% width and height to cover the entire window 
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+.hero {
+    width: 100%;
+    /*height: 100vh;*/
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+
 }
-.container-fluid#leverage {
-    margin: 0 auto;
-    padding: 0 0 0 0;
-}
-#leverage .container {
-    margin: 0 auto;
-    padding: 0;  
-}
-#leverage .col {
-    text-align: center;
+.content {
+    width: 100%;
+    height: auto;
+    
+    color: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content: end;  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
 }
-#leverage .alphaCover {
+.content h1 {
+    margin-top: 160px;
+    font-size: 2.75em!important;
+}
+.back-video {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
     width: 100%;
-    height: 700px;
-    background-color: rgba(255, 255, 255, .8)
-    
 }
+video {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+/*@media (max-aspect-ratio: 16/9){
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}*/
+
+
+
 #twoCoreSolutions .left, #twoCoreSolutions .right {
     background-color: rgba(255, 255, 255, .8);
 }
-#leverage h1 {
-    font-size: 2.5em!important;
-}
-
 #twoCoreSolutions {
     background-size: 100% 100%; 
     /*background: #ffffff url("../images/twoCore-background.png") no-repeat 50% 100%;*/
@@ -219,7 +259,11 @@ footer li a {
     main {
         padding: 0 0 0 0;
     }
-    
+    .hero,.content {min-height:375px;}
+    .content h1 {
+        margin-top: 260px;
+        font-size: 3.5em!important;
+    }
     #twoCoreSolutions h1 {
         font-size: 2.5em;
     }
@@ -230,9 +274,6 @@ footer li a {
     .navbar-toggler {
         right: 21px;
 
-    }
-    #leverage h1 {
-        font-size: 2.6em!important;
     }
     .indHead h1 {
         color:rgba(30, 51, 91, 1);
@@ -252,8 +293,10 @@ footer li a {
     main {
         padding: 0;
     }
-    #leverage h1 {
-        font-size: 2.7em!important;
+    .hero,.content {min-height:475px;}
+    .content h1 {
+        margin-top: 220px;
+        font-size: 3.5em!important;
     }
     #twoCoreSolutions {
         background: #ffffff url("../images/twoCore-background.png") no-repeat 50% 100%;
@@ -278,9 +321,6 @@ footer li a {
         right: 50px;
 
     }
-    #leverage h1 {
-        font-size: 4em!important;
-    }
     #veterinary-header .bottom-image img {
         vertical-align: bottom;
         margin-top: 80px;
@@ -294,26 +334,19 @@ footer li a {
     #twentyFiveYears .col-4 h3 {
         font-size: calc(1.1rem + .6vw);        
     } 
-    /*.container-fluid#leverage {
-        margin: 0 auto;
-        padding: inherit;
-    }
-    #leverage .container {
-        margin: 0 auto;
-        padding: inherit;
-    }*/
 }
 
 /*`lg` applies to medium devices (tablets, less than 992px)*/
 @media (min-width: 991.98px) {
     .navbar-brand {width:45%;}
+    .hero,.content {min-height:575px;}
+    .content h1 {
+        margin-top: 180px;
+        font-size: 3.5em!important;
+    }
     .navbar-toggler {
         right: 150px;
         top: 54px;
-
-    }
-    #leverage h1 {
-        font-size: 2.8em!important;
     }
     #twoCoreSolutions h1 {
         font-size: 3.5em;
@@ -336,8 +369,10 @@ footer li a {
 /*`xl` applies to large devices (desktops, less than 1200px)*/
 @media (min-width: 1199.98px) {
     .navbar-brand {width:42.5%;}
-    #leverage h1 {
-        font-size: 2.9em!important;
+    .hero,.content {min-height:675px;}
+    .content h1 {
+        margin-top: 140px;
+        font-size: 3.5em!important;
     }
     #twoCoreSolutions h1 {
         font-size: 4em;
@@ -361,8 +396,10 @@ footer li a {
 /*`xxl` applies to x-large devices (large desktops, less than 1400px)*/
 @media (min-width: 1399.98px) {
     .navbar-brand {width:40%;}
-    #leverage h1 {
-        font-size: 3em!important;
+    .hero,.content {min-height:775px;}
+    .content h1 {
+        margin-top: 100px;
+        font-size: 3.5em!important;
     }
     #twoCoreSolutions h1 {
         font-size: 4em;
@@ -379,7 +416,6 @@ footer li a {
     }
     #twentyFiveYears .col-4 h3 {
         font-size: calc(1.4rem + .6vw);        
-    } 
-   
+    }  
 }
 

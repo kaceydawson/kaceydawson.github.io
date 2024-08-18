@@ -1,4 +1,23 @@
 
+//JS for FULL SCREEN VIDEO
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+
+
 // BEGIN SLIDE IN ANIMATIONS ON LOAN TYPES
 $(function() {
     var $blocks = $('.animBlock.notViewed');
