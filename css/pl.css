@@ -231,6 +231,12 @@ video {
     vertical-align: bottom;
 }
 
+.fmTrail {
+    margin: 10px auto;
+    width: 100%;
+    float: none;
+}
+
 #ToS li, #PP li,#ToS p, #PP p {
  font-size: 1em;;
 }
@@ -286,6 +292,11 @@ footer li a {
     #twentyFiveYears .col-4 h3 {
         font-size: calc(1rem + .6vw);        
     } 
+    .fmTrail {
+        margin: -5px 0 0 5px;
+        width: 35%;
+        float: right;
+    }
 }
 
 /*`md` applies to small devices (landscape phones, less than 768px)*/
@@ -335,6 +346,10 @@ footer li a {
     #twentyFiveYears .col-4 h3 {
         font-size: calc(1.1rem + .6vw);        
     } 
+    .fmTrail {
+        margin: -15px 0 0 5px;
+        width: 40%;
+    }
 }
 
 /*`lg` applies to medium devices (tablets, less than 992px)*/
@@ -365,6 +380,10 @@ footer li a {
     #twentyFiveYears .col-4 h3 {
         font-size: calc(1.2rem + .6vw);        
     } 
+    .fmTrail {
+        margin: -25px 0 0 5px;
+        width: 40%;
+    }
 }
 
 /*`xl` applies to large devices (desktops, less than 1200px)*/
@@ -390,7 +409,11 @@ footer li a {
     }
     #twentyFiveYears .col-4 h3 {
         font-size: calc(1.3rem + .6vw);        
-    } 
+    }
+    .fmTrail {
+        margin: -25px 0 0 5px;
+        width: 25%;
+    }
    
 }
 
@@ -417,6 +440,10 @@ footer li a {
     }
     #twentyFiveYears .col-4 h3 {
         font-size: calc(1.4rem + .6vw);        
-    }  
+    }
+    .fmTrail {
+        margin: -25px 0 0 5px;
+        width: 20%;
+    }
 }
 
