@@ -33,11 +33,13 @@
     <meta name="theme-color" content="#ffffff">
     
     <script src="https://kit.fontawesome.com/61702dc971.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        rel="stylesheet" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-		  rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/pl.css">
-   
-	
+    <link rel="stylesheet" href="css/dragNdrop.css">
+
 </head>
 <body>
 	<header class="fixed-top">
@@ -90,16 +92,56 @@
         </nav>
 	</header>
 	<main>
-        <div class="container-fluid" id="tagLine">
+        <div class="container-fluid" id="ms-doc-upload">
             <div class="container">
-            <div class="row text-center">
-                <h1>Form Goes Here</h1>
-                <!--<script type="text/javascript" src=https://form.jotform.com/jsform/241496150699164></script>-->
 
-            </div>
+                <h1>Merchant Services from ThePracticeConsultant.com</h1>
+                <form>
+                    <div class="row">
+                    <div class="mb-3 col-12 col-md-6">
+                        <label for="formGroupExampleInput" class="form-label">Business Name</label>
+                        <input type="text" class="form-control" id="ms-business-name" placeholder="Acme Inc.">
+                    </div>
+                    <div class="mb-3 col-12 col-md-6">
+                        <label for="formGroupExampleInput2" class="form-label">Contact Name</label>
+                        <input type="text" class="form-control" id="ms-contact-name" placeholder="John Smith">
+                    </div>
+                    <div class="mb-3 col-12 col-md-6">
+                        <label class="form-label" for="form6Example6">Phone</label>
+                        <input type="number" id="ms-contact-phone" class="form-control" />
+                    </div>
+                    <div class="mb-3 col-12 col-md-6">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="ms-contact-email" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="form6Example6">Years in Business</label>
+                        <input type="number" id="ms-years-business" class="form-control w-25" />
+                    </div>
+                    <div class="mb-3 col-12">
+                        <label for="exampleFormControlTextarea1" class="form-label">Additional Notes</label>
+                        <textarea class="form-control" id="ms-notes" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3 col-12">
+                        <label for="exampleFormControlTextarea1" class="form-label">Upload your File :</label>
+                        <div class="drag-area">
+                            <div class="icon">
+                                <i class="fas fa-images"></i>
+                            </div>
+                            <span class="header">Drag & Drop</span>
+                            <span class="header">or <span class="button">browse</span></span>
+                            <input type="file" hidden />
+                            <span class="support">Supports: JPEG, JPG, PNG, PDF, XLS, CSV</span>
+                        </div>
+                    </div>
+                    <div class="col-6 mx-auto">
+                        <button type="submit" class="btn plGreen-btn getStarted w-100 mb-5 fs-4 fw-bold">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
-			
+
 		<footer class="container-fluid py-2 fixed-bottom">
 			<div class="container">
 				<div class="row">
@@ -154,6 +196,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="js/pl.js"></script>
+<script src="js/dragNdrop.js"></script>
 
 </body>
 </html>

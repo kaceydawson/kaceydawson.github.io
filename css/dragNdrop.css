@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+#ms-doc-upload {
+    margin: 165px auto 225px auto;
+}
+#ms-doc-upload label {
+    font-weight: 700;
+    font-size: large;
+}
+::placeholder {
+    color: #696969;
+}
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #696969;
+}
+
+.drag-area {
+    height: 400px;
+    border: 3px dashed #e0eafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px auto;
+  }
+  .drag-area .icon {
+    font-size: 50px;
+    color: #1683ff;
+  }
+  .drag-area .header {
+    font-size: 20px;
+    font-weight: 500;
+    color: #34495e;
+  }
+  .drag-area .support {
+    font-size: 12px;
+    color: gray;
+    margin: 10px 0 15px 0;
+  }
+  .drag-area .button {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1683ff;
+    cursor: pointer;
+  }
+  .drag-area.active {
+    border: 2px solid #1683ff;
+  }
+  .drag-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .download {
+    background-color:#4CAF50;
+    border: none;
+    color: white;
+    padding: 6px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 1px;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    #ms-doc-upload {
+        margin: 165px auto 200px auto;
+    } 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #ms-doc-upload {
+        margin: 165px auto 175px auto;
+    }     
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #ms-doc-upload {
+        margin: 165px auto 150px auto;
+    }     
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #ms-doc-upload {
+        margin: 165px auto 125px auto;
+    }   
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    #ms-doc-upload {
+        margin: 165px auto 100px auto;
+    }     
+}
