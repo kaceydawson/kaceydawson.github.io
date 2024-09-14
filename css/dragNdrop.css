@@ -1,23 +1,42 @@
 #ms-doc-upload {
   margin: 165px auto 225px auto;
+  padding: 0 0 240px 0;
 }
 #ms-doc-upload label {
   font-weight: 700;
   font-size: large;
 }
 
+#ms-doc-upload .image-right {
+  float: none;
+  width: 95%;
+  margin: 8px auto;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     #ms-doc-upload {
         margin: 165px auto 200px auto;
-    } 
+        padding: 0 0 240px 0;
+    }
+    #ms-doc-upload .image-right {
+      float: none;
+      width: 75%;
+      margin: 8px auto;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     #ms-doc-upload {
         margin: 165px auto 175px auto;
-    }     
+        padding: 0 0 120px 0;
+    }
+    #ms-doc-upload .image-right {
+      float: right;
+      width: 30%;
+      margin: 0 0 10px 10px;
+    }    
 }
 
 /* Large devices (desktops, 992px and up) */
