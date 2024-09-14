@@ -1,4 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+#ms-doc-upload {
+  margin: 165px auto 225px auto;
+}
+#ms-doc-upload label {
+  font-weight: 700;
+  font-size: large;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    #ms-doc-upload {
+        margin: 165px auto 200px auto;
+    } 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #ms-doc-upload {
+        margin: 165px auto 175px auto;
+    }     
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #ms-doc-upload {
+        margin: 165px auto 150px auto;
+    }     
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #ms-doc-upload {
+        margin: 165px auto 125px auto;
+    }   
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    #ms-doc-upload {
+        margin: 165px auto 100px auto;
+    }     
+}
+
+
+
+
+/* this CSS is used to style a drag n drop file upload feature on the merchant services page that was never used on 09/12/2024 */
+
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 #ms-doc-upload {
     margin: 165px auto 225px auto;
@@ -10,10 +58,9 @@
 ::placeholder {
     color: #696969;
 }
-::-ms-input-placeholder { /* Edge 12 -18 */
+::-ms-input-placeholder {
     color: #696969;
 }
-
 .drag-area {
     height: 400px;
     border: 3px dashed #e0eafc;
@@ -66,37 +113,4 @@
     width: 100%;
   }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-    #ms-doc-upload {
-        margin: 165px auto 200px auto;
-    } 
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    #ms-doc-upload {
-        margin: 165px auto 175px auto;
-    }     
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    #ms-doc-upload {
-        margin: 165px auto 150px auto;
-    }     
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    #ms-doc-upload {
-        margin: 165px auto 125px auto;
-    }   
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-    #ms-doc-upload {
-        margin: 165px auto 100px auto;
-    }     
-}
+  */
