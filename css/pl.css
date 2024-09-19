@@ -260,6 +260,31 @@ footer li a {
 
 }
 
+/* ----- Merchant Servies ----- */
+ul.ms-list > li {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+ul.ms-list > li {
+    font-weight: 700;
+}
+ul.ms-list > li li {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+#ms-doc-upload .disclaimer {
+    font-weight: 300;
+    font-style:italic;
+    font-size: .75em;
+    line-height: 1em;
+    display: inline-block;
+    margin: 50px auto 0;
+}
+
 /*`sm` applies to x-small devices (portrait phones, less than 576px)*/
 @media (min-width: 575.98px) { 
     .navbar-brand {width:50%;}
