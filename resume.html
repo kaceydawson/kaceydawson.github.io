@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PTHKTQ4');</script><!-- End Google Tag Manager --><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><meta name="author" content="">
+	<title>Kacey Dawson - Web Developer</title>
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" /><!-- Custom CSS -->
+	<link href="css/landing-page.css" rel="stylesheet" /><!-- Custom Fonts -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" /><!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --><!-- WARNING: Respond.js doesn't work if you view the page via file:// --><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]--><!-- Global site tag (gtag.js) - Google Analytics 2019/01/01 --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-131577681-1"></script><script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-131577681-1');
+	</script>
+
+<script type="text/javascript">
+ 
+ 
+    var screenshareConfig = { "exampleParameter": "Example Value"}
+ 
+ININ.screenshare.create(config, function(err, screenshare) {
+     if (err) {
+         if (err.name === 'UNSUPPORTED_BROWSER') {
+             // Redirect to instructions for unsupported browser, or handle appropriately
+             alert('Sorry, your browser is not supported!');
+             return;
+         }
+     }
+ 
+     screenshare.renderScreenShareForm({
+         containerEl: 'chatContainer'
+     });
+});
+ 
+ 
+    var chatConfig = {};
+    function createChatConfig(){
+        var firstName = document.getElementById('firstName').value;
+        var lastName = document.getElementById('lastName').value;
+        var agentEmail = document.getElementById('agentEmail').value;
+ 
+        chatConfig = {
+            // Web chat application URL
+            "webchatAppUrl": "https://apps.mypurecloud.com/webchat",
+ 
+            // Web chat service URL
+            "webchatServiceUrl": "https://realtime.mypurecloud.com:443",
+ 
+            // Numeric organization ID
+            "orgId": 4722,
+ 
+            // Organization name
+            "orgName": "alliancelaundrysystems",
+ 
+            // Requested agent language skill (Agent must have this language skill to receive chat)
+            "language": "",
+ 
+            // Requested agent skills (Agent must have these skills to receive chat)
+            "skills": [],
+            // OR
+            //"skills": [],
+ 
+            // Priority
+            "priority": 0,
+ 
+            // Queue Name
+            "queueName" : "CHAT_QUEUE_NAME",  //MUST BE CHANGED BEFORE GO LIVE
+ 
+            // Target agent email (OPTIONAL)
+            "agentEmail": agentEmail,
+ 
+            // Log level
+            "logLevel": "DEBUG",
+ 
+            // Locale code
+            "locale": "en",
+ 
+            // Data that will be included with interaction –SHOULD BE CHANGED BEFORE GO LIVE
+            "data": {
+                "firstName": firstName,
+                "lastName": lastName,
+                "addressStreet": "64472 Brown Street",
+                "addressCity": "Lindgrenmouth",
+                "addressPostalCode": "50163-2735",
+                "addressState": "FL",
+                "phoneNumber": "1-916-892-2045 x293",
+                "phoneType": "Cell",
+                "customerId": 59606
+            },
+ 
+            // Logo used at the top of the chat window  - SHOULD BE CHANGED BEFORE GO LIVE
+                "companyLogo": {
+                "width": 600,
+                  "height": 149,
+                "url": "http://docs.alliancelaundry.com/sqred.jpg"
+            },
+ 
+            // Logo used within the chat window – SHOULD BE CHANGED BEFORE GO LIVE
+            "companyLogoSmall": {
+                "width": 149,
+                "height": 149,
+                "url": "http://docs.alliancelaundry.com/sq.jpg"
+            },
+ 
+            // Image used for agent – SHOULD BE CHANGED BEFORE GO LIVE
+            "agentAvatar": {
+             "width": 462,
+              "height": 462,
+              "url": "http://docs.alliancelaundry.com/sq.jpg"
+            },
+ 
+            // Text displayed with chat window is displayed – SHOULD BE CHANGED BEFORE GO LIVE
+            "welcomeMessage": "Welcome to the My Alliance support system.  A customer support specialist will be with you in a moment.",
+         
+            // used for Screen Share
+            "popupNewTab": true,
+ 
+            // Used for Screen Share
+            chromeWebstoreUrl : " https://chrome.google.com/webstore/detail/chpkaocjjopjgclkahflonfkhdhkdenh1",
+ 
+ 
+            // CSS class applied to the chat window
+            "cssClass": "webchat-frame",
+ 
+            // Custom style applied to the chat window
+            "css": {
+                "width": "200%",
+                "height": "200%"           
+            }
+        };
+    }
+ 
+ 
+ 
+    function startEmbeddedChat() {
+        createChatConfig();
+        ININ.webchat.create(chatConfig, function(err, webchat) {
+            if (err) {
+                throw err;
+            }
+ 
+            // Render to frame
+            webchat.renderFrame({
+                containerEl: 'chatContainer'
+            });
+        });
+    }
+ 
+    function startPopupChat() {
+        createChatConfig();
+        ININ.webchat.create(chatConfig, function(err, webchat) {
+            if (err) {
+                throw err;
+            }
+            // Render to popup
+            webchat.renderPopup({
+                width: 400,
+                height: 400,
+                title: 'Chat'
+            });
+        });
+    }
+
+</script><!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTHKTQ4"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) --><!-- Navigation -->
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+<div class="container topnav"><!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header"><button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span></button><a class="navbar-brand topnav" href="#">kaceydawson.com</a></div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+	<li><a href="index.html" target="_self">Home</a></li>
+	<li><a href="resume.html" target="_self">Resume</a></li>
+	<li><a href="graphics.html" target="_self">Graphics</a></li>
+	<li><a href="index.html#contact" target="_self">Contact</a></li>
+</ul>
+</div>
+<!-- /.navbar-collapse --></div>
+<!-- /.container --></nav>
+<!-- Page Content -->
+
+<p><a name="resume"></a></p>
+
+<div class="content-section-a">
+<div class="container">
+<div class="row">
+<div class="col-lg-5 col-sm-6">
+<div class="clearfix"></div>
+
+<h2 class="section-heading"><a href="http://www.cendyn.com/" target="_blank">Cendyn Systems, Inc., Boca Raton, FL.</a></h2>
+
+<p class="roleLabel">09/15/2015&ndash; 03/05/2016</p>
+
+<p class="genericRoleId">CSS Developer</p>
+
+<ul class="dutyList">
+	<li class="dutyDesc">Edit and manipulate HTML, CSS in web based applications and emails</li>
+	<li class="dutyDesc">Debug and troubleshoot jQuery and JavaScript</li>
+	<li class="dutyDesc">Integrate Bootstrap in existing web applications</li>
+	<li class="dutyDesc">Create events in Metron and Metron Express</li>
+	<li class="dutyDesc">Responsive email creation</li>
+	<li class="dutyDesc">Familiarity with Microsoft Visual Studio and Team Foundation Server</li>
+</ul>
+</div>
+
+<div class="col-lg-5 col-lg-offset-2 col-sm-6"><img alt="Cendyn Logo" class="img-responsive comp-logo" src="img/cendyn-logo.png" /></div>
+</div>
+</div>
+<!-- /.container --></div>
+<!-- /.content-section-a -->
+
+<div class="content-section-b">
+<div class="container">
+<div class="row">
+<div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+<div class="clearfix"></div>
+
+<h2 class="section-heading"><a href="https://www.citrix.com/" target="_blank">Citrix Systems, Inc., Fort Lauderdale, FL.</a></h2>
+
+<p class="roleLabel">04/07/2014- 05/02/2014</p>
+
+<p class="genericRoleId">Web Producer</p>
+
+<ul class="dutyList">
+	<li class="dutyDesc">Receiving content including copy, photos, links, etc. and publishing the content onto the company&rsquo;s website using a Web Content Management System &ndash; Adobe CQ5</li>
+	<li class="dutyDesc">Edit, manipulate, resize and optimize images with Photoshop / GIMP</li>
+</ul>
+</div>
+
+<div class="col-lg-5 col-sm-pull-6  col-sm-6"><img alt="Citrix Logo" class="img-responsive comp-logo" src="img/citrix-logo.png" /></div>
+</div>
+</div>
+<!-- /.container --></div>
+<!-- /.content-section-b -->
+
+<div class="content-section-a">
+<div class="container">
+<div class="row">
+<div class="col-lg-5 col-sm-6">
+<div class="clearfix"></div>
+
+<h2 class="section-heading"><a href="http://www.cisco.com/" target="_blank">Cisco Systems, Lawrenceville, GA.</a></h2>
+
+<p class="roleLabel">06/04/2012- 12/17/2013</p>
+
+<p class="genericRoleId">Web Developer</p>
+
+<ul class="dutyList">
+	<li class="dutyDesc">Design and develop Webex Conferencing community on WebEx Social platform</li>
+	<li class="dutyDesc">Design and develop Jabber Topics pages on WebEx Social platform</li>
+	<li class="dutyDesc">Create and or manipulates standard web graphics files</li>
+	<li class="dutyDesc">Generate web site statistics and reports</li>
+	<li class="dutyDesc">Incorporate knowledge of Section 508 compliance, usability and accessibility</li>
+	<li class="dutyDesc">Experience utilizing Graphic and Page Layout packages (e.g., Dreamweaver, Photoshop)</li>
+	<li class="dutyDesc">Support other teams development efforts and provide troubleshooting and coding tips</li>
+</ul>
+</div>
+
+<div class="col-lg-5 col-lg-offset-2 col-sm-6"><img alt="Cisco Logo" class="img-responsive comp-logo" src="img/cisco-logo.png" /></div>
+</div>
+</div>
+<!-- /.container --></div>
+<!-- /.content-section-a -->
+
+<div class="content-section-b">
+<div class="container">
+<div class="row">
+<div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+<div class="clearfix"></div>
+
+<h2 class="section-heading"><a href="https://www.cdc.gov/" target="_blank">Center for Disease Control (CDC), Atlanta, GA.</a></h2>
+
+<p class="roleLabel">11/07/2011- 01/04/2012</p>
+
+<p class="genericRoleId">Web Developer</p>
+
+<ul class="dutyList">
+	<li class="dutyDesc">Provide design, development, and maintenance updates of internet and intranet web pages</li>
+	<li class="dutyDesc">Train and supports content providers</li>
+	<li class="dutyDesc">Create and or manipulates standard web graphics files</li>
+	<li class="dutyDesc">Generate web site statistics and reports</li>
+	<li class="dutyDesc">Incorporate knowledge of Section 508 compliance, usability and accessibility</li>
+	<li class="dutyDesc">Provide high level quality assurance and project ownership with each assignment</li>
+	<li class="dutyDesc">Experience in an environment utilizing HTML, CSS, Dream Weaver, and Microsoft Office</li>
+	<li class="dutyDesc">Experience with Section 508 accessibility regulations, web usability and document compliancy</li>
+	<li class="dutyDesc">Experience utilizing Graphic and Page Layout packages (e.g., Adobe PageMaker, Illustrator, Photoshop, Macromedia Fireworks, Adobe Indesign)</li>
+	<li class="dutyDesc">Experience managing large amounts of information in a timely and flexible manner while ensuring quality content, layout and presentation of this information</li>
+	<li class="dutyDesc">Written communication skills (strong web, journalist, instructional designer, and/or technical writing)</li>
+	<li class="dutyDesc">Oral communication skills (including presentations; interviewing subject matter experts and end-users to capture information about the purpose, use, and functionality of systems)</li>
+</ul>
+</div>
+
+<div class="col-lg-5 col-sm-pull-6  col-sm-6"><img alt="CDC logo" class="img-responsive comp-logo" src="img/cdc-logo.png" /></div>
+</div>
+</div>
+<!-- /.container --></div>
+<!-- /.content-section-b -->
+
+<div class="content-section-a">
+<div class="container">
+<div class="row">
+<div class="col-lg-5 col-sm-6">
+<div class="clearfix"></div>
+
+<h2 class="section-heading"><a href="https://www.equifax.com" target="_blank">Equifax Inc., Alpharetta, GA.</a></h2>
+
+<p class="roleLabel">11/26/2010- 08/05/2011</p>
+
+<p class="genericRoleId">User Interface Engineer</p>
+
+<ul class="dutyList">
+	<li class="dutyDesc">Thorough knowledge of HTML, CSS, JavaScript, jQuery, JSP, Adobe Suite, Section 508 / ADA Compliance, cross browser compatibility, SVN, Apache, and Fatwire CMS</li>
+	<li class="dutyDesc">Develop dynamic web pages for high-volume, multi-tiered web applications</li>
+	<li class="dutyDesc">eCommerce/web-based projects, specifically around building and enhancing web applications and consumer engagement channels (web services, mobile devices, web store fronts, social media, e.g. blogs communities, forums)</li>
+	<li class="dutyDesc">Knowledge of internet based (B2C) industry desired</li>
+	<li class="dutyDesc">Exceptional presentation, people management plus excellent verbal and written communication skills</li>
+	<li class="dutyDesc">Knowledge of project life cycle for application development using Agile/SCRUM utilizing Rally project management resource allocation software</li>
+	<li class="dutyDesc">Experience working with offshore development</li>
+</ul>
+</div>
+
+<div class="col-lg-5 col-lg-offset-2 col-sm-6"><img alt="" class="img-responsive comp-logo" src="img/equifax-logo.png" /></div>
+</div>
+</div>
+<!-- /.container --></div>
+<!-- /.content-section-a -->
+
+<div class="content-section-b">
+<div class="container">
+<div class="row">
+<div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+<div class="clearfix"></div>
+
+<h2 class="section-heading"><a href="http://www.autotrader.com/" target="_blank">Autotrader.com Inc., Atlanta, GA.</a></h2>
+
+<p class="roleLabel">2005- 2008</p>
+
+<p class="genericRoleId">Associate User Interface Engineer</p>
+
+<ul class="dutyList">
+	<li class="dutyDesc">Create and maintain dynamic user interface templates for multiple applications</li>
+	<li class="dutyDesc">Actively partner with project team members in identifying usability issues and make resolution recommendations</li>
+	<li class="dutyDesc">Stay current with web standards, application architectures, and deployment techniques</li>
+	<li class="dutyDesc">Work effectively in a very fluid, high-communication, product delivery centric environment</li>
+	<li class="dutyDesc">Work with minimal supervision on multiple concurrent projects or requests</li>
+	<li class="dutyDesc">Develop new or maintain existing programs based on specifications</li>
+	<li class="dutyDesc">Participate in requirements gathering and definition</li>
+	<li class="dutyDesc">Participate in testing for the assigned application(s), functional area(s) or project(s)</li>
+	<li class="dutyDesc">Participate in problem solving and troubleshooting for the assigned application(s), functional area(s) or project(s)</li>
+	<li class="dutyDesc">Develop and maintain a thorough knowledge of the assigned application(s), functional area(s) or project(s)</li>
+	<li class="dutyDesc">Work with Project Managers to understand business objectives and provide technical assessments, UI recommendations, risk analysis, and accurate development estimates</li>
+	<li class="dutyDesc">Mentor less experienced and/or on boarding User Interface Engineers</li>
+</ul>
+</div>
+
+<div class="col-lg-5 col-sm-pull-6  col-sm-6"><img alt="Autotrader.com Logo" class="img-responsive comp-logo" src="img/autotrader-logo.png" /></div>
+</div>
+</div>
+<!-- /.container --></div>
+<!-- /.content-section-b -->
+
+<section class="banner2">
+<div class="container">
+<div class="row"></div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<ul class="list-inline">
+	<li><a href="index.html" target="_self">Home</a></li>
+	<li class="footer-menu-divider">&sdot;</li>
+	<li><a href="resume.html" target="_self">Resume</a></li>
+	<li class="footer-menu-divider">&sdot;</li>
+	<li><a href="graphics.html" target="_self">Graphics</a></li>
+	<li class="footer-menu-divider">&sdot;</li>
+	<li><a href="index.html#contact" target="_self">Contact</a></li>
+</ul>
+<!-- <p class="copyright text-muted small">Copyright &copy; Your Company 2017. All Rights Reserved</p> --></div>
+</div>
+</div>
+</footer>
+<!-- jQuery --><script src="js/jquery.js"></script><!-- Bootstrap Core JavaScript --><script src="js/bootstrap.min.js"></script>
+
+<script
+  id="purecloud-webchat-js"
+  type="text/javascript"
+  src="https://apps.mypurecloud.com/webchat/jsapi-v1.js"
+  region="us-east-1"
+  org-guid="95babae6-a828-4b6d-b6d0-041349f2ebb8"
+  deployment-key="bfbbcb07-39ef-42d4-94e2-6c02a9e01ef4"
+></script>
+
+</body>
+</html>

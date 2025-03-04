@@ -1,0 +1,273 @@
+/* #################### LAYOUT TOP CSS #################### */
+/* #################### Brand Logo Area, Co-Brand Logo Area, Country Flags, Navigation #################### */
+#LayoutTop { /* top white area container that holds the logo and navigation */
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#BrandTop { /* container for Brand and CoBrand */
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#BrandContainer {
+	display: block;
+	float: left;
+	margin: 0;
+	padding:0;
+	width: 869px;
+}
+#Brand { /* container for the top left logo */
+	float: left;
+	height:45px;
+	margin: 0;
+	padding: 10px 0 0 0;
+	width: 500px;
+}
+#CoBrand { /* container for the top right logo */
+	float: right;
+	height: 47px;
+	margin: 0;
+	padding: 0 5px 0 0;
+	width: 165px;
+}
+#CoBrand img{ /* container for the top right logo */
+	float: right;
+}
+/* !!!!! COUNTRY NAVIGATION !!!!! */
+.SkipNav {
+	display:block;
+	height:0;
+	margin: -13px 0 -5px 0;
+	overflow:hidden;
+	width:0;
+}
+#CountryNav {
+	clear: both;
+	float: left;
+	height: 1.3em;
+	margin: 0 0 5px 0;
+	padding: 0;
+	width: 145px;
+}
+/* begin countries list */
+#CountryNavList {
+	background-color:#fff;
+	color: #666;
+	float:left;
+	font:0.85em Arial, Helvetica, sans-serif;
+	margin:0 0 0 0;
+	padding:0;
+	position:absolute;
+	width:144px;
+	z-index:3;
+}
+#CountryNavList li {
+	border:1px solid #999;
+	border-top-style:dashed;
+	border-bottom-style:none;
+	display:none;	
+	font:0.85em Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+/* creates dropdown effect without javascript in compliant browsers (not IE) */
+ul#CountryNavList:hover > li {
+	display:block;
+}
+li#CountryUS {
+	background:transparent url(../images/arrows/black_down.gif) no-repeat 3px 8px;
+	border:none;
+	display:block;
+}
+li#CountryUY {
+	border-bottom-style:solid;
+}
+#CountryNavList a {
+	background-position:16px 5px;
+	background-repeat:no-repeat;
+	color:#000;
+	display:block;
+	line-height:1.3em;
+	text-decoration:none;
+	padding:3px 0 3px 43px;
+	width:99px;
+}
+#CountryNavList a:hover {
+	background-color:#e5e5e5;
+}
+#CountryUS a {
+	background-image:url(../images/flags/us.gif);
+}
+#CountryUS a:hover {
+	background-color:transparent;
+}
+#CountryAR a {
+	background-image:url(../images/flags/ar.gif);
+}
+#CountryBR a {
+	background-image:url(../images/flags/br.gif);
+}
+#CountryCA a {
+	background-image:url(../images/flags/ca.gif);
+}
+#CountryCL a {
+	background-image:url(../images/flags/cl.gif);
+}
+#CountrySV a {
+	background-image:url(../images/flags/sv.gif);
+}
+#CountryPE a {
+	background-image:url(../images/flags/pe.gif);
+}
+#CountryES a {
+	background-image:url(../images/flags/es.gif);
+}
+#CountryUK a {
+	background-image:url(../images/flags/uk.gif);
+}
+#CountryUY a {
+	background-image:url(../images/flags/uy.gif);
+}
+/* end countries list */
+/* !!!!! NAVIGATION !!!!! */
+#Navigation {
+	margin: 0 0 0 90px;
+	padding: 0;
+	float: right;
+}
+html>body #Navigation {
+	margin: 0 0 0 110px;
+}
+#Navigation ul {
+	margin:0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+}
+#Navigation ul li {
+	margin: 0 20px 0 0;
+	padding: 3px 0 0 0;
+	border: 0;
+	list-style-type: none;
+	float: left;
+}
+#Navigation a, #Navigation a.visited {
+	border-top: solid 3px #fff;
+	color:#959595;
+    font-family: verdana, arial, sans-serif;
+	font-size:0.75em;
+	font-weight:bold;
+	text-decoration: none;
+	padding:0px 5px;
+}
+#Navigation ul li a:hover, #Navigation ul li#Products:hover, #Navigation ul li#Resources:hover, #Navigation ul li#CustomerService:hover {
+	border-top: solid 3px #9d0a0e;
+	color:#404040;
+	cursor: pointer;
+	text-decoration: none;
+}
+#Navigation ul li a, #Navigation ul li#Products, #Navigation ul li#Resources, #Navigation ul li#CustomerService {
+	border-top: solid 3px #fff;
+	color:#959595;
+    font-family: verdana, arial, sans-serif;
+	text-decoration: none;
+	padding:0px 5px;
+	font-weight:bold;
+}
+/* !!!!! NAVIGATION - POP UP MENU !!!!! */
+#Navigation ul li#Products ul#ProductsPop, #Navigation ul li#Resources ul#ResourcesPop, #Navigation ul li#CustomerService ul#CustomerServicePop {
+	background-color:#fff;
+	float:left;
+	margin:12px 0 0 -58px;
+	padding:0;
+	position:absolute;
+	width:170px;
+	z-index:200;
+}
+#Navigation ul li#Products ul#ProductsPop {
+	width: 230px;
+}
+#Navigation ul li#Resources ul#ResourcesPop, #Navigation ul li#CustomerService ul#CustomerServicePop {
+	background-color:#fff;
+	float:left;
+	margin:12px 0 0 -103px;
+	padding:0;
+	position:absolute;
+	width:170px;
+	z-index:200;
+}
+#Navigation ul li#CustomerService ul#CustomerServicePop {
+	margin:12px 0 0 -115px;
+}
+#Navigation ul li#Resources ul#ResourcesPop {
+	margin:16px 0 0 -75px;  /* different value from FatWire 12px-FW */
+}
+html>body #Navigation ul li#Products ul#ProductsPop, html>body #Navigation ul li#Resources ul#ResourcesPop, html>body #Navigation ul li#CustomerService ul#CustomerServicePop {
+	margin:-2px 0 0 -5px; /* 5px */
+	padding:0;
+}
+#Navigation ul li#Products ul#ProductsPop li, #Navigation ul li#Resources ul#ResourcesPop li, #Navigation ul li#CustomerService ul#CustomerServicePop li  {
+	background-color:#fff;
+	border:1px solid #999;
+	border-top-style:dotted;
+	border-bottom-style:none;
+	color:#404040;
+	display:none;
+	font:0.85em Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	width:170px;
+}
+#Navigation ul li#Products ul#ProductsPop li, #Navigation ul li#Resources ul#ResourcesPop li, #Navigation ul li#CustomerService ul#CustomerServicePop li    { /* grouping label for pop-up */
+	font-weight: bold;
+	width:230px;
+}
+#Navigation ul li#Resources ul#ResourcesPop li, #Navigation ul li#CustomerService ul#CustomerServicePop li   { /* grouping label for pop-up */
+	width:170px;
+}
+#Navigation ul li#Products ul#ProductsPop li ul li, #Navigation ul li#Resources ul#ResourcesPop li ul li, #Navigation ul li#CustomerService ul#CustomerServicePop li ul li  { /* special embedded list under pop-up */
+	border-right: none;
+	border-left: none;
+	border-top-style:dotted;
+	border-bottom-style:none;
+	font:1em Arial, Helvetica, sans-serif;
+}
+/* creates dropdown effect without javascript in compliant browsers (not IE) */
+#Navigation ul li#Products ul#ProductsPop:hover > li, #Navigation ul li#Resources ul#ResourcesPop:hover > li, #Navigation ul li#CustomerService ul#CustomerServicePop:hover > li {
+	display:block;
+	background-color:#fff;
+}
+#Navigation ul li#Products ul#ProductsPop li.Last, #Navigation ul li#Resources ul#ResourcesPop li.Last, #Navigation ul li#CustomerService ul#CustomerServicePop li.Last {
+	border-bottom-style:solid;
+}
+#Navigation ul li#Products ul#ProductsPop a, #Navigation ul li#Resources ul#ResourcesPop a, #Navigation ul li#CustomerService ul#CustomerServicePop a {
+	color:#404040;
+	font:0.85em Arial, Helvetica, sans-serif;
+	display:block;
+	text-decoration:none;
+	padding:0 0 3px 10px;
+	margin: 0;
+}
+#Navigation ul li#Products ul#ProductsPop a:hover, #Navigation ul li#Resources ul#ResourcesPop a:hover, #Navigation ul li#CustomerService ul#CustomerServicePop a:hover {
+	background-color:#e5e5e5;
+	border-color:#e5e5e5;
+	font:0.85em Arial, Helvetica, sans-serif;
+}
+span.GroupHdr { /* adjust the left padding for the group label in the pop-up menus */
+	padding-left: 5px;
+}
+/* Adjust the text when the parent link is removed */
+#Navigation ul li#Products span.GroupHdr, #Navigation ul li#Resources span.GroupHdr, #Navigation ul li#CustomerService span.GroupHdr {
+	color:#959595;
+	font-size: 0.78em;
+	font-weight: bold;
+	
+}
+#Navigation ul li#Products ul#ProductsPop span.GroupHdr, #Navigation ul li#Resources ul#ResourcesPop span.GroupHdr, #Navigation ul li#CustomerService ul#CustomerServicePop span.GroupHdr {
+	color:#333;
+	font-size: 0.9em;
+	font-weight: bold;
+	
+}
+/* #################### END LAYOUT TOP CSS #################### */

@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Chat Test</title>
+    
+    <script type="text/javascript"> 
+ 
+    var screenshareConfig = { "exampleParameter": "Example Value"}
+ 
+    ININ.screenshare.create(config, function(err, screenshare) {
+         if (err) {
+             if (err.name === 'UNSUPPORTED_BROWSER') {
+                 // Redirect to instructions for unsupported browser, or handle appropriately
+                 alert('Sorry, your browser is not supported!');
+                 return;
+             }
+         }
+         screenshare.renderScreenShareForm({
+             containerEl: 'chatContainer'
+         });
+    });
+ 
+ 
+    var chatConfig = {};
+    function createChatConfig(){
+        var firstName = document.getElementById('firstName').value;
+        var lastName = document.getElementById('lastName').value;
+        var agentEmail = document.getElementById('agentEmail').value;
+ 
+        chatConfig = {
+            // Web chat application URL
+            "webchatAppUrl": "https://apps.mypurecloud.com/webchat",
+ 
+            // Web chat service URL
+            "webchatServiceUrl": "https://realtime.mypurecloud.com:443",
+ 
+            // Numeric organization ID
+            "orgId": 4722,
+ 
+            // Organization name
+            "orgName": "alliancelaundrysystems",
+ 
+            // Requested agent language skill (Agent must have this language skill to receive chat)
+            "language": "",
+ 
+            // Requested agent skills (Agent must have these skills to receive chat)
+            "skills": [],
+            // OR
+            //"skills": [],
+ 
+            // Priority
+            "priority": 0,
+ 
+            // Queue Name
+            "queueName" : "CHAT_QUEUE_NAME",  //MUST BE CHANGED BEFORE GO LIVE
+ 
+            // Target agent email (OPTIONAL)
+            "agentEmail": agentEmail,
+ 
+            // Log level
+            "logLevel": "DEBUG",
+ 
+            // Locale code
+            "locale": "en",
+ 
+            // Data that will be included with interaction –SHOULD BE CHANGED BEFORE GO LIVE
+            "data": {
+                "firstName": firstName,
+                "lastName": lastName,
+                "addressStreet": "64472 Brown Street",
+                "addressCity": "Lindgrenmouth",
+                "addressPostalCode": "50163-2735",
+                "addressState": "FL",
+                "phoneNumber": "1-916-892-2045 x293",
+                "phoneType": "Cell",
+                "customerId": 59606
+            },
+ 
+            // Logo used at the top of the chat window - Updated by KDawson (06/12/2019)
+            "companyLogo": {
+                "width": 254, //changed from 600 by KDawson (06/12/2019)
+                "height": 99, //changed from 149 by KDawson (06/12/2019)
+                "url": "http://kaceydawson.com/purecloud/Alliance_Color_web.png" //Updated new image to absolute path KDawson (06/12/2019)
+            },
+ 
+            // Logo used within the chat window - Updated by KDawson (06/12/2019)
+            "companyLogoSmall": {
+                "width": 350, //changed from 149 by KDawson (06/12/2019)
+                "height": 40, //changed from 149 by KDawson (06/12/2019)
+                "url": "http://kaceydawson.com/purecloud/all-logo.png" //Updated new image to absolute path KDawson (06/12/2019)
+            },
+ 
+            // Image used for agent – SHOULD BE CHANGED BEFORE GO LIVE
+            "agentAvatar": {
+                "width": 269,
+                "height": 320,
+                "url": "http://kaceydawson.com/purecloud/loading-animation.gif"
+            },
+ 
+            // Text displayed with chat window is displayed – SHOULD BE CHANGED BEFORE GO LIVE
+            "welcomeMessage": "Welcome to the My Alliance support system. A customer support specialist will be with you in a moment.",
+         
+            // used for Screen Share
+            "popupNewTab": true,
+ 
+            // Used for Screen Share
+            chromeWebstoreUrl : "https://chrome.google.com/webstore/detail/chpkaocjjopjgclkahflonfkhdhkdenh1",
+ 
+ 
+            // CSS class applied to the chat window
+            "cssClass": "webchat-frame",
+ 
+            // Custom style applied to the chat window
+            "css": {
+                "width": "200%",
+                "height": "200%"           
+            }
+        };
+    }
+ 
+ 
+ 
+    function startEmbeddedChat() {
+        createChatConfig();
+        ININ.webchat.create(chatConfig, function(err, webchat) {
+            if (err) {
+                throw err;
+            }
+ 
+            // Render to frame
+            webchat.renderFrame({
+                containerEl: 'chatContainer'
+            });
+        });
+    }
+ 
+    function startPopupChat() {
+        createChatConfig();
+        ININ.webchat.create(chatConfig, function(err, webchat) {
+            if (err) {
+                throw err;
+            }
+            // Render to popup
+            webchat.renderPopup({
+                width: 400,
+                height: 400,
+                title: 'Chat'
+            });
+        });
+    }
+</script>
+</head>
+
+<body>
+<form id="chatForm">
+    <h3> Support</h3>
+
+    <table class="webchat-config">
+        <tbody>
+        <tr>
+            <th>First Name:</th>
+            <td><input type="text" id="firstName" value="TEST" /></td>
+        </tr>
+        <tr>
+            <th>Last Name:</th>
+            <td><input type="text" id="lastName" value="Ignore Me" /></td>
+        </tr>
+        <tr>
+            <th>Agent Email:</th>
+            <td><input type="text" id="agentEmail" value="test@test.com" /></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <button type="button" onclick="startEmbeddedChat()">Start Embedded Chat</button>
+    <button type="button" onclick="startPopupChat()">Start Pop-up Chat</button>
+</form>
+
+<div id="chatContainer" style="height:600px"></div>
+
+<script
+  id="purecloud-webchat-js"
+  type="text/javascript"
+  src="https://apps.mypurecloud.com/webchat/jsapi-v1.js"
+  region="us-east-1"
+  org-guid="95babae6-a828-4b6d-b6d0-041349f2ebb8"
+  deployment-key="bfbbcb07-39ef-42d4-94e2-6c02a9e01ef4"
+></script>
+
+</body>
+</html>

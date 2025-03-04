@@ -1,0 +1,578 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Conceled Damage Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/conceled-damage.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <form id="form-damage" class="" style="margin: 0 auto; padding: 2em 0;">
+        <div class="form-group">
+            <label for="customer-type" class="no-display">Customer Type</label>
+            <select class="form-control NormalTextBox" id="customer-type">
+                <option value="ct">Customer Type*</option>
+                <option value="ssd">Self-Servicing Dealer</option>
+                <option value="nsd">Non-Servicing Dealer</option>
+            </select>
+        </div>
+        <div class="form-group" id="vendor-id">
+            <label for="vendor-id" class="no-display">Vendor ID</label>
+            <input type="text" class="form-control NormalTextBox" id="vendor-id-input" placeholder="Vendor ID Number">
+        </div>
+        <div id="dealer-details">
+            <hr />
+            <h3>Dealer Details</h3>
+            <div class="form-group">
+                <label for="dealer-name" class="no-display">Dealer Name</label>
+                <input type="text" class="form-control NormalTextBox" id="dealer-name" placeholder="Business Name*">
+            </div>
+            <div class="form-group">
+                <label for="address-1" class="no-display">Address 1</label>
+                <input type="text" class="form-control NormalTextBox" id="dealer-address-1" placeholder="Street Number*">
+            </div>
+            <div class="form-group">
+                <label for="address-2" class="no-display">Address 2</label>
+                <input type="text" class="form-control NormalTextBox" id="address-2" placeholder="Suite/Building">
+            </div>
+            <div class="form-group">
+                <label for="city" class="no-display">City</label>
+                <input type="text" class="form-control NormalTextBox" id="dealer-city" placeholder="City*">
+            </div>
+            <div class="form-group">
+                <label for="state" class="no-display">State</label>
+                <select class="form-control NormalTextBox" id="dealer-state">
+                    <option value="AL">State (ST)</option>
+                    <option value="AL">Alabama (AL)</option>
+                    <option value="AK">Alaska (AK)</option>
+                    <option value="AZ">Arizona (AZ)</option>
+                    <option value="AR">Arkansas (AR)</option>
+                    <option value="CA">California (CA)</option>
+                    <option value="CO">Colorado (CO)</option>
+                    <option value="CT">Connecticut (CT)</option>
+                    <option value="DE">Delaware (DE)</option>
+                    <option value="DC">District Of Columbia (DC)</option>
+                    <option value="FL">Florida (FL)</option>
+                    <option value="GA">Georgia (GA)</option>
+                    <option value="HI">Hawaii (HI)</option>
+                    <option value="ID">Idaho (ID)</option>
+                    <option value="IL">Illinois (IL)</option>
+                    <option value="IN">Indiana (IN)</option>
+                    <option value="IA">Iowa (IA)</option>
+                    <option value="KS">Kansas (KS)</option>
+                    <option value="KY">Kentucky (KY)</option>
+                    <option value="LA">Louisiana (LA)</option>
+                    <option value="ME">Maine (ME)</option>
+                    <option value="MD">Maryland (MD)</option>
+                    <option value="MA">Massachusetts (MA)</option>
+                    <option value="MI">Michigan (MI)</option>
+                    <option value="MN">Minnesota (MN)</option>
+                    <option value="MS">Mississippi (MS)</option>
+                    <option value="MO">Missouri (MO)</option>
+                    <option value="MT">Montana (MT)</option>
+                    <option value="NE">Nebraska (NE)</option>
+                    <option value="NV">Nevada (NV)</option>
+                    <option value="NH">New Hampshire (NH)</option>
+                    <option value="NJ">New Jersey (NJ)</option>
+                    <option value="NM">New Mexico (NM)</option>
+                    <option value="NY">New York (NY)</option>
+                    <option value="NC">North Carolina (NC)</option>
+                    <option value="ND">North Dakota (ND)</option>
+                    <option value="OH">Ohio (OH)</option>
+                    <option value="OK">Oklahoma (OK)</option>
+                    <option value="OR">Oregon (OR)</option>
+                    <option value="PA">Pennsylvania (PA)</option>
+                    <option value="RI">Rhode Island (RI)</option>
+                    <option value="SC">South Carolina (SC)</option>
+                    <option value="SD">South Dakota (SD)</option>
+                    <option value="TN">Tennessee (TN)</option>
+                    <option value="TX">Texas (TX)</option>
+                    <option value="UT">Utah (UT)</option>
+                    <option value="VT">Vermont (VT)</option>
+                    <option value="VA">Virginia (VA)</option>
+                    <option value="WA">Washington (WA)</option>
+                    <option value="WV">West Virginia (WV)</option>
+                    <option value="WI">Wisconsin (WI)</option>
+                    <option value="WY">Wyoming (WY)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="zip" class="no-display">Zip</label>
+                <input type="text" class="form-control NormalTextBox" id="dealer-zip" placeholder="Zip Code*">
+            </div>
+            <div class="form-group">
+                <label for="phone" class="no-display">Phone</label>
+                <input type="phone" class="form-control NormalTextBox" id="dealer-phone" placeholder="Contact Phone*">
+            </div>
+            <div class="form-group">
+                <label for="email" class="no-display">Email</label>
+                <input type="email" class="form-control NormalTextBox" id="dealer-email" placeholder="Contact Email*">
+            </div>
+        </div><!-- end #dealer-details -->
+        
+        <!--<hr />-->
+        
+        <div id="machine-details">
+            <hr />
+            <h3>Machine Details</h3>
+            <div class="form-group">
+                <label for="serial-number" class="no-display">Serial Number</label>
+                <input type="text" class="form-control NormalTextBox" id="serial-number" placeholder="Serial Number">
+            </div>
+            <div class="form-group">
+                <label for="model-number" class="no-display">Model Number</label>
+                <input type="text" class="form-control NormalTextBox" id="model-number" placeholder="Model Number">
+            </div>
+            <div class="form-group">
+                <label for="model-number" class="no-display">Product Code</label>
+                <input type="text" class="form-control NormalTextBox" id="prod-code" placeholder="Product Code">
+            </div>        
+            <div class="form-group">
+                <label for="package-damage-pic" class="//no-display">Serial Number Picture</label>
+                <input type="file" class="form-control-file NormalTextBox" id="serial-number-pic" value="This is Value Field" title="This is the Title Field" placeholder="This is the placeholder">
+            </div>
+            <div class="form-group">
+                <label for="prod-class" class="no-display">Product Class</label>
+                <select class="form-control NormalTextBox" id="prod-class">
+                    <option>Product Class</option>
+                    <option>Commercial</option>
+                    <option>Residential</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="machine-type" class="no-display">Machine Type</label>
+                <select class="form-control NormalTextBox" id="machine-type">
+                    <option>Machine Type</option>
+                    <option>TLW</option>
+                    <option>FLW</option>
+                    <option>Dryer</option>
+                    <option>W/D</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div><!-- end #machine-details -->
+        
+        <!--<hr />-->
+        
+        <div id="part-1" class="part-container">
+            <hr />
+            <h3>Part 1 Details</h3>
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Available Concealed Damage Parts</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Available Concealed Damage Parts</option>
+                    <option>Top Lid</option>
+                    <option>Part 2</option>
+                    <option>Front Knobs</option>
+                    <option>Part 4</option>
+                    <option>Leveling Legs</option>
+                    <option>Part 6</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="part-number" class="no-display">Part Number</label>
+                <input type="text" class="form-control NormalTextBox part-number" placeholder="Part Number">
+            </div>
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Damage Type</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Damage Type</option>
+                    <option>Scratch</option>
+                    <option>Dent</option>
+                    <option>Break</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="damamge-pic" class="//no-display">Damage Picture</label>
+                <input type="file" class="form-control-file NormalTextBox" id="damamge-pic">
+            </div>
+            <div class="form-group">
+                <label for="comments" class="no-display">Comments</label>
+                <textarea class="form-control NormalTextBox" id="part-comments" placeholder="Additional Comments Regarding Damaged Part" rows="5"></textarea>
+            </div>
+        </div><!-- end #part-1 -->
+        <div id="part-2" class="part-container no-display">
+            <hr />
+            <h3>Part 2 Details</h3>
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Available Concealed Damage Parts</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Available Concealed Damage Parts</option>
+                    <option>Top Lid</option>
+                    <option>Part 2</option>
+                    <option>Front Knobs</option>
+                    <option>Part 4</option>
+                    <option>Leveling Legs</option>
+                    <option>Part 6</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="part-number" class="no-display">Part Number</label>
+                <input type="text" class="form-control NormalTextBox part-number" placeholder="Part Number">
+            </div>
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Damage Type</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Damage Type</option>
+                    <option>Scratch</option>
+                    <option>Dent</option>
+                    <option>Break</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="damamge-pic" class="//no-display">Damage Picture</label>
+                <input type="file" class="form-control-file NormalTextBox" id="damamge-pic">
+            </div>
+            <div class="form-group">
+                <label for="comments" class="no-display">Comments</label>
+                <textarea class="form-control NormalTextBox" id="comments" placeholder="Additional Comments Regarding Damaged Part" rows="5"></textarea>
+            </div>
+        </div><!-- end #part-2 -->
+        <div id="part-3" class="part-container no-display">
+            <hr />
+            <h3>Part 3 Details</h3>
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Available Concealed Damage Parts</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Available Concealed Damage Parts</option>
+                    <option>Top Lid</option>
+                    <option>Part 2</option>
+                    <option>Front Knobs</option>
+                    <option>Part 4</option>
+                    <option>Leveling Legs</option>
+                    <option>Part 6</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="part-number" class="no-display">Part Number</label>
+                <input type="text" class="form-control NormalTextBox part-number" placeholder="Part Number">
+            </div>
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Damage Type</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Damage Type</option>
+                    <option>Scratch</option>
+                    <option>Dent</option>
+                    <option>Break</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="damamge-pic" class="//no-display">Damage Picture</label>
+                <input type="file" class="form-control-file NormalTextBox" id="damamge-pic">
+            </div>
+            <div class="form-group">
+                <label for="comments" class="no-display">Comments</label>
+                <textarea class="form-control NormalTextBox" id="comments" placeholder="Additional Comments Regarding Damaged Part" rows="5"></textarea>
+            </div>
+        </div><!-- end #part-3 -->
+        <div id="part-4" class="part-container no-display">
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Available Concealed Damage Parts</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Available Concealed Damage Parts</option>
+                    <option>Top Lid</option>
+                    <option>Part 2</option>
+                    <option>Front Knobs</option>
+                    <option>Part 4</option>
+                    <option>Leveling Legs</option>
+                    <option>Part 6</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="part-number" class="no-display">Part Number</label>
+                <input type="text" class="form-control NormalTextBox part-number" placeholder="Part Number">
+            </div>
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Damage Type</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Damage Type</option>
+                    <option>Scratch</option>
+                    <option>Dent</option>
+                    <option>Break</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="damamge-pic" class="//no-display">Damage Picture</label>
+                <input type="file" class="form-control-file NormalTextBox" id="damamge-pic">
+            </div>
+            <div class="form-group">
+                <label for="comments" class="no-display">Comments</label>
+                <textarea class="form-control NormalTextBox" id="comments" placeholder="Additional Comments Regarding Damaged Part" rows="5"></textarea>
+            </div>
+        </div><!-- end #part-4 -->
+        <div id="part-5" class="part-container no-display">
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Available Concealed Damage Parts</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Available Concealed Damage Parts</option>
+                    <option>Top Lid</option>
+                    <option>Part 2</option>
+                    <option>Front Knobs</option>
+                    <option>Part 4</option>
+                    <option>Leveling Legs</option>
+                    <option>Part 6</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="part-number" class="no-display">Part Number</label>
+                <input type="text" class="form-control NormalTextBox part-number" placeholder="Part Number">
+            </div>
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Damage Type</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Damage Type</option>
+                    <option>Scratch</option>
+                    <option>Dent</option>
+                    <option>Break</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="damamge-pic" class="//no-display">Damage Picture</label>
+                <input type="file" class="form-control-file NormalTextBox" id="damamge-pic">
+            </div>
+            <div class="form-group">
+                <label for="comments" class="no-display">Comments</label>
+                <textarea class="form-control NormalTextBox" id="comments" placeholder="Additional Comments Regarding Damaged Part" rows="5"></textarea>
+            </div>
+        </div><!-- end #part-5 -->
+        <div id="part-6" class="part-container no-display">
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Available Concealed Damage Parts</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Available Concealed Damage Parts</option>
+                    <option>Top Lid</option>
+                    <option>Part 2</option>
+                    <option>Front Knobs</option>
+                    <option>Part 4</option>
+                    <option>Leveling Legs</option>
+                    <option>Part 6</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="part-number" class="no-display">Part Number</label>
+                <input type="text" class="form-control NormalTextBox part-number" placeholder="Part Number">
+            </div>
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Damage Type</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Damage Type</option>
+                    <option>Scratch</option>
+                    <option>Dent</option>
+                    <option>Break</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="damamge-pic" class="//no-display">Damage Picture</label>
+                <input type="file" class="form-control-file NormalTextBox" id="damamge-pic">
+            </div>
+            <div class="form-group">
+                <label for="comments" class="no-display">Comments</label>
+                <textarea class="form-control NormalTextBox" id="comments" placeholder="Additional Comments Regarding Damaged Part" rows="5"></textarea>
+            </div>
+        </div><!-- end #part-6 -->
+        <div id="part-7" class="part-container no-display">
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Available Concealed Damage Parts</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Available Concealed Damage Parts</option>
+                    <option>Top Lid</option>
+                    <option>Part 2</option>
+                    <option>Front Knobs</option>
+                    <option>Part 4</option>
+                    <option>Leveling Legs</option>
+                    <option>Part 6</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="part-number" class="no-display">Part Number</label>
+                <input type="text" class="form-control NormalTextBox part-number" placeholder="Part Number">
+            </div>
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Damage Type</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Damage Type</option>
+                    <option>Scratch</option>
+                    <option>Dent</option>
+                    <option>Break</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="damamge-pic" class="//no-display">Damage Picture</label>
+                <input type="file" class="form-control-file NormalTextBox" id="damamge-pic">
+            </div>
+            <div class="form-group">
+                <label for="comments" class="no-display">Comments</label>
+                <textarea class="form-control NormalTextBox" id="comments" placeholder="Additional Comments Regarding Damaged Part" rows="5"></textarea>
+            </div>
+        </div><!-- end #part-7 -->
+        <div id="part-8" class="part-container no-display">
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Available Concealed Damage Parts</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Available Concealed Damage Parts</option>
+                    <option>Top Lid</option>
+                    <option>Part 2</option>
+                    <option>Front Knobs</option>
+                    <option>Part 4</option>
+                    <option>Leveling Legs</option>
+                    <option>Part 6</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="part-number" class="no-display">Part Number</label>
+                <input type="text" class="form-control NormalTextBox part-number" placeholder="Part Number">
+            </div>
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Damage Type</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Damage Type</option>
+                    <option>Scratch</option>
+                    <option>Dent</option>
+                    <option>Break</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="damamge-pic" class="//no-display">Damage Picture</label>
+                <input type="file" class="form-control-file NormalTextBox" id="damamge-pic">
+            </div>
+            <div class="form-group">
+                <label for="comments" class="no-display">Comments</label>
+                <textarea class="form-control NormalTextBox" id="comments" placeholder="Additional Comments Regarding Damaged Part" rows="5"></textarea>
+            </div>
+        </div><!-- end #part-8 -->
+        <div id="part-9" class="part-container no-display">
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Available Concealed Damage Parts</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Available Concealed Damage Parts</option>
+                    <option>Top Lid</option>
+                    <option>Part 2</option>
+                    <option>Front Knobs</option>
+                    <option>Part 4</option>
+                    <option>Leveling Legs</option>
+                    <option>Part 6</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="part-number" class="no-display">Part Number</label>
+                <input type="text" class="form-control NormalTextBox part-number" placeholder="Part Number">
+            </div>
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Damage Type</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Damage Type</option>
+                    <option>Scratch</option>
+                    <option>Dent</option>
+                    <option>Break</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="damamge-pic" class="//no-display">Damage Picture</label>
+                <input type="file" class="form-control-file NormalTextBox" id="damamge-pic">
+            </div>
+            <div class="form-group">
+                <label for="comments" class="no-display">Comments</label>
+                <textarea class="form-control NormalTextBox" id="comments" placeholder="Additional Comments Regarding Damaged Part" rows="5"></textarea>
+            </div>
+        </div><!-- end #part-9 -->
+        <div id="part-10" class="part-container no-display">
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Available Concealed Damage Parts</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Available Concealed Damage Parts</option>
+                    <option>Top Lid</option>
+                    <option>Part 2</option>
+                    <option>Front Knobs</option>
+                    <option>Part 4</option>
+                    <option>Leveling Legs</option>
+                    <option>Part 6</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="part-number" class="no-display">Part Number</label>
+                <input type="text" class="form-control NormalTextBox part-number" placeholder="Part Number">
+            </div>
+            <div class="form-group">
+                <label for="damage-type" class="no-display">Damage Type</label>
+                <select class="form-control NormalTextBox" id="damage-type">
+                    <option>Damage Type</option>
+                    <option>Scratch</option>
+                    <option>Dent</option>
+                    <option>Break</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="damamge-pic" class="//no-display">Damage Picture</label>
+                <input type="file" class="form-control-file NormalTextBox" id="damamge-pic">
+            </div>
+            <div class="form-group">
+                <label for="comments" class="no-display">Comments</label>
+                <textarea class="form-control NormalTextBox" id="comments" placeholder="Additional Comments Regarding Damaged Part" rows="5"></textarea>
+            </div>
+        </div><!-- end #part-10 -->        
+        
+        <!--<hr />-->
+        
+        <div id="package-damage">
+            <div class="form-group">
+                <label for="package-damage" class="no-display">Visible Package Damage</label>
+                <select class="form-control NormalTextBox" id="package-damage-select">
+                    <option>Visible Package Damage</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="package-damage-pic" class="//no-display">Package Damage Picture</label>
+                <input type="file" class="form-control-file NormalTextBox" id="package-damage-pic">
+            </div>
+            <div class="form-group">
+                <label for="comments" class="no-display">Comments</label>
+                <textarea class="form-control NormalTextBox" id="comments" placeholder="Additional Comments Regarding Package Damage" rows="5"></textarea>
+            </div><!-- end #package-damage -->
+        </div>
+        
+        <button type="submit" class="btn btn-primary" id="submit-damage-button">Submit</button>
+    </form>
+
+    <script>
+        $(document).ready(function(){
+            $('select#customer-type').on('change', function() {
+                //alert($(this).val());
+                if ($(this).val()=="ssd"){
+                    $('#vendor-id').show();
+                    $('#dealer-details').show();
+                } else if ($(this).val()=="nsd"){
+                    $('#vendor-id').hide();
+                    $('#dealer-details').show();                    
+                } else if ($(this).val()=="ct"){
+                    $('#vendor-id').hide();
+                    $('#dealer-details').hide();
+                }
+            });
+            $('#dealer-email').on('change', function() {
+                if ($("#dealer-name, #dealer-address-1, #dealer-city, #dealer-state, #dealer-zip, #dealer-phone, #dealer-email").val()){
+                    $("#machine-details").show();
+                }
+            });
+            $('#machine-type').on('change', function() {
+                $('#part-1').show();
+            });
+            $('#part-comments').on('change', function() {
+                $('#part-2').show();
+                $('#package-damage').show();
+                $('#submit-damage-button').show();
+            });
+
+        });
+
+    </script>
+    
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

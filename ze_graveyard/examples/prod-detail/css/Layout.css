@@ -1,0 +1,123 @@
+/* #################### LAYOUT CSS #################### */
+/* #################### Center Position, Round Corner Canvas, General Classes, Global Setting #################### */
+
+/* !!!!! GENERAL !!!!! */
+body {
+	background-color: #555;
+	color:#3d3d3d;
+	font:0.9em Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding:0;
+}
+a:link, a:visited {
+	color: #002157;
+	text-decoration: underline;
+}
+a:hover {
+	color: #444444;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6, h7, h8, form, p, blockquote, label{
+	margin: 0;
+	padding: 0;
+}
+/* !!!!! COMMON CLASSES !!!!! */
+.price {
+	color: #9e0b0e;
+}
+.Center { /* place elements in the center of the canvas */
+	margin: 0 auto;
+	padding: 0;
+	width: 867px;
+}
+.CompareIcon {
+	background:transparent url(../images/icos/ic_comparison.gif) no-repeat 0 0;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+}
+.CompareIcon1 { /*Added for #ITG 143439 */
+	height: 25px;
+	margin: 0;
+	padding: 0;
+}
+.CompareIcon a {
+	padding: 5px 25px;
+}
+a.CompareIcon { /* used for orange arrow list */
+	padding: 5px 25px;
+	background-position: 0 5px;
+}
+.Clear {
+	clear: both;
+	display: block;
+	height: 1px;
+	width: 10px;
+}
+/* !!!!! BRAND TOP !!!!! */
+#BrandTop { /* the very top part of the page -- gray area  */
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+/* !!!!! LAYOUT !!!!! */
+#Layout { /* the cage to hold everything on the page - centered style */
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	width: 938px;
+}
+#BrowserMessage {
+	height:0;
+	margin: 0;
+	overflow:hidden;
+	text-indent: 3000px;
+	white-space: nowrap;
+	width:0;
+}
+/* !!!!! CONTAINER !!!!! */
+#FWContainer { /* rounded corner side border graphic for the main canvas */
+	background: #555 url(../images/bgs/bg_ContainerMiddle.gif) repeat-y 0 0;
+	clear: both;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 938px;
+}
+#ContainerTop { /* rounded corner top graphic for the main canvas */
+	background: transparent url(../images/bgs/bg_ContainerTop.gif) no-repeat 0 0;
+	float: left;
+	margin: -3px 0 0 0;
+	padding:0;
+	width: 938px;
+}
+html>body #ContainerTop {
+	margin: -7px 0 0 0;
+	padding:13px 0 0 0;
+}
+#ContainerBottom { /* rounded corner bottom graphic for the main canvas */
+	background: transparent url(../images/bgs/bg_ContainerBottom.gif) no-repeat left bottom;
+	float: left;
+	margin: 0;
+	padding: 0 0 25px 0;
+	width: 938px;
+}
+#FWContent { /* set the left side margin (global)  */
+	clear: both;
+	float: left;
+	margin: 0 0 0 20px;
+	padding:20px 0 0 0;	
+	width: 878px;
+}
+html>body #FWContent {
+	margin: 0 0 0 34px;
+}
+
+/* !!!!! BRAND BOTTOM !!!!! */
+#BrandBottom { /* the very bottom part of the page -- gray area  */
+	clear: both;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+/* #################### END LAYOUT CSS #################### */

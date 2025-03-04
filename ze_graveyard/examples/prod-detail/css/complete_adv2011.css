@@ -1,0 +1,156 @@
+/* #################### complete_adv2011 CSS #################### */
+.clear 	{ clear:both; display:block; overflow:hidden; visibility:hidden; width:0px; height:0px;}
+.left	{ float:left; }
+.orange { color: #f36f31; }
+.prodDetailHeader {
+	padding: 0 0 0 260px;
+	background: #FFF url(../images/bgs/couple-with-cell-phone.png) no-repeat 0 0;	
+}
+.prodTitle {
+	margin: 10px 0 0 0;	
+}
+.shareIt {
+	float: right;
+	margin: -20px 5px 0 0;	
+}
+.shareIt p {
+	float: left;
+	color: #f36f31;
+	padding: 0 3px 0 0;
+	font-weight: bolder;
+}
+.shareIt a {
+	float: left;
+	padding: 0 3px;
+}
+.prodShortDesc p {
+	color: #666;	
+}
+.buttPriceLink {
+	margin: 10px 0 0 0;	
+}
+.Button { /* button*/
+	background: #fff url(../images/btns/btn-orange-middle.png) repeat-x 0 0;
+	/* background: #f26522 url(../images/comparePage/btns/btn-orange-middle.png) repeat-x 0 0; */
+	float: left;
+	margin: 0 10px;
+	padding: 0;
+	width: auto;
+}
+.ButtonCenter {
+	float: left;
+	margin: 8px 0 0 35px;
+}
+.ButtonLeft {
+	background: transparent url(../images/btns/btn-orange-left.png) no-repeat 0 0;
+	/* background: transparent url(../images/comparePage/btns/btn-orange-left.png) no-repeat 0 0; */
+	float: left;
+	padding: 0 0 0 15px;
+}
+.ButtonRight {
+	background: transparent url(../images/btns/btn-orange-right.png) no-repeat right top;
+	/* background: transparent url(../images/comparePage/btns/btn-orange-right.png) no-repeat right top; */
+	float: left;
+	padding-right: 15px;
+}
+.Button a:link, .Button a:visited, .Button a:hover {
+	color: #fff;
+	float: left;
+	font:bold 1.050em/2.020em Arial,Helvetica,sans-serif;
+	margin: 0;
+	padding: 2px 10px 0px 8px;
+	text-decoration: none;
+}
+.productPrice {
+	float: left;
+	padding: 0 0 5px 0;	
+}
+.productPrice p {
+	font-size: 1.5em;
+	padding: 0 0 0 3px;	
+}
+.whyYouShould {
+	clear: both;
+	margin: 3px 0 3px 0;
+	padding: 3px 0 3px 0;
+	background: #790000 url(../images/bgs/why-you-should.png) no-repeat 100% 0;	
+}
+.whyYouShould p {
+	color: #FFF;
+	padding: 3px 0 3px 10px;		
+}
+.sellPointContainer {
+	width: 55%;
+	float: left;
+}
+.sellPoint {
+	padding: 0 0 0 75px;	
+}
+.sellPoint h3 {
+	margin: 20px 0 0 0;	
+}
+.sellPoint p {
+	color: #666;
+	margin: 2px 0 5px 5px;	
+}
+.icon1 {background: #FFF url(../images/icos/icos-laptop-hands.png) no-repeat 0 0; }
+.icon2 {background: #FFF url(../images/icos/icos-woman-babies.png) no-repeat 0 0; }
+.icon3 {background: #FFF url(../images/icos/icos-laidback-dude.png) no-repeat 0 0; }
+.prodButtPrice {
+	padding: 10px 0 0 0;	
+}
+.prodVid {
+	float: left;
+	padding: 20px 0 0 20px;	
+}
+ /*  STAY INFORMED CSS  */
+#StayInformed { /* four boxes to present up to four highlighted products */
+	background: #d6dbe1;
+	clear: both;
+	float: left;
+	margin: 25px 0 15px 0;
+	padding: 0;
+	width: 99%; 
+}
+#StayInformed h3 {
+	border: none;
+	clear: both;
+	color: #000;
+	float: left;
+	font-size: 1.0em;
+	margin: 3px 0 0 5px;
+	padding: 6px 20px 8px 5px;
+}
+#StayInformed h3 span {
+	color: #69737f;
+	display: block;
+	font-size: .75em;
+}
+#newsletterForm {
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+#newsletterNameDiv, #newsletterEmailAddressDiv {
+	float: left;
+	padding: 20px 10px 3px 5px;
+}
+#newsletterForm label {
+	color: #69737f;
+	font-size: .75em;
+}
+#newsletterForm input {
+	font-size: .9em;
+}
+#newsletterSubmitDiv #newsletterSubmit {
+	background: none;
+	border: none;
+	color: #0e5fd8;
+	cursor: pointer;
+	font-size: .85em;
+	text-decoration: underline;
+	padding: 21px 0 0 18px;
+	background: url(../images/comparePage/arrows/arrow-secondary-bullet.png) no-repeat 17% 95%;
+}
+/*-- end Stay Informed --*/
+/* #################### END complete_adv2011 CSS #################### */

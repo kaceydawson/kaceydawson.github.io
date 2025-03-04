@@ -1,0 +1,7 @@
+#adtPricingHolder { 
+	border: #cccccc 1px solid;
+	margin: 20px 0 0 0;
+	padding: 15px;
+	border-radius: 10px 10px 10px 10px;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}

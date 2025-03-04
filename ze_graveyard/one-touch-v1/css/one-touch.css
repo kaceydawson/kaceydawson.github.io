@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+.btn {
+    width: 100%;
+    text-align: left;
+}
+#accordionOneTouch .card-header h2 button {
+    color: #162a53;
+    font-weight: bold;
+    text-decoration: none;
+}
+#accordionOneTouch .card-header h2 button img {
+    height: 2.5em;
+    padding: 0 1em 0 0;
+}

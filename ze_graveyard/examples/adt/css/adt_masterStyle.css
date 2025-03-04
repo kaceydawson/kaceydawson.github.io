@@ -1,0 +1,356 @@
+/* ======== DomainName.com Screen Stylesheet ::
+Author:    Name, Website
+Created:    Date Intitals
+Updated:    Date Initials
+TOC:        Resets; HTML & Body; Links; Typography; Lists; Tables;
+        Classes; Template; Navigation; Page Styles; Forms; Other;
+----------------------------------------------------------------- */
+
+body { 
+height:100%;
+font:62.5%/1.4 Arial,Tahoma,Geneva,Helvetica,sans-serif;
+background:#fff;
+color:#333;
+}
+
+#adtContainer {
+	width: 70%;
+	max-width: 783px;
+	min-width: 780px;
+	margin: 10px auto;
+	//border: 1px black solid;
+}
+#adtLogo {
+	float: left;
+}
+#adtTagLine {
+	float: left;
+	margin: 10px 0 0 5px;
+}
+#adtTagLine sup {
+	font-size: xx-small;
+}
+#adtWel {
+	border-bottom: 1px grey dashed;
+}
+#adtWelcomeBack {
+	float: right;
+}
+#adtCartAccount {
+	margin: 0 0 0 0;
+}
+#adtCartAccount img {
+	margin: 0 0 -2px 0;
+}
+#adtWelcomeCart {
+	float: right;
+	margin: 10px 5px 5px 0px;
+}
+#adtNav {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#adtNav ul {    
+    padding: 0;    
+	width: 100%;
+	margin: 0 5px;
+	overflow: hidden;
+	list-style-type: none;
+}
+#adtNav li {
+    float: left;
+}
+#adtNav li:first-of-type {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-image: ../images/navBarLeft.png;
+}
+#adtNav li:last-of-type {
+    background-image: ../images/navBarRight.png;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+#adtNav a:link,#adtNav a:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: #000000;
+    background: url(../images/navBarBackGround.png);
+	background-repeat: repeat-x;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+}
+
+#adtNav a:hover,#adtNav a:active {
+    color:#cccccc;
+}
+#adtSearch {
+	background-color: #f1f1f0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 0 5px;
+	padding: 5px;
+}
+#adtPricingHolder { 
+	border: #cccccc 1px solid;
+	margin: 20px 0 0 0;
+	padding: 15px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	background: rgb(232,232,232); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(232,232,232,1) 0%, rgba(255,255,255,1) 3%, rgba(255,255,255,1) 97%, rgba(232,232,232,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(232,232,232,1)), color-stop(3%,rgba(255,255,255,1)), color-stop(97%,rgba(255,255,255,1)), color-stop(100%,rgba(232,232,232,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(232,232,232,1) 0%,rgba(255,255,255,1) 3%,rgba(255,255,255,1) 97%,rgba(232,232,232,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(232,232,232,1) 0%,rgba(255,255,255,1) 3%,rgba(255,255,255,1) 97%,rgba(232,232,232,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(232,232,232,1) 0%,rgba(255,255,255,1) 3%,rgba(255,255,255,1) 97%,rgba(232,232,232,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(232,232,232,1) 0%,rgba(255,255,255,1) 3%,rgba(255,255,255,1) 97%,rgba(232,232,232,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+}
+#adtSelectActivity h5 {
+	padding: 10px 0 30px 10px;
+}
+#adtTransParking {
+
+}
+#adtTransParkingHead {
+	color: #FFFFFF;
+	background-color: #666666;
+}
+#adtTransParkingHead h5{
+	padding-left: 5px;
+}
+#adtAttractionsTickets {
+
+}
+#adtAttracTickHead {
+	margin: 10px 0 0 0;
+	background-color: #e3e3e3;
+}
+#adtAttracTickHead h5{
+	padding-left: 5px;
+}
+.adtGroundTransSelect {
+ 	background-color: #f3f3f3;
+	margin: 10px 0 0 0;
+	padding: 10px 10px 10px 10px;
+	
+}
+.adtGroundTransImg {
+	float: left;
+	width: 18%;
+}
+.adtGroundTransImg img {
+	padding: 10px;
+}
+.adtGroundTransPara {
+	float: left;
+	width: 60%;
+}
+.adtInfoTitle {
+	font-weight: bold;
+	margin: 0 0 0 0;
+}
+.adtInfo {
+	margin: -6px 0 0 0;
+}
+.adtInfoLink {
+	color: #000000;
+	text-decoration: underline;
+}
+.adtGroundTransPrice {
+	text-align: center;
+	float: left;
+	width: 20%;
+}
+.adtFrom {
+	color: #0033FF;
+}
+.adtPrice {
+	color: #990000;
+	margin: -10px 0 0 0;
+}
+.adtPriceButton {
+
+}
+.viewPrice {
+	cursor: pointer;
+}
+.adtAddTrip {
+	border-bottom: #e3e3e3 1px solid;
+}
+.adtAddTripHead {
+	margin: 10px 0 0 0;
+	background-color: #cccccc;
+}
+.addTripCheckBoxHead {
+	width: 24%;
+	padding: 0 0 0 5px;
+	color: #ffffff;
+	float: left;
+	background-color: #cccccc;
+}
+.addTripDrpQuantHead {
+	width: 18%;
+	padding: 0 0 0 30px;
+	float: left;
+	color: #ffffff;
+	background-color: #cccccc;
+}
+#adtPricingSummaryHead {
+	width: 18%;
+	padding: 0 0 0 5px;
+	float: left;
+	color: #ffffff;
+	background-color: #cccccc;
+}
+.addTripDateTimeHead {
+	width: 18%;
+	padding: 0 0 0 0;
+	float: left;
+	color: #ffffff;
+	background-color: #cccccc;
+}
+.addTripPricingHead {
+	width: 15%;
+	padding: 0 0 0 145px;
+	float: left;
+	color: #ffffff;
+	background-color: #cccccc;
+}
+.addTripCheckBox {
+	width: 4%;
+	float: left;
+	padding: 12px 0 0 9px;
+}
+.addTripDesc {
+	width: 20%;
+	float: left;
+	padding: 5px;
+}
+.addTripDrpQuant {
+	width: 15%;
+	float: left;
+	padding: 16px;
+}
+#adtPricingSummary {
+	width: 18%;
+	float: left;
+	padding: 16px 0 0 0;
+}
+.addTripDateTime {
+	width: 22%;
+	float: left;
+	padding: 16px 0 0 0;
+}
+.addTripPricing {
+	width: 15%;
+	float: left;
+	padding: 10px 0 0 125px;
+}
+.adtTopPrice {
+	color: #000000;
+}
+.adtDollars {
+	color: #72c755;
+	border-bottom: grey 1px dotted;
+}
+.adtYourPrice {
+	color: #005bb4;
+	font-weight: bold;
+}
+.dollarAmount {
+	float: right;
+}
+.addTripCloser {
+	
+}
+.addTripClose {
+	float: left;
+	cursor: pointer;
+}
+.addTripPricSummary {
+	float: right;
+}
+
+.adtAttracTickImg {
+	float: left;
+	width: 18%;
+}
+.adtAttracTickImg img {
+	padding: 15px;
+}
+.adtAttracTickPara {
+	float: left;
+	width: 60%;
+}
+.adtAttracTickInfoTitle {
+	font-weight: bold;
+	margin: 0 0 -15px 0;
+}
+.adtAttracTickInfo {
+	margin: -6px 0 0 0;
+}
+.adtAttracTickInfoLink {
+	color: #000000;
+	text-decoration: underline;
+}
+.adtAttracTickPriceHold {
+	text-align: center;
+	float: left;
+	width: 20%;
+}
+.adtAttracTickFrom {
+	color: #0033FF;
+}
+.adtAttracTickPrice {
+	color: #005bb4;
+	font-size: x-large;
+	margin: -10px 0 0 0;
+}
+.burgandy {
+	color: #993300;
+}
+.adtAttracTickPriceButton {
+
+}
+#adtBottomDoubleBorder {
+	width: 100%;
+	height: 9px;
+	margin: 0;
+	padding: 0;
+	background: url(../images/bottom-double-boarder.gif);
+	background-repeat: repeat-x;
+}
+#adtPricingSummary {
+	border: #e3e3e3 1px solid;
+	margin: 20px;
+	padding: 10px;
+	float: right;
+	width: 200px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+.pricingSummaryHeader {
+	color: #0066cc;
+}
+.finalPrice {
+
+}
+.finalCurrency {
+	color: #66cc33;
+}
+.finalPriceAfter {
+	border-top: black 1px solid;
+	border-bottom: black 1px solid;
+}
+.yourFinalPrice {
+	font-weight: bold;
+	color: #0066cc;
+}
+.green {
+	color: #00CC00;
+}
+

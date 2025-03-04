@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADT - Pricing Page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link rel="stylesheet" href="css/initStyle.css" type="text/css" />
+	<link rel="stylesheet" href="css/adt_masterStyle.css" type="text/css" />
+	<!--[if gte IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/adt_IEmasterStyle.css" />
+	<![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="adtContainer">
+	<div id="adtHeader">
+		<div id="adtLogoTagLine">
+			<div id="adtLogo">
+				<img src="images/adt_logo_97x98.png" alt="adt logo">
+			</div><!--end #adtLogo -->
+			<div id="adtTagLine">
+				<h3 id="adtTagLine">ADT <em>Always There</em><sup>&#174;</sup></h3>
+			</div><!--end #adtTagLine -->
+		</div>
+		<div id="adtWelcomeCart">
+			<div id="adtWel">
+				<p id="adtWelcomeBack"><span class="bold">Welcome back, John</span> | <a href="#" title="Sign Out" target="_self">Sign Out</a></p>
+				<div class="clear">&nbsp;</div><!-- end .clear -->
+			</div><!--end #adtWel -->			
+			<div id="adtCart">
+				<div id="adtCurrencySpend">
+					<p class="floatright">&lt;Currency&gt; to Spend: <span class="green">$1000.00</span></p>
+					<div class="clear">&nbsp;</div><!-- end .clear -->
+				</div><!--end #adtCurrencySpend -->
+				<div id="adtCartAccount">
+					<img src="images/cart_21x15.png" alt="cart">
+					<a href="#" title="Sign Out" target="_self">(X) Items in Cart</a> | 
+					<a href="#" title="Sign Out" target="_self">My Account</a>
+				</div><!--end #adtCartAccount -->			
+			</div><!--end #adtCart -->
+		</div><!--end #adtWelcomeCart -->
+	</div><!--end #adtHeader -->
+	<div class="clear">&nbsp;</div><!-- end .clear -->
+	<div id="adtNavSearchHolder">
+		<div id="adtNav">
+			<ul>
+			  <li><a href="default.asp">Home</a></li>
+			  <li><a href="travel.asp">Travel</a></li>
+			  <li><a href="entertainment.asp">Entertainment</a></li>
+			  <li><a href="merchandise.asp">Merchandise</a></li>
+			  <li><a href="giftcards.asp">Gift Cards</a></li>
+			  <li><a href="1234567890123456.asp">1234567890123456</a></li>
+			</ul>
+		</div><!--end #adtNav -->
+		<div id="adtSearch">
+			Search:
+			<select>
+				<option value="Department">Department</option>
+				<option value="Home">Home</option>
+				<option value="Travel">Travel</option>
+				<option value="Entertainment">Entertainment</option>
+				<option value="Merchandise">Merchandise</option>
+				<option value="Gift Cards">Gift Cards</option>
+				<option value="1234567890123456">1234567890123456</option>
+			</select>
+			For: <input type="text" name="keyword" required>
+		</div>
+	</div>
+	
+	<div id="adtPricingHolder">
+		<div id="adtSelectActivity">
+			<h5>Select Your Activities: <a href="#" title="Ground Transportation and Parking">Ground Transportation and Parking</a> | <a href="#" title="Attractions and Tickets">Attractions and Tickets</a></h5>
+		</div><!--end #adtSelectActivity -->
+		<div id="adtTransParking">
+			<div id="adtTransParkingHead">
+				<h5>Ground Transportaion and Parking</h5>
+			</div>
+			<div class="adtGroundTransSelect">
+				<div class="adtGroundTransImg">
+					<img src="images/las-vegas-thumbnail.png" alt="Las Vegas Thumbnail">
+				</div><!-- end .adtGroundTransImg -->
+				<div class="adtGroundTransPara">
+					<a href="#" class="adtInfoTitle">Las Vegas International Airport Round Trip Ground Transportation</a>
+					<p class="adtInfo">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus nec urna. Sed nec sem. Donec volutpat. Fusce felis lectus, condimentum eget, convallis sed, sollicitudin venenatis, tortor. Quisque nulla odio, blandit eu, venenatis eget, lacinia eu, leo. <a href="#" class="adtInfoLink">More Information</a></p>					
+				</div><!-- end .adtGroundTransPara -->
+				<div class="adtGroundTransPrice">
+					<p class="adtFrom">From</p>
+					<h4 class="adtPrice">$500.00</h4>
+					<div class="adtPriceButton"><img class="viewPrice" src="images/btn_viewpricing_off.gif" alt="View Pricing"></div><!-- end .adtPriceButton -->
+				</div><!-- end .adtGroundTransPrice -->
+				<div class="clear">&nbsp;</div><!-- end .clear -->
+			</div><!-- end .adtGroundTransSelect -->
+			
+			<div class="adtAddTripContainer">
+				<div class="adtAddTripHead">				
+					<div class="addTripCheckBoxHead">
+						<h5>Add to Trip</h5>
+					</div><!-- end .addTripCheckBox -->
+					<div class="addTripDrpQuantHead">
+						<h5>Quantity</h5>
+					</div><!-- end .addTripDrpQuantHead -->
+					<div class="addTripDateTimeHead">
+						<h5>Date / Time</h5>
+					</div><!-- end .addTripDateTimeHead -->
+					<div class="addTripPricingHead">
+						<h5>Pricing</h5>
+					</div><!-- end .addTripPricingHead -->
+					<div class="clear">&nbsp;</div><!-- end .clear -->
+				</div><!-- end .adtAddTripHead -->			
+				<div class="clear">&nbsp;</div><!-- end .clear -->
+				
+				<div class="adtAddTrip">				
+					<div class="addTripCheckBox">
+						<form>
+							<input type="checkbox" name="Select" value="Select this package">
+						</form>
+					</div><!-- end .addTripCheckBox -->
+					<div class="addTripDesc">
+						<p>Round trip transportation to Las Vegas strip hotels.</p>
+					</div><!-- end .addTripDesc -->
+					<div class="addTripDrpQuant">
+						<select>
+							<option value="1 Traveler">1 Traveler</option>
+							<option value="2 Travelers">2 Travelers</option>
+							<option value="3 Travelers">3 Travelers</option>
+							<option value="4 Travelers">4 Travelers</option>
+							<option value="5 Travelers">5 Travelers</option>
+							<option value="6 Travelers">6 Travelers</option>
+							<option value="7 Travelers">7 Travelers</option>
+						</select>
+					</div><!-- end .addTripDrpQuant -->
+					<div class="addTripDateTime">
+						<input type="datetime-local" name="bdaytime">	
+					</div><!-- end .addTripDateTime -->
+					<div class="addTripPricing">
+						<p class="adtTopPrice">Price:<span class="dollarAmount">$138.00</span></p>
+						<p class="adtDollars">ADT Dollars:<span class="dollarAmount">-40.00</span></p>
+						<p class="adtYourPrice">Your Price:<span class="dollarAmount">98.00</span></p>
+					</div><!-- end .addTripPricing -->
+				</div><!-- end .adtAddTrip -->			
+				<div class="clear">&nbsp;</div><!-- end .clear -->
+				
+				<div class="adtAddTrip">
+					<div class="addTripCheckBox">
+						<form>
+							<input type="checkbox" name="Select" value="Select this package">
+						</form>
+					</div><!-- end .addTripCheckBox -->
+					<div class="addTripDesc">
+						<p>Round trip transportation to Las Vegas strip hotels.</p>
+					</div><!-- end .addTripDesc -->
+					<div class="addTripDrpQuant">
+						<select>
+							<option value="1 Traveler">1 Traveler</option>
+							<option value="2 Travelers">2 Travelers</option>
+							<option value="3 Travelers">3 Travelers</option>
+							<option value="4 Travelers">4 Travelers</option>
+							<option value="5 Travelers">5 Travelers</option>
+							<option value="6 Travelers">6 Travelers</option>
+							<option value="7 Travelers">7 Travelers</option>
+						</select>
+					</div><!-- end .addTripDrpQuant -->
+					<div class="addTripDateTime">
+						<input type="datetime-local" name="bdaytime">	
+					</div><!-- end .addTripDateTime -->
+					<div class="addTripPricing">
+						<p class="adtTopPrice">Price:<span class="dollarAmount">$138.00</span></p>
+						<p class="adtDollars">ADT Dollars:<span class="dollarAmount">-40.00</span></p>
+						<p class="adtYourPrice">Your Price:<span class="dollarAmount">98.00</span></p>
+					</div><!-- end .addTripPricing -->
+				</div><!-- end .adtAddTrip -->
+				<div class="clear">&nbsp;</div><!-- end .clear -->
+				<div class="addTripCloser">
+					<p class="addTripClose">[X] Close</p><p class="addTripPricSummary">&gt;&gt; View Pricing Summary</p>
+				</di><!-- end .addTripCloser -->
+				<div class="clear">&nbsp;</div><!-- end .clear -->
+			</div><!-- end .adtAddTripContainer -->			
+		</div><!--end #adtTransParking -->		
+
+		<div id="adtAttractionsTickets">
+			<div id="adtAttracTickHead">
+				<h5>Attractions and Tickets</h5>
+			</div><!--end #adtAttracTickHead -->
+			
+			<div class="adtAttracTickSelect">
+				<div class="adtAttracTickImg">
+					<img src="images/le_reve-2.png" alt="la reve 2">
+				</div><!-- end .adtAttracTickImg -->
+				<div class="adtAttracTickPara">
+					<p class="adtAttracTickInfoTitle">Las Vegas International Airport Round Trip Ground Transportation</p>
+					<p class="adtInfo">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus nec urna. Sed nec sem. Donec volutpat. Fusce felis lectus, condimentum eget, convallis sed, sollicitudin venenatis, tortor. Quisque nulla odio, blandit eu, venenatis eget, lacinia eu, leo. <a href="#" class="adtInfoLink">More Information</a></p>					
+				</div><!-- end .adtAttracTickPara -->
+				<div class="adtAttracTickPriceHold">
+					<p class="adtFrom">From</p>
+					<h4 class="adtPrice">$200.00</h4>
+					<div class="adtAttracTickPriceButton"><img src="images/btn_viewpricing_off.gif" alt="View Pricing"></div><!-- end .adtPriceButton -->
+				</div><!-- end .adtAttracTickPrice -->
+				<div class="clear">&nbsp;</div><!-- end .clear -->
+			</div><!-- end .adtAttracTickSelect -->
+			<div class="adtAttracTickSelect">
+				<div class="adtAttracTickImg">
+					<img src="images/le_reve-1.png" alt="la reve 2">
+				</div><!-- end .adtAttracTickImg -->
+				<div class="adtAttracTickPara">
+					<p class="adtAttracTickInfoTitle">Las Vegas International Airport Round Trip Ground Transportation</p>
+					<p class="adtInfo">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus nec urna. Sed nec sem. Donec volutpat. Fusce felis lectus, condimentum eget, convallis sed, sollicitudin venenatis, tortor. Quisque nulla odio, blandit eu, venenatis eget, lacinia eu, leo. <a href="#" class="adtInfoLink">More Information</a></p>					
+				</div><!-- end .adtAttracTickPara -->
+				<div class="adtAttracTickPriceHold">
+					<p class="adtAttracTickFrom">From</p>
+					<h4 class="adtAttracTickPrice">$300.00</h4>
+				</div><!-- end .adtAttracTickPrice -->
+				<div class="clear">&nbsp;</div><!-- end .clear -->
+			</div><!-- end .adtAttracTickSelect -->
+			<div class="adtAttracTickSelect">
+				<div class="adtAttracTickImg">
+					<img src="images/le_reve-2.png" alt="la reve 2">
+				</div><!-- end .adtAttracTickImg -->
+				<div class="adtAttracTickPara">
+					<p class="adtAttracTickInfoTitle">Las Vegas International Airport Round Trip Ground Transportation</p>
+					<p class="adtInfo">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus nec urna. Sed nec sem. Donec volutpat. Fusce felis lectus, condimentum eget, convallis sed, sollicitudin venenatis, tortor. Quisque nulla odio, blandit eu, venenatis eget, lacinia eu, leo. <a href="#" class="adtInfoLink">More Information</a></p>					
+				</div><!-- end .adtAttracTickPara -->
+				<div class="adtAttracTickPriceHold">
+					<p class="adtAttracTickFrom">From</p>
+					<h4 class="adtAttracTickPrice">$400.00</h4>
+				</div><!-- end .adtAttracTickPrice -->
+				<div class="clear">&nbsp;</div><!-- end .clear -->
+			</div><!-- end .adtAttracTickSelect -->			
+		</div><!--end #adtAttractionsTickets -->
+		<div id="adtBottomDoubleBorder">&nbsp;</div>
+		<div id="adtPricingSummary">
+			<h3 class="pricingSummaryHeader">Pricing Summary</h3>
+			<p class="finalPrice">Price:<span class="dollarAmount">$30.00</span></p>
+			<p class="finalCurrency">&lt;Currency&gt;:<span class="dollarAmount">-15.00</span></p>
+			<p class="finalPriceAfter">Price after &lt;Currency&gt;:<span class="dollarAmount">15.00</span></p>
+			<p class="yourFinalPrice">Your Final Price:<span class="dollarAmount">$300.00</span></p>
+			<div class="center"><img src="images/book-now-button.png" alt="Book Now"></div>
+		</div><!--end #adtPricingSummary -->
+	</div><!--end #adtPricingHolder -->	
+	<div class="clear">&nbsp;</div><!-- end .clear -->
+</div><!--end #adtContainer -->
+<script>
+$(document).ready(function(){
+$("div.adtAddTripHead").hide();
+$("div.adtAddTrip").hide();
+$("div.addTripCloser").hide();
+	$("div.adtPriceButton").click(function(){
+		$("div.adtAddTripHead").show();
+		$("div.adtAddTrip").show();
+		$("div.addTripCloser").show();
+		$("img.viewPrice").attr("src","images/btn_viewpricing_on.gif");
+  	});
+	$("p.addTripClose").click(function(){
+		$("div.adtAddTripHead").hide();
+		$("div.adtAddTrip").hide();
+		$("div.addTripCloser").hide();
+		$("img.viewPrice").attr("src","images/btn_viewpricing_off.gif");
+  	});
+});
+</script>
+
+</body>
+</html>

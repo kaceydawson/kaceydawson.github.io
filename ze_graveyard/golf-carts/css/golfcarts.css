@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+.text-nowrap {
+    white-space: nowrap;
+}
+a >.card {color: #333;}
+.cartCard > a:hover {text-decoration:none;}
+
+.navbar-brand {font-size: 1.75rem; color:#000000;}
+.navbar-light .navbar-nav .nav-link {color:#000000;}
+.navbar-light .navbar-nav .active > .nav-link {color:#fa6262;}
+
+
+#header { background: #ffffff url("../imgs/header01-1500x500.jpg") no-repeat 0% 75%; background-size: cover; }
+//#header { background: #ffffff url("../imgs/header02-1500x500.jpg") no-repeat 0% 30%; background-size: cover; }
+
+.catCom {margin:10px 0;}
+.catCom .bi {color:#fa6262;}
+.catCom .category {white-space: nowrap;}
+.catCom .comments {white-space: nowrap;}
+
+.callUs {background: rgb(255,116,81); background: linear-gradient(105deg, rgba(255,116,81,1) 4%, rgba(250,99,98,1) 48%);}
+
+.dateCard {padding:5px; margin: 8px 0 0 10px; background-color:#fff; color:#333;border-radius:5px;}
+.dateCard p.day {font-size:inherit;padding:0; margin: 0; }
+.dateCard p.month {font-size:50%; padding:0; margin: 0; }
+
+nav.pagination {text-align: center;}
+nav.pagination ul {padding:none; margin:25px auto;}
+nav.pagination .page-link {color: #000;margin: 0 2px;}
+.page-link:focus { box-shadow: none; background: rgb(255,116,81); background: linear-gradient(105deg, rgba(255,116,81,1) 4%, rgba(250,99,98,1) 48%); color:#fff;}
+.page-link #active { box-shadow: none; background: rgb(255,116,81); background: linear-gradient(105deg, rgba(255,116,81,1) 4%, rgba(250,99,98,1) 48%); color:#fff;}
+
+.btn-link {color: #000000;text-decoration: none;}
+.btn-link a {color: #000000;text-decoration: none;}
+.btn-link:hover {color: #666666;text-decoration: none;}
+
+#twitter { color:#54acee; }
+#facebook { color:#39599f; }
+#google { color:#dd4b39; }

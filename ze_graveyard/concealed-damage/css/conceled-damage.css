@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+.no-display {
+    display: none;
+}
+#vendor-id, #dealer-details, #machine-details, #part-1, #part-2, #part-3, #part-4, #part-5, #part-6, #part-7, #part-8, #part-9, #part-10, #package-damage, #submit-damage-button {
+    display: none;
+}
+
+#form-damage {
+    width: 500px;
+}
+#form-damage label {
+    margin-bottom: 0;   
+}
+.form-control-file {
+    padding-top: .5em;
+}
+.NormalTextBox {
+    border: 1px solid #a7a7aa;
+    border-radius: 5px;
+    height: 58px;
+    padding-left: 26px;
+    color: #002854;
+    font-size: 20px;
+    line-height: 27px;
+}
+

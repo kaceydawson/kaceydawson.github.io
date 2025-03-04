@@ -1,0 +1,554 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BAI Landing Page</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+<!-- reference 3a-millionaire-order.html -->
+
+<style>
+body { background-color:#fff; margin:0; padding:0; }
+* {box-sizing: border-box}
+#mainWrpDiv img {width:100%; height:auto; border:0;}
+#mainWrpDiv .displayDesktop {display:none;}
+#mainWrpDiv .displayMobile {display:inherit;}
+#mainWrpDiv sup {vertical-align: baseline; position: relative; top: -0.4em;}
+
+/* main wrapper div style */
+#mainWrpDiv {width:100%; /*background-color:#fff;*/ }
+
+/* graphic body div */
+#mainWrpDiv #grphBodyDiv {margin:0px auto; padding:0 5px; width:98%;}
+    
+#mainWrpDiv #headerWrp {text-align:center;}
+
+/* header styles */
+#mainWrpDiv h1, h2, h3, h4 {font-family: 'Kanit', sans-serif; padding:0; text-align:center; font-weight:bold; color:#000;}
+#mainWrpDiv h1 { font-family: Impact, Charcoal, sans-serif; font-size:60px; line-height:60px; margin:0 auto 20px; padding:0; font-weight: 900;}
+    
+#mainWrpDiv h2.top { font-size:60px; line-height:65px; margin:20px 0; color:#303030; text-decoration: underline;}
+#mainWrpDiv h2 { font-size:28px; line-height:35px; margin:20px 0; color:#22668b;}
+
+#mainWrpDiv h3 { font-size:48px; line-height:50px; }
+#mainWrpDiv h4 { font-size:24px; line-height:28px; margin:10px auto; text-align:center;}
+#mainWrpDiv h4.allThis {font-size:35px; line-height:40px; margin:10px auto; text-align:center;}
+
+#mainWrpDiv p, li, table {font-family: Arial, Helvetica, sans-serif; font-size:19px; line-height:23px; margin:0 0 15px; padding:0; font-weight:normal;}
+#mainWrpDiv li {padding-bottom:10px;}
+#mainWrpDiv li:last-child {padding-bottom:0;}
+
+
+/* text styles */
+#mainWrpDiv .clear { clear:both;}
+#mainWrpDiv .colorRed { color:#c30000; }
+#mainWrpDiv .colorBurgundy {color:#8e0d38; font-weight:bold; font-style:italic; }    
+#mainWrpDiv .colorBlue { color:#0d648e; } 
+#mainWrpDiv .colorGreen {color:#007236; }
+
+#mainWrpDiv .kitTitle {font-weight:bold; font-size:115%; color:#007236;}
+    
+#mainWrpDiv .bold { font-weight: bold; }
+#mainWrpDiv .boldCenter { font-weight: bold; text-align: center; font-size: 115%; }
+#mainWrpDiv .boldHighlight { font-weight:bold; background-color:gold; text-align:center;}
+#mainWrpDiv .boldI { font-weight: bold; font-style:italic; font-size:115%; }
+
+#mainWrpDiv .quote {color:#007236; font-weight:bold; margin: 20px auto; padding: 15px; border: solid 1px #999999; }
+#mainWrpDiv .disclaimer {font-size: 90%; line-height: 15px; text-align: left; color:#333; padding: 5px 15px 0 15px;}
+
+/* list styles */
+#mainWrpDiv ol li {font-weight:normal;}
+#mainWrpDiv ol {margin:0; padding:0; counter-reset:item; box-sizing:border-box;}
+#mainWrpDiv ol>li {counter-increment: item; list-style-type: none; margin: 0 20px 10px; padding: 0 0 0 1.5em; text-indent: -2em;}
+#mainWrpDiv ol>li:before {display:inline-block; width:1.5em; padding-right:0.5em; font-weight:normal; text-align:right; content:counter(item) "."; color:#000000;}
+#mainWrpDiv ol.greenNum>li {counter-increment: item; list-style-type: none; margin: 0 20px 10px; padding: 0 0 0 1.5em; text-indent: -2em;}
+#mainWrpDiv ol.greenNum>li:before {display:inline-block; width:1.5em; padding-right:0.5em; font-weight:bold; text-align:right; content:counter(item) "."; color:#007236;}
+#mainWrpDiv ol>li:last-child {margin-bottom:20px;}
+
+/* image styles */
+#mainWrpDiv .photoR, .photoRlg, .chartCenter, {float:none; width:90%; margin:10px auto; padding:0;}
+#mainWrpDiv .photoDisplayD { display:none; }
+    
+#mainWrpDiv .photoL {float:left; width:30%; margin:0 20px 0 0; padding:0;}
+#mainWrpDiv .photoLcash {float:left; margin:0 20px 0 0; padding:0;}
+
+#mainWrpDiv .photoCenterLg {width:95%; margin:10px auto 20px; padding:0;}
+#mainWrpDiv .photoRtom { float:none; width:80%; margin:10px auto; padding:0; }
+#mainWrpDiv .photoRcash { float:right; margin:10px auto; padding:0; }
+#mainWrpDiv .photoRlogo { float:none; width:80%; margin:10px auto; padding:0; }
+    
+#mainWrpDiv .photoShadow {-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+#mainWrpDiv .photoBorder { margin:10px auto; padding:10px; background-color:#fff; border: 3px #0d648e solid; border-radius: 5px;}
+    
+#mainWrpDiv .chartCenter {display:inherit; margin:10px auto; padding:0; width:85%;}
+#mainWrpDiv .btnCenter { width: 80%; margin: 20px auto;}
+    
+#mainWrpDiv .tomHutchinson { float:right; width:25%; background-color:lightblue; border:1px #000 solid;}
+    
+
+
+/*****************************************************/
+/*****************************************************/
+/*****************************************************/
+@media only screen and (min-width: 40em) {
+	
+    body { background: rgb(0,114,54); background: linear-gradient(0deg, rgba(0,114,54,1) 0%, rgba(51,51,51,1) 50%, rgba(0,114,54,1) 100%); }
+    #mainWrpDiv {max-width:58em; margin:0 auto; padding:0 0 20px; /*background-color:#fff;*/ position:relative;}
+    #mainWrpDiv #grphBodyDiv {background-color:#fff; padding: 20px 25px 10px; margin:0 auto; width:90%; box-shadow: -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75); -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75); box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);}
+    
+    #mainWrpDiv .displayDesktop {display:inherit;}
+    #mainWrpDiv .displayMobile {display:none;}
+    
+    #mainWrpDiv h1 { font-size:95px; line-height:100px; margin:0 auto 20px; padding:0;}
+    
+    #mainWrpDiv .boldHighlight { font-weight:bold; background-color:gold; }
+    
+    /* image styles */
+    #mainWrpDiv .photoDisplayM { display:none; }
+    
+    #mainWrpDiv .photoRsm {float:right; width:20%; margin:0 0 0 20px; padding:0;}
+    #mainWrpDiv .photoR {float:right; width:30%; margin:0 0 0 20px; padding:0;}
+    #mainWrpDiv .photoRlg {float:right; width:45%; margin:0 0 0 20px; padding:0;}
+    #mainWrpDiv .photoRtom { float:right; width:27%; margin:0 0 0 20px; padding:0; }
+    #mainWrpDiv .photoRcash {float:right; width:20%; margin:0 0 0 20px; padding:0;}
+    #mainWrpDiv .photoRlogo {float:right; width:30%; margin:0 0 0 20px; padding:0;}
+    #mainWrpDiv .photoRsr {float:right; width:30%; margin:0 0 0 20px; padding:0;}
+    #mainWrpDiv .photoL {float:left; width:30%; margin:0 20px 0 0; padding:0;}
+    #mainWrpDiv .photoLcash {float:left; width:20%; margin:0 20px 0 0; padding:0;}
+    
+    #mainWrpDiv .chartCenter { margin:20px auto; padding:0; width:75%;}
+    #mainWrpDiv .btnCenter { width: 40%; margin: 20px auto;}
+    
+    #mainWrpDiv .tomHutchinson { float:right; width:25%; background-color:lightblue; border:1px #000 solid;}
+}
+
+@media only print  {
+               
+    body {background-color:#fff; margin:0; padding:0;}
+
+    #mainWrpDiv {/*max-width:56em;*/ margin:0 auto 20px; padding:0 0 10px; background-color:#fff;}
+    #mainWrpDiv #grphBodyDiv {margin:0px auto; padding:0; width:100%;}
+
+        #mainWrpDiv h1 { font-size:95px; line-height:100px; margin:0 auto 20px; padding:0;}
+    
+    #mainWrpDiv .boldHighlight { font-weight:bold; background-color:gold; }
+    
+    /* image styles */
+    #mainWrpDiv .photoDisplayM { display:none; }
+    
+    #mainWrpDiv .photoRsm {float:right; width:20%; margin:0 0 0 20px; padding:0;}
+    #mainWrpDiv .photoR {float:right; width:30%; margin:0 0 0 20px; padding:0;}
+    #mainWrpDiv .photoRlg {float:right; width:45%; margin:0 0 0 20px; padding:0;}
+    #mainWrpDiv .photoRtom { float:right; width:27%; margin:0 0 0 20px; padding:0; }
+    #mainWrpDiv .photoRcash {float:right; width:20%; margin:0 0 0 20px; padding:0;}
+    #mainWrpDiv .photoRlogo {float:right; width:30%; margin:0 0 0 20px; padding:0;}
+    #mainWrpDiv .photoRsr {float:right; width:30%; margin:0 0 0 20px; padding:0;}
+    #mainWrpDiv .photoL {float:left; width:30%; margin:0 20px 0 0; padding:0;}
+    #mainWrpDiv .photoLcash {float:left; width:20%; margin:0 20px 0 0; padding:0;}
+    
+    #mainWrpDiv .chartCenter { margin:20px auto; padding:0; width:75%;}
+    
+   #mainWrpDiv .tomHutchinson { float:right; width:25%; background-color:lightblue; border:1px #000 solid;}
+}
+
+</style>
+
+</head>
+
+<body>
+<div id="mainWrpDiv"><!-- Main Wrapper Div -->
+<div id="grphBodyDiv">
+<div id="headerWrp">
+    <p><strong><span class="colorRed">&ldquo;PERFECT FOR THIS ‘POST-COVID&rsquo; ECONOMY!&rdquo;</span> Income investing expert reveals his newest and most profitable income-generating strategy allowing you to&nbsp;.&nbsp;.&nbsp;.&nbsp;</strong></p>
+    <h1 class="colorGreen">POINT, CLICK .&nbsp;.&nbsp;.&nbsp;And <u>CASH-OUT</u></h1>
+<!--    <h2 class="top">Charter Member Enrollment</h2>-->
+    <h2>This could be the easiest &mdash;&nbsp;and possibly one of the safest &mdash;&nbsp;ways to make an extra $2,000&nbsp;.&nbsp;.&nbsp;. $2,460&nbsp;.&nbsp;.&nbsp;. $4,300&nbsp;.&nbsp;.&nbsp;. $5,780&nbsp;.&nbsp;.&nbsp;. even up to $9,006 in <u>INCOME</u> each and every month!</h2>
+</div>
+
+<p class="bold">Dear Income Investor,</p>
+<div class="photoRtom">
+    <img src="images/th.jpg">
+</div>
+<p>My name is Tom Hutchinson.</p>
+<p>You may recognize me from my <em>High Income Factor</em> newsletter that I&rsquo;ve been writing since 2011.</p>
+<p>As you&rsquo;ve probably experienced for yourself, the COVID-19 crisis has made investing for <u>income</u> more challenging than it&rsquo;s ever been.</p>
+<p>That&rsquo;s why I dedicated most of my time throughout 2020 to investigating and testing the best income-generating opportunities available to investors and retirees.</p>
+<p>And today I want to share an incredible breakthrough that could provide you with several thousand dollars in <em>extra</em> income each month.</p>
+<p>Take a look for yourself:</p>
+    
+<!--<p>(insert image of stacks of cash with title: $2,000 Generated)</p>-->
+<div class="photoRcash" style="width:30%">
+    <img src="images/2000.jpg">
+</div>
+<p style="padding-top: 5em">One of these opportunities was able to generate <strong>$2,000</strong>&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+
+<div class="clear"></div>
+    
+<!--<p>(insert image of stacks of cash with title:  Another $2,460 )</p>    -->
+
+<div class="photoLcash" style="width:35%">
+    <img src="images/2460.jpg">
+</div>
+<p style="padding-top: 5em">While a second one could have handed you <strong>$2,460</strong>.</p>
+<div class="clear"></div>
+
+<!--<p>(insert image of twice as many stacks of cash as First image with title: An Extra $4,300 )</p>-->
+<hr>
+<p class="boldCenter">And those were some of the smaller amounts!</p>
+<hr>
+    
+<div class="photoRcash" style="width:40%">
+    <img src="images/4300.jpg">
+</div>
+<p style="padding-top: 5em">Below, I&rsquo;ll show you how I was also able to make an extra <strong>$4,300</strong>&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<div class="clear"></div>
+    
+<!--<p>(insert image of twice as many stacks of cash as First image with title:  Another $5,780)</p>-->
+<div class="photoLcash" style="width:50%">
+    <img src="images/5780.jpg">
+</div>
+<p style="padding-top: 5em">Plus another <strong>$5,780</strong>&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<div class="clear"></div>
+
+<!--<p>(insert image of 4-times as many stacks of cash as First image with title:  $9,006 In Income)</p>-->
+<div class="photoRcash" style="width:60%">
+    <img src="images/9006.jpg">
+</div>
+<p style="padding-top: 10em">And even make up to <strong>$9,006</strong> in income using this tested and proven income strategy.</p>
+<div class="clear"></div>
+<br>    
+<p>With these five opportunities alone&nbsp;&mdash;&nbsp;you could have added an <em>extra</em> $23,546 to your investment account in just a few months&rsquo; time.</p>
+<p>Done over the course of an entire year, income-generating opportunities like these could potentially provide you with double&nbsp;.&nbsp;.&nbsp;.&nbsp;or even triple that amount.</p>
+<p class="bold">That&rsquo;s an extra $47,092 to $70,638 in income each year.</p>
+<p>And this is just the start!</p>
+<p>In a moment, I&rsquo;ll share <em>exactly</em> how you could make this kind of extra cash for yourself over and over for years to come.</p>
+<p>Now, keep in mind&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>This income is <u>separate and in addition to the capital gains</u> from the carefully selected stocks I&rsquo;ve recommend to my 76,979+ readers who&rsquo;ve paid for my research over the past 10 years.</p>
+<p>For example, just in the past year alone&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>They&rsquo;ve enjoyed <strong>41%</strong> gains on Visa&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<!--<p>(insert upward trending Visa chart with 41% gains)</p>-->
+<div class="chartCenter">
+    <img src="images/chart-visa-41.jpg">
+</div>
+<p><strong>59%</strong> gains on Starbucks&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<!--<p>(insert upward trending Starbucks chart with 59% gains)</p>-->
+<div class="chartCenter">
+    <img src="images/chart-starbucks-59.jpg">
+</div>
+<p>And they were able to double their money with <strong>105%</strong> gains on Innovative Industrial Properties.</p>
+<!--<p>(insert upward trending Innovative Industrial Properties chart with 105% gains)</p>-->
+<div class="chartCenter">
+    <img src="images/chart-idustrial-properties-105.jpg">
+</div>
+<p>When it comes to taking profits&nbsp;&mdash;&nbsp;my readers (maybe you&rsquo;ve been one of them) have had the opportunity to bank:</p>
+<p><strong>56%</strong> profits on V.F. Corp&nbsp;.&nbsp;.&nbsp;.&nbsp;<strong>77%</strong> profits on Realty Income&nbsp;.&nbsp;.&nbsp;.&nbsp;<strong>96%</strong> profits on Western Refining&nbsp;.&nbsp;.&nbsp;.&nbsp;<strong>198%</strong> on Brookfield Infrastructure Partners&nbsp;.&nbsp;.&nbsp;.&nbsp;and <strong>376%</strong> on Eli Lilly.</p>
+<p>So if you&rsquo;ve followed my work and invested in the companies I&rsquo;ve recommended&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>Then you already know my primary focus has been&nbsp;&mdash;&nbsp;and continues to be&nbsp;&mdash;&nbsp;helping my readers make money and enjoy a comfortable, stress-free retirement.</p>
+<p>And if you&rsquo;re looking for a <em>safer</em> way to generate several hundred or even several thousand dollars in <u>extra income</u> from your savings&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>And be able to do it month after month&nbsp;&mdash;&nbsp;no matter what happens in the financial markets&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>Then I&rsquo;d like to share how you could start <em>multiplying</em> the income you receive on your investments today.</p>
+    
+<h2>Why I Believe This Could Be the SAFEST Income Strategy Available Today</h2>
+<p>Over the past 10 years, I&rsquo;ve recommended several different income-generating strategies to my readers.</p>
+<p>However, as we move into a new decade ahead&nbsp;&mdash;&nbsp;we&rsquo;re already seeing that what worked well back in 2011 doesn&rsquo;t hold the same promise as we proceed through 2021.</p>
+<p>So while there are new challenges&nbsp;.&nbsp;.&nbsp;.&nbsp;there are also new and exciting opportunities.</p>
+<p>And if you&rsquo;ve invested for income before, then you&rsquo;ll love this strategy I&rsquo;m about to share below because&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<ul>
+<li>It&rsquo;s <strong><u>better</u></strong> than Real Estate Investment Trusts (REITS)&nbsp;.&nbsp;.&nbsp;.&nbsp;</li>
+<li>It&rsquo;s <strong><u>better</u></strong> than Master Limited Partnerships (MLPs)&nbsp;.&nbsp;.&nbsp;.&nbsp;</li>
+<li>It&rsquo;s <strong><u>better</u></strong> than Business Development Companies (BDCs).</li>
+</ul>
+<p>While I personally like those three investment vehicles, and how they traditionally have had the potential to deliver 8% to 12% average annual returns&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>Many retirees and investors are only starting to realize:</p>
+<div class="chartCenter">
+    <img src="images/tearsheet.jpg">
+</div>
+<!--<p class="quote">&ldquo;Unless you&rsquo;re already an expert income investor&nbsp;&mdash;&nbsp;it&rsquo;s now becoming much more difficult to find investments that provide reliable income to supplement your Social Security benefits, pensions, and savings.&rdquo;</p>-->
+<p>This leaves many income-seeking retirees and investors between a rock and a hard place when trying to find safe income-generating investments&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>&nbsp;.&nbsp;.&nbsp;.&nbsp;And also, to do it <em>without</em> tying up their hard-earned savings for long periods of time.</p>
+<p>Just take a look at &ldquo;traditional&rdquo; income-producing investments:</p>
+<p>Low-yield investments like money market accounts, Treasury bonds, CDs, muni bonds, and fixed annuities now only pay 0.11% to 2.65%&nbsp;.&nbsp;.&nbsp;.&nbsp;if you&rsquo;re lucky.</p>
+<!--<p>Insert horizontal row of bar charts here with Money Market Accounts 0.11% , T-Bonds 0.98% , CDs 1.0% , Muni Bonds 1.2% , Fixed Annuities 2.65%</p>-->
+<div class="photoCenterLg">
+    <img src="images/collage-low-yield.jpg">
+</div>
+<p>So not only do you have to lock-up your cash for 2 years&nbsp;.&nbsp;.&nbsp;.&nbsp;5 years&nbsp;.&nbsp;.&nbsp;.&nbsp;even up to 7 years with those investments&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>Those paltry returns don&rsquo;t even allow you to keep up with inflation! </p>
+<p>Because of bankers and politicians devaluing the dollar over the past several decades&nbsp;&mdash;&nbsp;today&rsquo;s pitiful interest rates have become absurd.</p>
+<p>In fact, it&rsquo;s downright insulting for those of us old enough to remember earning 4%&nbsp;.&nbsp;.&nbsp;.&nbsp;6%&nbsp;.&nbsp;.&nbsp;.&nbsp;even 8% or more on our savings with a basic 1-year CD at our local bank.</p>
+<p>Those days are long gone.</p>
+<p>But I&rsquo;m excited to share how you could quickly make <strong>6%</strong>&nbsp;.&nbsp;.&nbsp;.&nbsp;<strong>11%</strong> (this was the average)&nbsp;.&nbsp;.&nbsp;.&nbsp;even up to <strong>24%</strong> returns on your money&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p class="bold">&nbsp;.&nbsp;.&nbsp;.&nbsp;All without ever having to touch any of the starting capital in your investment account!</p>
+<p>And instead of locking up your capital for years at a time&nbsp;&mdash;&nbsp;I&rsquo;ll show you how you could make those kinds of returns in just 2-3 months.</p>
+<p>This gives you far greater control and flexibility in allotting your capital to income investments that provide the <em>greatest</em> potential returns.</p>
+<p>Plus, this could allow you to quickly compound your gains <em>faster</em> than any income-generating strategy you may have <em>ever</em> used before.</p>
+<p class="bold">Now, here&rsquo;s the best part&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>I&rsquo;ve spent much of 2020 refining&nbsp;.&nbsp;.&nbsp;.&nbsp;perfecting&nbsp;.&nbsp;.&nbsp;.&nbsp;and making this so simple and user-friendly for my readers so that <em>anyone</em> could do it.</p>
+<p>I&rsquo;m talking about making it as simple as being able to: <span class="kitTitle">POINT, CLICK&nbsp;.&nbsp;.&nbsp;.&nbsp;and <u>CASH-OUT</u></span>!</p>
+<p>In fact, you could doing this today and potentially have hundreds or even thousands of dollars deposited right into your investing account in less than 24 hours.</p>
+<p>I promise you that you&rsquo;ve <em>never</em> seen anything like this.</p>
+<p>But I must make this disclaimer&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+    
+<h2>This Income Strategy Truly Is Incredible<br>But It Is <u>NOT</u> for Everyone…</h2>
+<p>Now, there <em>is</em> a catch to all of this.</p>
+<p>In fact, there are two.</p>
+<p>And because I don&rsquo;t want to waste your time&nbsp;&mdash;&nbsp;I&rsquo;ll tell you what they are right now.</p>
+<p>First, you must have some STARTING CAPITAL to use this income-generating strategy.</p>
+<p>Now, I know that sounds like a no-brainer&nbsp;&mdash;&nbsp;but you wouldn&rsquo;t believe how many people today think money is just going to magically appear in their accounts!</p>
+<p>But here&rsquo;s the good news&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p class="boldI">You <u>DON&rsquo;T</u> need a fortune to get started.</p>
+<p>In fact, I&rsquo;ll even share a few different starting capital amounts and income scenarios below.  </p>
+<p>And when you see them&nbsp;&mdash;&nbsp;you&rsquo;ll realize just how quickly you could generate extra cash&nbsp;.&nbsp;.&nbsp;.&nbsp;practically on demand.</p>
+<p>What you&rsquo;re about to see is a proven strategy I&rsquo;ve successfully used myself and have recommended to others with increased frequency in recent years.</p>
+<p>And depending on how much money you allocate to this strategy&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>It could allow you to add <strong>$2,000</strong>&nbsp;.&nbsp;.&nbsp;. <strong>$2,460</strong>&nbsp;.&nbsp;.&nbsp;. <strong>$4,300</strong>&nbsp;.&nbsp;.&nbsp;. <strong>$5,780</strong>&nbsp;.&nbsp;.&nbsp;. even up to <strong>$9,006</strong> in extra cash per month to your existing sources of income.</p>
+<p>And while that might not be like winning several million dollars by playing the lottery&nbsp;&mdash;&nbsp;I don&rsquo;t know anybody that would turn away that kind of extra cash each month!</p>
+<p>So when you add that additional income to money you&rsquo;re receiving from your job, your Social Security payments, and your other retirement income from pensions or IRA/401(k) distributions&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<div class="photoRlg">
+    <img src="images/retire.jpg">
+</div>
+<p>It could provide you with a <em>very</em> comfortable retirement.</p>
+<p class="bold">Here&rsquo;s what&rsquo;s even better&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>These numbers I&rsquo;ve mentioned are based on a <em>conservative</em> amount of starting capital.</p>
+<p>This means if you start with more&nbsp;&mdash;&nbsp;then you could generate an even higher monthly income.</p>
+<p>Possibly much higher.</p>
+<p>Plus, if you&rsquo;re like me and hate taking unnecessary risks with your hard-earned money&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>You&rsquo;ll be excited when you see how you can use this income strategy year after year&nbsp;&mdash;&nbsp;and <u>never have to touch your starting capital</u> in your account if you don&rsquo;t want to!</p>
+<p>Now, the second catch is this&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>I am only making this available to the first 250 people who want to try this out for themselves, and start making <em>extra</em> investment income today.</p>
+<p>This isn&rsquo;t for amateurs or &ldquo;wishy-washy&rdquo; types of people. This is serious investment income for serious investors.</p>
+<p>In fact, once you see my research and examples below&nbsp;&mdash;&nbsp;you&rsquo;ll know <em>immediately</em> if you&rsquo;re the right kind of person for this.</p>
+<p>Quite frankly, I believe this is the <em>safest</em> income strategy available today&nbsp;.&nbsp;.&nbsp;.&nbsp;yet most investors have never heard of it.</p>
+<p>And those few investors who do know about it&nbsp;&mdash;&nbsp;and how to use it <u>successfully</u>&nbsp;&mdash;&nbsp;are not telling their secrets.</p>
+<p>But I am&nbsp;.&nbsp;.&nbsp;.&nbsp;and you&rsquo;ll get to enjoy the financial benefits of what I&rsquo;m about to share&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+    
+<h2>This Was Originally Available to <br class="displayDesktop">Only The Wealthiest Investors in the U.S.</h2>
+<p>This powerful income generating strategy I&rsquo;ve been testing has been around for just over 50 years now.</p>
+<p>However&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>When it was first made available to the public in 1970, only the <em>wealthiest</em> of investors could use it.</p>
+<p class="bold">There were TWO reasons why:</p>
+<p>First, as I mentioned earlier&nbsp;&mdash;&nbsp;you need starting capital to use this strategy.</p>
+<p>And back in 1970s, there simply weren&rsquo;t all too many &ldquo;wealthy&rdquo; Americans in the first place with stagflation, the gas crisis, and mortgage rates topping 11%.</p>
+<p>To further illustrate this point&nbsp;.&nbsp;.&nbsp;.&nbsp;there were only around 120,000 millionaires in the US in 1970 compared to over 18 million today!</p>
+<p>The second reason this strategy was only available to the rich was because of access to &ldquo;privileged information.&rdquo; </p>
+<p>In the &rsquo;70s, only the wealthiest people who invested in the stock market:</p>
+<ol>
+	<li>Knew these investments even existed&nbsp;.&nbsp;.&nbsp;.&nbsp;</li>
+	<li>Knew how to get in on these opportunities&nbsp;.&nbsp;.&nbsp;.&nbsp;and&nbsp;.&nbsp;.&nbsp;.&nbsp;</li>
+    <li>Had stockbrokers and financial advisers that knew which ones had the most income-generating potential.</li>
+</ol>
+<p><em>But things are much different today&nbsp;&mdash;&nbsp;and it works to your benefit when using this income-generating strategy!</em></p>
+<p>For starters, you don&rsquo;t have to be a millionaire to get started or even have six-figures in the bank.</p>
+<p>In fact, you could get started with less than $10,000 in starting capital.</p>
+<p>And with my <span class="kitTitle">POINT, CLICK&nbsp;.&nbsp;.&nbsp;.&nbsp;and <u>CASH-OUT</u></span> approach&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>You don&rsquo;t even need to have access to a stockbroker or high-priced financial adviser to get information about (and direct access to) these income-generating investments.</p>
+<p>I do all the &ldquo;heavy lifting&rdquo; for you&nbsp;.&nbsp;.&nbsp;.&nbsp;provide you with the research&nbsp;.&nbsp;.&nbsp;.&nbsp;and instruct you what to do.</p>
+<p>Let me show you&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+    
+<h2>How You Could Pocket an Extra $4,300&nbsp;.&nbsp;.&nbsp;.&nbsp;$5,780&nbsp;.&nbsp;.&nbsp;.&nbsp;Up To $9,006 in Extra Income (And Do It Over and Over Again!)</h2>
+<p>If you&rsquo;ve ever invested for income before&nbsp;.&nbsp;.&nbsp;.&nbsp;then you&rsquo;ve probably heard of selling covered calls.</p>
+<p>And as I mentioned earlier&nbsp;&mdash;&nbsp;I believe it is the <em>safest</em> income-generating strategy available today.</p>
+<p>Now, if you&rsquo;re not familiar with this strategy or haven&rsquo;t used covered calls before&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p class="bold">Here&rsquo;s a simple explanation of how they work:</p>
+<p>Writing a covered call means you&rsquo;re selling someone else the <u>right</u> to purchase a stock that you <em>already</em> own, at a specific price, within a specified time frame.</p>
+<p>Because one contract to sell represents 100 shares&nbsp;&mdash;&nbsp;to use this strategy, you must own at least 100 shares for every call contract you plan to sell.</p>
+<p>As a result of selling (&ldquo;writing&rdquo;) the contract for the covered call, you immediately pocket the premium right off the bat.</p>
+<p><em>This is where we are able to generate several hundred or several thousand dollars in income from each and every contract.</em></p>
+<p class="bold">And here&rsquo;s where it gets even BETTER when using covered calls&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>When we do this&nbsp;&mdash;&nbsp;we&rsquo;re only buying and holding good, solid stocks that we&rsquo;d want to have in our investment portfolio in the first place.</p>
+<p>Plus, the fact that you <em>already</em> own the stock means you&rsquo;re &ldquo;covered&rdquo; if the stock price rises past the agreed-upon price and you deliver on the contract.</p>
+<p>If this happens, you&rsquo;ll simply:</p>
+<ol>
+	<li>Sell the stock you <em>already</em> own for a profit, reaping the extra financial benefit of the increase on the stock&rsquo;s value&nbsp;.&nbsp;.&nbsp;.&nbsp;and&nbsp;.&nbsp;.&nbsp;.&nbsp;</li>
+	<li>Receive any dividends that were distributed, which boosts your total return.</li>
+</ol>
+<p>Now keep in mind&nbsp;&mdash;&nbsp;all of that is in <em>addition</em> to the money you originally received when you sold the covered call.</p>
+<p>That means <u>even more income</u> for you to spend as you see fit, or to add back into your account so you can write more covered calls for even more income in the future!</p>
+<p>So you can see this process in action&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>I&rsquo;ll share a few examples from 2020 that I&rsquo;ve referenced earlier so you can see just how easy I&rsquo;ve made doing this for my readers.</p>
+<p>And if you want to earn this kind of <em>extra</em> income&nbsp;&mdash;&nbsp;month after month&nbsp;&mdash;&nbsp;I&rsquo;ll show you how you can join them and start putting extra income in your investment account today!</p>
+
+<h2><span class="kitTitle">POINT, CLICK&nbsp;.&nbsp;.&nbsp;.&nbsp;and <u>CASH-OUT</u></span></h2>
+<h3>Income Opportunity #1:<br>Altria (MO)</h3>
+<div class="photoShadow photoRlogo">
+    <img src="images/logo-altria.jpg">
+</div>
+
+<p>Let me show you just how simple this can be&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>Imagine that you bought Altria stock on June 2 at $39.66</p>
+<p>And then sold the covered call on July 17.</p>
+<p>Then, on July 10 you would have received an 86-cent dividend per share.</p>
+<p>On July 31 the covered call would have expired at $1.60.</p>
+<p>So, we were able to earn $1.60 plus a $0.86 dividend (a total of $2.46 per share) over the course of about two months.</p>
+<p>Keep in mind that each contract is for 100 shares.</p>
+<p>Now here&rsquo;s how much income you could have made on this opportunity:</p>
+<p class="bold">
+    1 contract = <span class="colorGreen">$246</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    5 contracts = <span class="colorGreen">$1,230</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    10 contracts = <span class="colorGreen">$2,460</span>
+</p>
+<p>And remember, you still would keep all the Altria stock you bought!</p>
+<p>Let&rsquo;s look at another example&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+    
+<h2><span class="kitTitle">POINT, CLICK&nbsp;.&nbsp;.&nbsp;.&nbsp;and <u>CASH-OUT</u></span></h2>
+<h3>Income Opportunity #2:<br>AbbVie (ABBV)</h3>
+<div class="photoShadow photoRlogo">
+    <img src="images/logo-abbvi.jpg">
+</div>
+<p>As you know, pharmaceutical companies were hot in 2020.</p>
+<p>Say you bought AbbVie stock on June 2 at $91.04</p>
+<p>And then you sold the covered call on July 15.</p>
+<p>On August 14 you&rsquo;d have received a $1.18 dividend per share.</p>
+<p>And on July 31 the covered call would have expired at $4.60.</p>
+<p>So you would have been able to earn $4.60 plus a $1.18 dividend (a total of $5.78 per share) over the course of 3.5 months.</p>
+<p>Here&rsquo;s how much income you could have made on this opportunity:</p>
+<p class="bold">
+    1 contract = <span class="colorGreen">$578</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    5 contracts = <span class="colorGreen">$2,890</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    10 contracts = <span class="colorGreen">$5,780</span>
+</p>
+<p>And again in this case, you still would have been able to keep all the AbbVie stock you bought!</p>
+<p>Now, let me show you what happens when our covered call gets &ldquo;called&rdquo; and why it&rsquo;s still great for us&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+    
+<h2><span class="kitTitle">POINT, CLICK&nbsp;.&nbsp;.&nbsp;.&nbsp;and <u>CASH-OUT</u></span></h2>
+<h3>Income Opportunity #3:<br>US Bancorp (USB)</h3>
+<div class="photoShadow photoRlogo">
+    <img src="images/logo-usBancorp.jpg">
+</div>
+<p>Suppose you bought US Bancorp stock on July 22 at $36.26</p>
+<p>And also sold the covered call on July 22.</p>
+<p>For this profit opportunity, you wouldn&rsquo;t have received any dividends because they weren&rsquo;t distributed during this holding period.</p>
+<p>On September 18 the covered call would have expired at $2.00 and was &ldquo;called&rdquo; as the stock price hit $37.50.</p>
+<p>So you would have been able to earn $2.00 plus a $1.24 in capital appreciation (a total of $3.24 per share) in less than two months </p>
+<p>Here&rsquo;s how much income you could have made on this opportunity:</p>
+<p class="bold">
+    1 contract = <span class="colorGreen">$324</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    5 contracts = <span class="colorGreen">$1,625</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    10 contracts = <span class="colorGreen">$3,240</span>
+</p>
+<p>Here, you could have made the money on the contract and profit from the sale of the stock&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>&nbsp;.&nbsp;.&nbsp;.&nbsp; Allowing you to use that income any way you wanted, or add it back to your account to use toward other opportunities!</p>
+<p>And I used this same process with other stocks as well.</p>
+<p>Like with Qualcomm <strong>(QCOM)</strong>&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>Here we were able to generate <span class="colorGreen"><strong>$4,300</strong></span> in income for ourselves.</p>
+<p>Plus, we had the chance to make <span class="colorGreen"><strong>$9,006</strong></span> from Innovative Industrial Properties <strong>(IIPR)</strong>.</p>
+<p>From just these five income opportunities&nbsp;&mdash;&nbsp;you could have made an extra $23,546 in income.</p>
+<p>As for the total amount of time it would have taken you to do it&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p class="bold">Less than one hour&nbsp;&mdash;&nbsp;for all 5 combined!</p>
+<p>And remember&nbsp;&mdash;&nbsp;you&rsquo;re not doing this all by yourself&nbsp;.&nbsp;.&nbsp;.&nbsp;You&rsquo;re receiving guidance from me on each and every one of the income opportunities I identify, investigate, and recommend.</p>
+<p>Like I promised you earlier&nbsp;&mdash;&nbsp;you&rsquo;ve never seen anything like this before!</p>
+<p>This could truly be the safest way to generate extra investment income today&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>&nbsp;.&nbsp;.&nbsp;.&nbsp;Especially if you are &ldquo;sitting on the sidelines&rdquo; with cash looking for investments that could provide you with reliable returns.</p>
+<p>So if you meet the criteria I mentioned earlier, and you want to make this kind of extra, stress-free income&nbsp;.&nbsp;.&nbsp;.&nbsp;month after month&nbsp;.&nbsp;.&nbsp;.&nbsp;Then I&rsquo;d like to invite you to be among the first 250 people to try out my newest income advisory service called <em>Breakaway Income</em>.</p>
+<p>This is the maximum number of Charter members we&rsquo;re allowing in at this time for reasons I&rsquo;ll share below&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<div class="btnCenter">    
+    <a href="#order-page"><img src="images/btn-claim.png"></a>
+</div>
+<h2>Try Out <em>Breakaway Income</em> and You Could Make an Extra $2,000&nbsp;.&nbsp;.&nbsp;. $2,460&nbsp;.&nbsp;.&nbsp;. $4,300&nbsp;.&nbsp;.&nbsp;. $5,780&nbsp;.&nbsp;.&nbsp;. Even Up to $9,006 Each and Every Month&nbsp;&mdash;&nbsp;Starting Today!</h2>
+<p>I created this top-tier &ldquo;done-for-you&rdquo; income advisory service for retirees and investors who:</p>
+<ol>
+    <li class="bold">Want to put their hard-earned savings to work and generate more income than they ever have before&nbsp;.&nbsp;.&nbsp;.&nbsp;and&nbsp;.&nbsp;.&nbsp;.&nbsp;</li>
+    <li class="bold">Want to do it with as little &ldquo;work&rdquo; as possible.</li>
+</ol>
+<p>After all, you&rsquo;re busy.</p>
+<p>You certainly don&rsquo;t want to be spending most of your free time worrying about money or constantly researching investments and watching the markets.</p>
+<p>You want to spend time with family, friends, and enjoying your hobbies.</p>
+<p>For this service, I&rsquo;ll easily be spending 30-40 hours each week doing all the in-depth research to discover and report on the <em>best</em> income opportunities available.</p>
+<p>The ones that have the potential to safely pay out the <em>most</em> amount of money&nbsp;.&nbsp;.&nbsp;.&nbsp;in the <em>least</em> amount of time.</p>
+<p>Is all of this a lot of work? </p>
+<p>Absolutely.</p>
+<p>But I love what I do, and I know you&rsquo;ll love the results you&rsquo;ll get.</p>
+<p>Plus, I made this whole process incredibly user-friendly.</p>
+<p>So if you have a computer, tablet, or smart phone that you&rsquo;re reading this on right now&nbsp;.&nbsp;.&nbsp;.&nbsp;Then all you have to do is <span class="kitTitle">POINT, CLICK&nbsp;.&nbsp;.&nbsp;.&nbsp;and <u>CASH-OUT</u></span>!</p>
+<p>It really is that simple.</p>
+<p>Once you&rsquo;re a member&nbsp;.&nbsp;.&nbsp;.&nbsp;Each time you receive an opportunity alert notification from me and open your investment account, you just:</p>
+<p><span class="colorGreen"><strong>POINT</strong></span> to the stock and covered call option I recommend</p>
+<p><span class="colorGreen"><strong>CLICK</strong></span> to confirm&nbsp;.&nbsp;.&nbsp;.&nbsp;and&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p><span class="colorGreen"><strong><u>CASH-OUT</u></strong></span> to deposit money in your account.</p>
+<p>I promise that you&rsquo;ve never experienced a way to generate so much money with so little effort!</p>
+<p>However&nbsp;.&nbsp;.&nbsp;.&nbsp;Due to the supply and demand nature of these unique income opportunities, having too many people trying to use them actually diminishes their overall return.</p>
+<p>And because I want each member of <em>Breakaway Income</em> to have the chance to make the <u>most</u> amount of income each opportunity alert I issue&nbsp;.&nbsp;.&nbsp;.&nbsp;I&rsquo;m keeping the membership size of this group small.</p>
+<p>Right now, during this enrollment period, I&rsquo;m only opening it up to 250 members.</p>
+<p>Perhaps in the future, I may open it up to more if it doesn&rsquo;t impact the high income potential in the opportunities I investigate and recommend.</p>
+<p class="bold">So for now&nbsp;&mdash;&nbsp;250 members is the limit.</p>
+<div class="btnCenter">    
+    <a href="#order-page"><img src="images/btn-claim.png"></a>
+</div>
+<p>And if everything I&rsquo;ve shown you makes good financial sense&nbsp;&mdash;&nbsp;and you act quickly&nbsp;&mdash;&nbsp;then you may be able to secure a spot.</p>    
+<div class="photoCenterLg">
+    <img src="images/collage-prods.jpg">
+</div>
+<p class="bold">Here&rsquo;s everything I&rsquo;d like to give to you for taking a 100% risk-free trial to <em>Breakaway Income</em> today:</p>
+<ol class="greenNum">
+	<li><span class="colorGreen"><strong>A 12-month membership to <em>Breakaway Income</em></strong></span>&nbsp;&mdash;&nbsp;Each month, you&rsquo;ll receive my research and recommendations on the best income-generating opportunities that could hand you hundreds to thousands in extra cash each and every month! (typically, 24-36 per year). </li>
+	<li><span class="colorGreen"><strong>The <em>Breakaway Income</em> Portfolio</strong></span>&nbsp;&mdash;&nbsp;You&rsquo;ll get access to my model portfolio of all open and closed cash-generating investments. </li>
+	<li><span class="colorGreen"><strong>Trade Alerts</strong></span>&nbsp;&mdash;&nbsp;When it&rsquo;s time to make an adjustment to our holdings or take profits, I will send you a trade alert by email. These emails will give you trading instructions that you can share with your broker, or allow you to go online to make the trade on your own.</li>
+	<li><span class="colorGreen"><strong>Secure Access to Our MEMBERS-ONLY Website</strong></span>&nbsp;&mdash;&nbsp;Here, you can access everything I&rsquo;ve mentioned above 24/7 from your computer, tablet, or smart phone.</li>
+	<li><span class="colorGreen"><strong>Concierge Customer Service</strong></span>&nbsp;&mdash;&nbsp;We are 100% committed to your satisfaction and success. So if you ever have a question, simply call us or send us an email. Our friendly, patient, and helpful staff is dedicated to our members and they&rsquo;ll do everything they can to assist you.</li>
+</ol>
+<p><span class="colorRed">EXTRA BONUS FOR NEW MEMBERS! The <em>Breakaway Income</em> Library</span>&nbsp;&mdash;&nbsp;You&rsquo;ll have access to 5 of my newest cash-generating special reports you see below&nbsp;.&nbsp;.&nbsp;.&nbsp;where just one tip or recommendation from each of these special reports could help you make thousands of dollars in extra income this year alone. Plus, you&rsquo;ll be notified whenever I add a new report to the library!</p>
+<!--<p>(insert image montage of all the report covers here)</p>-->
+<img src="images/collage-sr.jpg">
+<p>And to top it all off&nbsp;.&nbsp;.&nbsp;.&nbsp;you get me.</p>
+<p>I&rsquo;ll be the one guiding you with my investing insights, market research, and investment recommendations as you <span class="kitTitle">POINT, CLICK&nbsp;.&nbsp;.&nbsp;.&nbsp;and <u>CASH-OUT</u></span> to extra income opportunities month after month!</p>
+<p>I can guarantee you that you <em>won&rsquo;t</em> find anyone with a better track record than mine when it comes to finding the best income investments.</p>
+<p>But I can&rsquo;t guarantee that any of the 250 spots will be available beyond today.</p>
+<div class="btnCenter">    
+    <a href="#order-page"><img src="images/btn-claim.png"></a>
+</div>
+    
+<h2>How to Claim Your Spot Right Now And <br class="displayDesktop">Start Generating Extra Income Today!</h2>
+<p>My publisher has set the one year membership price for <em>Breakaway Income</em> to $1,995 a year.</p>
+<p>And when you consider that you could make that amount&nbsp;&mdash;&nbsp;and much more&nbsp;&mdash;&nbsp;from just the first recommendation I provide to you&nbsp;.&nbsp;.&nbsp;.&nbsp;that price is an absolute bargain.</p>
+<p>But after talking with my publisher to reduce the price for Charter Members, he&rsquo;s agreed to offer a limited-time discount.</p>
+<p class="bold">So if you&rsquo;re one of the first 250 people to get started today&nbsp;&mdash;&nbsp;you&rsquo;ll pay only $995.</p>
+<p>That&rsquo;s over <u>HALF-OFF</u> the retail rate.</p>
+<p>And if you like, you could use your savings to put toward your first income investment.</p>
+<p>Just imagine how great it&rsquo;ll be if you&rsquo;re able to recoup your entire membership fee from your first investment&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>&nbsp;.&nbsp;.&nbsp;.&nbsp;And everything after that for the next year could be pure profit!</p>
+<p class="bold">But please know that once those 250 spots are taken with this limited-time offer&nbsp;.&nbsp;.&nbsp;.&nbsp;that&rsquo;s it.</p>
+<p class="bold">And when I say limited time&nbsp;&mdash;&nbsp;that means, by the time you click on the membership enrollment page&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p class="bold">&nbsp;.&nbsp;.&nbsp;.&nbsp; We may have already hit our membership limit and this offer may already be expired.</p>
+<p class="boldHighlight">(If that&rsquo;s the case, you&rsquo;ll have the opportunity to be put on a priority first-alert waiting list, and will be notified when we open enrollment again.)</p>
+<p>We have close to 1 million readers on our email lists, so I&rsquo;m sure those spots will be filled up quickly!</p>
+<p>And if you are lucky enough to get in today, you&rsquo;ll be happy you took fast action&nbsp;.&nbsp;.&nbsp;.&nbsp;because my newest recommendation is right around the corner!</p>
+<p class="bold">Plus, you can try out all of my work 100% risk-free for the next 60 days.</p>
+<p>So if you&rsquo;re not happy with my work or recommendations for any reason&nbsp;.&nbsp;.&nbsp;.&nbsp;or even no reason at all&nbsp;&mdash;&nbsp;simply let us know, and we&rsquo;ll offer you a full and prompt refund.</p>
+<p>But I think that you&rsquo;re going to love my research and all the extra income it could provide you in the year to come.</p>
+<p>And it couldn&rsquo;t come at a better time, as many people are already starting to feel the financial aftermath of what happened to the economy and financial markets in 2020.</p>
+<p>As I said at the beginning of this letter:</p>    
+<p class="quote">&ldquo;Unless you&rsquo;re already an expert income investor&nbsp;&mdash;&nbsp;it&rsquo;s now becoming much more difficult to find investments that provide reliable income to supplement your Social Security benefits, pensions, and savings.&rdquo;</p>
+<p>The good news is you don&rsquo;t have to be an expert income investor&nbsp;.&nbsp;.&nbsp;.&nbsp;because you got me by your side.</p>
+<p>When you get started today&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>You&rsquo;ll have the chance to immediately start making an extra <strong>$2,000</strong>&nbsp;.&nbsp;.&nbsp;. <strong>$2,400</strong>&nbsp;.&nbsp;.&nbsp;. <strong>$4,300</strong>&nbsp;.&nbsp;.&nbsp;. <strong>$5,780</strong>&nbsp;.&nbsp;.&nbsp;. even up to <strong>$9,006</strong> each and every month!</p>
+<p>Now for some exceptionally wealthy individuals, some of those amounts may seem like &ldquo;chump change.&rdquo; </p>
+<p>However, for most of the people I know these days&nbsp;&mdash;&nbsp;hard-working people who have diligently saved their money and want to put it to work and receive a decent return&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>Having the opportunity to receive even an extra $1,000 a month would make a world of difference.</p>
+<p>And if you could use more income from your investments so you don&rsquo;t have to lose sleep at night&nbsp;.&nbsp;.&nbsp;.&nbsp;worrying if you&rsquo;ll have enough savings to last the rest of your days&nbsp;.&nbsp;.&nbsp;.&nbsp;</p>
+<p>Then I&rsquo;d like to help you&nbsp;.&nbsp;.&nbsp;.&nbsp;just like I&rsquo;ve help tens of thousands of my readers make exceptional profits and earn life-changing income since 2011.</p>
+<p>But I don&rsquo;t expect this enrollment period to be open for long, and I hope you can secure an open spot.</p>
+<p><a href="#order-form">So try out a risk-free membership in <em>Breakaway Income</em> today.</a></p>
+<p>It could be the best financial decision you ever make.</p>
+<p>Simply click on the link below to review everything you&rsquo;ll receive when you get started, and I&rsquo;ll look forward to welcoming you aboard!</p>
+<p>Sincerely,</p>
+<div class="photoL">
+    <img src="images/th-sig.jpg">
+</div>
+<div class="clear"></div>
+<p>Tom Hutchinson</p>
+
+<p>Editor, <em>Breakaway Income</em></p>
+    
+<div class="btnCenter">    
+    <a href="#order-page"><img src="images/btn-claim.png"></a>
+</div>
+    
+<p class="boldHighlight"><span class="colorRed">Pick up standard order form, credit card, and customer info capture below here</span></p>
+    
+</div> <!-- end grphBodyDiv -->
+</div><!-- Main Wrapper Div -->
+
+</body>
+</html>

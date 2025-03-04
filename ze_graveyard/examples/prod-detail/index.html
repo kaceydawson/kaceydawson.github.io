@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Product Name - Monitor Product Name</title>
+<link href="css/Layout.css" rel="stylesheet" type="text/css" /><!-- Global -->
+<link href="css/GlobalTop.css" rel="stylesheet" type="text/css" /><!-- Global -->
+<link href="css/LayoutTop.css" rel="stylesheet" type="text/css" /><!-- Global -->
+<link href="css/ProdDetail.css" rel="stylesheet" type="text/css" /><!-- Product Detail -->
+<link href="css/productFeaturesWidget.css" rel="stylesheet" type="text/css" /><!-- productFeaturesWidget Widget -->
+<link href="css/BenefitsInclude.css" rel="stylesheet" type="text/css" /><!-- Benefits Include Widet -->
+<link href="css/complete_adv2011.css" rel="stylesheet" type="text/css" /><!-- complete_adv2011 -->
+<link href="css/LayoutBottom.css" rel="stylesheet" type="text/css" /><!--  -->
+<link href="css/GlobalBottom.css" rel="stylesheet" type="text/css" /><!-- Global -->
+
+<!--[if IE 7]>
+<link href="LayoutTopIE7.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+   <script type="text/javascript" language="javascript">
+   <!-- hide from JavaScript-challenged browsers
+   // is document ready?
+   $(document).ready(function() {
+
+	// hide div not in default view
+	// main featured section
+	$('#categoryPageMainContent').find('div#featuredBoxTwo').hide();
+	// product sections, 2 or 3 depending on cat page
+	$('#productBoxesColumnOne').find('div#productBox_1of2_inactive').hide();
+    $('#productBoxesColumnTwo').find('div#productBox_2of2_active').hide();
+	
+	// if product hover then swap content
+
+	$('#productBoxesColumnOne').find('div#productBox_1of2_inactive').mouseover(function() {
+		$('#categoryPageMainContent').find('div#featuredBoxOne').show();
+		$('#categoryPageMainContent').find('div#featuredBoxTwo').hide();
+		$('#productBoxesColumnOne').find('div#productBox_1of2_active').show();
+		$('#productBoxesColumnOne').find('div#productBox_1of2_inactive').hide();
+		$('#productBoxesColumnTwo').find('div#productBox_2of2_active').hide();
+		$('#productBoxesColumnTwo').find('div#productBox_2of2_inactive').show();
+	 });
+	 
+	$('#productBoxesColumnTwo').find('div#productBox_2of2_inactive').mouseover(function() {
+		$('#categoryPageMainContent').find('div#featuredBoxOne').hide();
+		$('#categoryPageMainContent').find('div#featuredBoxTwo').show();
+		$('#productBoxesColumnOne').find('div#productBox_1of2_active').hide();
+		$('#productBoxesColumnOne').find('div#productBox_1of2_inactive').show();
+		$('#productBoxesColumnTwo').find('div#productBox_2of2_active').show();
+		$('#productBoxesColumnTwo').find('div#productBox_2of2_inactive').hide();
+	 });
+	
+});
+// done hiding -->
+<script language="javascript" type="text/javascript">
+function flyout(targetID,targetChildTag,toggle,targetLevel) {
+	target = document.getElementById(targetID);
+	targetLink = target.getElementsByTagName("a").item(0);
+	child = target.getElementsByTagName(targetChildTag);
+	if(targetChildTag == "li") {
+		loopCount = 1;
+		loopLength = child.length;
+	} else {
+		loopCount = 0;
+		loopLength = 1;
+	}
+	if(child != null) {
+		for(i=loopCount;i<loopLength;i++) {
+			if(toggle == 0){
+				child.item(i).style.display = "block";
+				if(targetLevel) {
+					if(targetLevel == "parent") {
+						bgColor = "#b5cfe7";
+						targetLink.style.color = "#333";
+					} else {
+						bgColor = "#eff7ff";
+					}
+					targetLink.style.backgroundColor = bgColor;
+				}
+			} else {
+				child.item(i).style.display = "none";
+				if(targetLevel) {
+					if(targetLevel == "parent") {
+						targetLink.style.color = "#224f65";
+					}
+					targetLink.style.backgroundColor = "#fff";
+				}
+			}
+		}
+	}
+}
+
+function flyout2(targetID,targetChildTag,toggle,targetLevel) {
+	target = document.getElementById(targetID);
+	targetLink = target.getElementsByTagName("a").item(0);
+	child = target.getElementsByTagName(targetChildTag);
+	if(targetChildTag == "li") {
+		loopCount = 0;
+		loopLength = child.length;
+	} else {
+		loopCount = 1;
+		loopLength = 1;
+	}
+	if(child != null) {
+		for(i=loopCount;i<loopLength;i++) {
+			if(toggle == 0){
+				child.item(i).style.display = "block";
+				if(targetLevel) {
+					if(targetLevel == "parent") {
+						bgColor = "#b5cfe7";
+						targetLink.style.color = "#333";
+					} else {
+						bgColor = "#eff7ff";
+					}
+					targetLink.style.backgroundColor = bgColor;
+				}
+			} else {
+				child.item(i).style.display = "none";
+				if(targetLevel) {
+					if(targetLevel == "parent") {
+						targetLink.style.color = "#224f65";
+					}
+					targetLink.style.backgroundColor = "#fff";
+				}
+			}
+		}
+	}
+}
+// for new Browse by Product JS
+function product_jumpMenu(targ,selObj,restore){ 
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+</head>
+<body>
+<!-- ####### LAYOUT ####### -->
+<div id="Layout">
+  <!-- ####### GLOBAL TOP ####### -->
+  <div id="GlobalTop">
+  	<div id="Login"><a href="#" title="Company Customer Login">Login</a></div><!-- end Login -->
+	<div id="GlobalNavigation">
+		<ul>
+			<li class="First"><a href="#" title="Personal Solutions">Solutions</a></li>
+			<li class="Last"><a href="#" title="Contact Us">Contact Us</a></li>
+		</ul>
+	</div><!-- end GlobalNavigation -->
+    <div id="Search">
+		<form method="get" action="#">
+				<fieldset>
+					<input type="text" maxlength="50" size="18" name="" value="" />
+					<input type="hidden" name="" value="" />
+					<input type="hidden" name="" value="" />
+					<input type="hidden" name="" value="All" />
+					<input type="submit" value="SEARCH" class="Submit" />
+
+				</fieldset>
+		</form>
+	</div><!-- end Search -->
+  </div>
+  <!-- end GlobalTop -->
+  <!-- ####### CONTAINER ####### -->
+  <div id="FWContainer">
+    <div id="ContainerTop">
+      <div id="ContainerBottom">
+        <div id="FWContent">
+		  <!-- ####### LAYOUT TOP ####### -->
+          <div id="LayoutTop">
+		  	<div id="BrandContainer">
+			<div id="Brand"><img src="images/misc/companyLogo.png" alt="Company Logo" width="179" height="34" /></div><!-- end Brand -->
+			<div id="CoBrand"><img src="images/misc/altCompanyLogo.png" width="135" height="45" alt="Alt Company Logo" />
+			</div><!-- end CoBrand --></div><!-- end BrandContainer -->
+			<div class="SkipNav"><a href="#DetailTop" title="Skip Country Navigation">Skip Country Nav</a></div><!-- end skipNav -->
+			<div id="Navigation">	
+				<ul>
+				  <li id="Products" onmouseover="flyout2(this.id,'li',0)" onmouseout="flyout2(this.id,'li',1)"><span class="GroupHdr">Products</span>
+						<ul id="ProductsPop">
+							<li class="First"><a href="#" title="Company Name Products List">Company Name Products List</a></li>
+							<li class="Middle"><a href="#" title="Company Name Product 123">Company Name Product 123</a></li>
+							<li class="Middle"><a href="#" title="Product 123">Product 123</a></li>
+							<li class="Middle"><a href="#" title="Company Name DProduct 123">Company Name DProduct 123</a></li>
+							<li class="Middle"><a href="#" title="Product 123">Product 123</a></li>
+							<li class="Middle"><a href="#" title="Company Name Credit Product 123">Company Name Credit Product 123</a></li>
+							<li class="Middle"><a href="#" title="Product 123">Product 123</a></li>
+							<li class="Middle"><a href="#" title="Product 123">Product 123</a></li>
+							<li class="Middle"><a href="#" title="Score Power">Product 123</a></li>
+							<li class="Middle"><a href="#" title="Company Name Credit Product 123&trade;">Company Name Credit Product 123</a></li>
+							<li class="Middle"><a href="#" title="Company Name Product 123&trade;">Company Name Product 123</a></li>
+							<li class="Last"><a href="#" title="Compare Products">Compare Products</a></li>
+							
+						</ul><!-- end ProductsPop -->
+				  </li>
+				  <li id="CustomerService" onmouseover="flyout2(this.id,'li',0)" onmouseout="flyout2(this.id,'li',1)"><span class="GroupHdr">Customer Service</span>
+				  	<ul id="CustomerServicePop">
+							<li class="First">
+								<ul>
+									<li><a href="#" title="Online Dispute" rel="external">Online Dispute</a></li>
+							<li class="Middle"><a href="#" title="Online Fraud Alert" rel="external" target="_blank">Online Fraud Alert</a></li>
+							<li class="Middle"><a href="#" title="Security Freeze" rel="external">Security Freeze</a></li>							
+							<li class="Middle"><a href="#" title="Free Credit Report" rel="external">Free Credit Report</a></li>
+							<li class="Middle"><a href="#" title="Security Freeze" rel="external">Product FAQs</a></li>
+							<li class="Last"><a href="#" title="Contact Us">Contact Us</a></li>
+							</ul>
+						</li>
+						</ul><!-- end CustomerServicePop -->
+				  </li>
+				  <li id="Resources" onmouseover="flyout2(this.id,'li',0)" onmouseout="flyout2(this.id,'li',1)"><span class="GroupHdr">Resources</span>
+				  	<ul id="ResourcesPop">
+							<li class="First">
+							<ul>
+							<li class="Middle"><a href="#" title="Company Feature" rel="external" target="_blank">Company Feature</a></li>
+							<li class="Middle"><a href="#" title="Learn at Company Name" rel="external" target="_blank">Learn at Company Name</a></li>							
+							<li class="Last"><a href="#" title="Company Feature Finder&trade;" rel="external">Company Feature Finder&trade;</a></li>
+							</ul>
+						</li>
+						</ul><!-- end ResourcesPop --></li>
+				  <li id="MemberCenter"><a href="#" title="Online Dispute">Member Center</a></li>
+				</ul>
+			</div><!-- end Navigation -->			
+          </div><!-- end LayoutTop -->  
+         
+			<div class="clear">&nbsp;</div>
+            <div class="prodDetailHeader">          
+                <div class="prodTitle">
+                	<h1>Company Name Product</h1>
+                </div>
+                 <div class="shareIt">
+                    <p>SHARE IT</p>
+                    <a href="#" title="Share It Email"><img src="images/comparePage/icos/share-email-icon.png" border="0" width="16" height="16" alt="Share It Email" /></a>
+                    <a href="#" title="Share It Facebook"><img src="images/comparePage/icos/share-facebook-icon.png" border="0" width="16" height="16" alt="Share It Facebook" /></a>
+                    <a href="#" title="Share It Twitter"><img src="images/comparePage/icos/share-twitter-icon.png" border="0" width="16" height="16" alt="Share It Twitter" /></a>
+                </div>
+                <div class="prodShortDesc">
+                	<h2 class="orange">Some sort of product sub-heading here</h2>
+                	<p>This would most likely be some nicely worded short product description here and why it totally rocks.  This would most likely be some nicely worded short product description here and why it totally rocks.  This would most likely be some nicely worded short product description here and why it totally rocks.</p>
+                </div>
+                <div class="buttPriceLink">
+                	<div class="Button"><div class="ButtonLeft"><div class="ButtonRight"><a title="Activate Fraud Alerts" href="#url">Buy Now</a></div></div></div>
+                	<div class="productPrice"><p>$00.00/month</p></div>                	
+                </div>
+                <div class="clear">&nbsp;</div>
+            </div><!-- prodDetailHeader ends -->
+            <div class="whyYouShould">
+            	<p>Why you should own this product</p>
+            </div>
+         	<div class="prodDetailBody">
+   	  			<div class="sellPointContainer">          
+                    <div class="sellPoint icon1">
+                        <h3>This is a great reason to purchase this product</h3>
+                        <p>This is where a few short sentences about how much this product should benefit those that are lucky enough to have purchased it.  This is where a few short sentences about how much this product should benefit those that are lucky enough to have purchased it.</p>
+                    </div>
+                    <div class="sellPoint icon2">
+                        <h3>This is a great reason to purchase this product</h3>
+                        <p>This is where a few short sentences about how much this product should benefit those that are lucky enough to have purchased it.  This is where a few short sentences about how much this product should benefit those that are lucky enough to have purchased it.  This is where a few short sentences about how much this product should benefit those that are lucky enough to have purchased it.</p>
+                    </div>
+                    <div class="sellPoint icon3">
+                        <h3>This is a great reason to purchase this product</h3>
+                        <p>This is where a few short sentences about how much this product should benefit those that are lucky enough to have purchased it.</p>
+                    </div>
+                </div><!-- ends sellPointContainer -->
+                <div class="prodFeatures">
+                	<img src="images/misc/movie-place-holder.png" width="355" height="232" alt="Prod Details Movie" />
+                    <h3>This is an h3 heading</h3>
+                    <h4>This is an h4 heading. This is an h4 heading</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <p class="olHeader">Ordered List</p>
+                    <ol>
+                    	<li>Non linkable ordered list item.</li>
+                    	<li><a href="#">Linkable ordered list item.</a></li>
+                        <li>Non linkable ordered list item.</li>
+                    	<li><a href="#">Linkable ordered list item.</a></li>
+                    </ol>
+                    <p class="ulHeader">Un-ordered List</p>                    
+                    <ul>
+                    	<li>Non linkable un-ordered list item.</li>
+                    	<li><a href="#">Linkable un-ordered list item.</a></li>
+                        <li>Non linkable un-ordered list item.</li>
+                    	<li><a href="#">Linkable un-ordered list item.</a></li>
+                    </ul>
+                </div><!-- end prodFeatures -->
+                <div class="clear">&nbsp;</div>
+                <div class="prodButtPrice">
+               		<h2 class="left">Product Name 2</h2>
+                	<div class="Button"><div class="ButtonLeft"><div class="ButtonRight"><a title="Activate Fraud Alerts" href="#url">Buy Now</a></div></div></div>
+                	<div class="productPrice"><p>$00.00/month</p></div>
+              	</div>                 
+          	</div><!-- prodDetailBody ends -->            
+		</div><!-- end DetailBottom -->
+        </div><!-- end Content -->
+      </div><!-- end ContainerBottom -->
+    </div><!-- end ContainerTop -->
+  </div><!-- end Container -->
+  <!-- ####### GLOBAL BOTTOM ####### -->
+  <div id="GlobalBottom">
+    <div class="Disclaimer">
+      <p>&dagger; Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div><!-- end Disclaimer -->
+    <div id="Copyright">
+      <ul>
+        <li>Copyright Company Name DATE</li>
+        <li class="First"><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+        <li class="Middle"><a href="#" title="Terms of Use">Terms of Use</a></li>
+		<li class="Middle"><a href="#" title="Become an Affiliate">Become An Affiliate</a></li>
+		<li class="Middle"><a href="#" title="Careers">Careers</a></li>
+		<li class="Last"><a href="#" title="Investor Center">Investor Center</a></li>
+      </ul>
+    </div><!-- end Copyright -->
+  </div><!-- end GlobalTop -->
+</div><!-- end Layout (Layout.css) -->
+</body>
+</html>

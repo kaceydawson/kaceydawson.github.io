@@ -1,0 +1,386 @@
+/* ############ PRODUCT COMPARISON CSS ############ */
+/* !!!!! DETAIL TOP CSS !!!!! */
+#DetailTop { /* Product Name or Page Title container */
+	clear: both;
+	float: left;
+	margin: 8px 0 3px 0;
+	padding: 0;
+	width: 867px;
+}
+#DetailTop h1 { /* Product Name or Page Title */
+	color: #000000;
+	float: left;
+	font-size: 1.8em;
+	font-weight: normal;
+	height: 1.6em;
+	line-height: 1.6em;
+	margin: 0;
+	padding: 0 0 0 10px;
+	width: 857px;
+}
+.strong { font-weight: 600;}
+.noBold	{ font-weight: 400; }
+.shareIt {
+	float: right;
+	margin: -40px 5px 0 0;	
+}
+.shareIt p {
+	float: left;
+	color: #f36f31;
+	padding: 0 6px 0 0;
+	font-weight: bolder;
+}
+.shareIt div {
+	float: left;
+	padding: 0 2px;
+}
+.rightForMe {
+	float: right;
+	margin: -5px 5px 0 0;
+	padding: 0 0 0 35px;
+	background: transparent url(../images/comparePage/icos/virtual-assistant-help-icon.png) no-repeat 0 0;	
+}
+.rightForMe p {
+	font-size: 1.1em;
+	font-weight: bolder;	
+}
+.rightForMe a {
+	font-size: .9em;
+	font-weight: bold;
+	color: #107faa;	
+}
+.productTitleHeader {
+	height: 200px;
+	left: auto;
+	margin-left: 0;
+	background: transparent url(../images/comparePage/bgs/man-with-phone.png) no-repeat 0 100%;		
+}
+.productTitleHeader p {
+	padding: 40px 0 0 150px;
+}
+.orangeText {
+	color: darkorange;
+	font-size: 136%;	
+}
+.productTitle {
+	padding: 50px 0 10px 70px;
+	background: transparent url(../images/comparePage/icos/icon-prod-basic.png) no-repeat 10% 80%;		
+}
+.mostPopRibbon {
+	width: 100%;
+	height: 37px;
+	background: #7a0001 url(../images/comparePage/bgs/most-pop-bckgnd.gif) no-repeat 100% 0;	
+}
+.mostPopRibbon p {
+	color: #ffffff;
+	padding: 10px 0 0 5px;
+}
+.productTitleMostPop {
+	padding: 12px 0 10px 70px;
+	background: transparent url(../images/comparePage/icos/icon-prod-ultimate.png) no-repeat 0 80%;		
+}
+.popRibbon {
+	height: 37px;
+	
+}
+.popRibbon p {
+	color: #ffffff;
+	padding: 10px 0 0 5px;
+}
+sup, sub 		{ line-height:0; vertical-align: super; font-size: 0.65em;}
+.featureHeader:hover { cursor: pointer; }
+/* ############ DetailMiddle ############ */
+
+/* !!!!! Pop Layers  !!!!! */
+.hideElement { display: none; }
+.helptext { position: static;	width: 97%;	font-size: 80%;	margin: 6px 0; padding: 0 5px; z-index: 1000;	border: 1px solid #898989; }
+
+a.help { font-size: 100%; position: relative; /* need this position for Overlay filter activate on IE6 */ }
+a.help:focus, a.help:active { border: none; outline: none; }
+
+div#popbox {  }
+div#popbox img { border: 0; }
+div#popbox a.close { position: absolute; top: 3px; right: 3px; text-decoration: none; }
+div#popbox h3 { color: #000; font-size: 1.0em; }
+div#popbox p  { font-size: 0.8em; }
+
+.popleft, .popright { position: absolute; z-index: 1000; width: 280px; margin: 0; border-style: solid; border-color: #ffa90e #666 #666 #ffa90e; border-width: 1px 2px 2px 1px; padding: 12px 20px; background: #fff6a7; font-size: 90%; }
+.popleft { margin-left: -320px; } 
+
+#compareProductsPageContent {
+	clear: both;
+	margin: 0 0 15px 0;
+	padding: 5px 0 0 0;
+}
+#compareProductsTabs {
+	font-weight: bold;
+	float: left;
+	margin: 0 0 0 5px;
+	padding: 0 0 0 0px;
+}
+.activeTabMonitoring, .activeTabReporting {
+	background: transparent url(../images/comparePage/bgs/bg_compareProducts_tab_active_center2011.gif) repeat-x;
+	color: #000;
+	float: left;
+	margin: 0px 4px 0px 4px;
+	padding: 13px 40px 12px 40px;	
+}	
+.activeTabMonitoring a, .activeTabReporting a { text-decoration: none; cursor: hand; }
+html>body .activeTabMonitoring, .activeTabReporting {
+	margin: 0px 6px 0px 6px;	
+}
+.activeTabLeftMonitoring, .activeTabLeftReporting {
+	background: transparent url(../images/comparePage/bgs/bg_compareProducts_tab_active_left2011.gif) no-repeat top left;
+	float: left;	
+	margin-left: 5px;
+}
+.activeTabRightMonitoring, .activeTabRightReporting {
+	background: transparent url(../images/comparePage/bgs/bg_compareProducts_tab_active_right2011.gif) no-repeat top right;
+	float: left;
+}
+.inactiveTabMonitoring, .inactiveTabReporting {
+	background: transparent url(../images/comparePage/bgs/bg_compareProducts_tab_inactive_center2011.gif) repeat-x;
+	color: #000000;
+	font-size: 0.9em;
+	float: left;
+	margin: 0px 4px;
+	padding: 6px 40px 7px 40px;
+}	
+.inactiveTabMonitoring a, .inactiveTabReporting a { text-decoration: none; cursor: hand; color: #ffffff; }
+
+.inactiveTabMonitoring a:hover, .inactiveTabReporting a { color: #ffffff; } 
+.activeTabMonitoring a:hover, .activeTabReporting a:hover { color: #002157; }
+
+html>body .inactiveTabMonitoring, .inactiveTabReporting {
+	margin: 0px 6px 0px 6px;	
+}
+.inactiveTabLeftMonitoring, .inactiveTabLeftReporting {
+	background: transparent url(../images/comparePage/bgs/bg_compareProducts_tab_inactive_left2011.gif) no-repeat top left;
+	float: left;
+	margin: 5px 5px 0px 5px;
+}
+.inactiveTabRightMonitoring, .inactiveTabRightReporting {
+	background: transparent url(../images/comparePage/bgs/bg_compareProducts_tab_inactive_right2011.gif) no-repeat top right;
+	float: left;
+}
+.compareProductsContainerTop, .compareProductsContainerMiddle, .compareProductsContainerBottom {
+	float: left;
+	width: 887px;
+}
+.compareProductsContainerTop {
+	background: transparent url(../images/comparePage/bgs/bg_compareProductsContainer_top2011.gif) no-repeat 0px 35px;
+}
+.compareProductsContainerBottom {
+	background: transparent;
+}
+.compareProductsContainerMiddle {
+	background: transparent;
+}
+table.compareProducts {
+	clear: both;
+	font-size: 0.8em;
+	margin: 10px 5px 10px 5px;
+	width: 862px;
+}
+table.compareProducts th {
+	padding-bottom: 0px;
+	text-align: left;
+	border-left: solid 1px #e0e0e0;
+}
+table.compareProducts th.buttons { 
+	padding-bottom: 5px;
+}
+table.compareProducts th.tableDescription {
+	width: 41%;
+	border-left: none;
+	font-weight: normal;
+}
+table.compareProducts th a {
+	font-weight: bold;
+}
+table.compareProducts th p.tableHeaderText {
+	clear: both;
+	display: block;
+	font-weight: normal;
+}
+table.compareProducts th span.tableHeaderOffer {
+	clear: both;
+	display: block;
+}
+table.compareProducts tr.bottomBorder td {
+	border-bottom: dotted 2px #e0e0e0;
+}
+table.compareProducts tr td {
+	height: 35px;
+	text-align: center;
+	border-left: solid 1px #e0e0e0;
+}
+table.compareProducts tr td.noLeftBorder {
+	border-left: none;
+}
+table.compareProducts tr td.headline div.headline {
+	border: none;
+	text-align: left;
+	background: #556b83;
+}
+table.compareProducts tr td.headline div.headline p {
+	color: #ffffff;
+	font-weight:bold;
+	padding: 5px 0 5px 10px;
+
+}
+table.compareProducts tr td.headline div.headline span.clicker {
+	padding: 0 5px 0 0;
+	float: right;	
+}
+table.compareProducts tr td.headline div.headline span.clicker:hover {
+	color:#FC6;
+}
+table.compareProducts tr td.headline div.mostPopProduct {
+	border :none;
+	background: #7a0001;
+}
+table.compareProducts tr td.headline div.mostPopProduct p {
+	padding: 5px 0 5px 0;
+}
+table.compareProducts tr td.headline div.allOtherProd {
+	border:none;
+	background:#c1cbd5;
+}
+table.compareProducts tr td.headline div.allOtherProd p {
+	padding: 5px 0 5px 0;
+}
+table.compareProducts tr td.feature {
+	width: 20%;
+	text-align: left;
+	padding: 0 0 0 10px;
+}
+table.compareProducts tr td.feature span.featureNote {
+	font-size:0.7em;
+	font-style:italic;
+}
+table.compareProducts tr td.help {
+	border-left: none;
+	vertical-align: middle;
+	width: 21px;
+}
+table.compareProducts tr td.help  a {
+	float: left;
+}
+.alignBottom {
+	vertical-align: bottom;	
+}
+.productPrice {
+	padding: 0 0 5px 0;	
+}
+.productPrice p {
+	font-size: 1.5em;
+	padding: 5px 0 0 3px;	
+}
+.Button { /* button*/
+	background: #f26522 url(../images/btns/btn-orange-middle.png) repeat-x 0 0;
+	/* background: #f26522 url(../images/comparePage/btns/btn-orange-middle.png) repeat-x 0 0; */
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+.ButtonCenter {
+	float: left;
+	margin: 8px 0 0 35px;
+}
+.ButtonLeft {
+	background: transparent url(../images/btns/btn-orange-left.png) no-repeat 0 0;
+	/* background: transparent url(../images/comparePage/btns/btn-orange-left.png) no-repeat 0 0; */
+	float: left;
+	padding: 0 0 0 15px;
+}
+.ButtonRight {
+	background: transparent url(../images/btns/btn-orange-right.png) no-repeat right top;
+	/* background: transparent url(../images/comparePage/btns/btn-orange-right.png) no-repeat right top; */
+	float: left;
+	padding-right: 15px;
+}
+.Button a:link, .Button a:visited, .Button a:hover {
+	color: #fff;
+	float: left;
+	font:bold 1.050em/2.020em Arial,Helvetica,sans-serif;
+	margin: 0;
+	padding: 2px 10px 0px 8px;
+	text-decoration: none;
+}
+.right {
+	float: right;	
+}
+.companyName    { color: #790000; }
+.experian   { color: #0076a3; }
+.transunion { color: #598527; }
+
+ /*  STAY INFORMED CSS  */
+#StayInformed { /* four boxes to present up to four highlighted products */
+	background: #d6dbe1;
+	clear: both;
+	float: left;
+	margin: 5px 0 15px 0;
+	padding: 0;
+	width: 99%; 
+}
+#StayInformed h3 {
+	border: none;
+	clear: both;
+	color: #000;
+	float: left;
+	font-size: 1.0em;
+	margin: 3px 0 0 5px;
+	padding: 6px 20px 8px 5px;
+}
+#StayInformed h3 span {
+	color: #69737f;
+	display: block;
+	font-size: .75em;
+}
+#newsletterForm {
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+#newsletterNameDiv, #newsletterEmailAddressDiv {
+	float: left;
+	padding: 20px 10px 3px 5px;
+}
+#newsletterForm label {
+	color: #69737f;
+	font-size: .75em;
+
+}
+#newsletterForm input {
+	font-size: .9em;
+}
+#newsletterSubmitDiv #newsletterSubmit {
+	background: none;
+	border: none;
+	color: #0e5fd8;
+	cursor: pointer;
+	font-size: .85em;
+	text-decoration: underline;
+	padding: 21px 0 0 18px;
+	background: url(../images/comparePage/arrows/arrow-secondary-bullet.png) no-repeat 17% 95%;
+}
+/*-- end Stay Informed --*/
+
+/* !!!!! DETAIL BOTTOM CSS !!!!! */
+#DetailBottom { /* container for DetailBottom that holds AdSense and Disclaimer */
+	clear: both;
+	margin: 5px 0 5px 0;
+	padding: 0;
+	width: 867px;
+}
+#DetailBottom p {
+	margin: 0 0 5px 10px;
+}
+#DetailBottom .Disclaimer p{ /* disclaimer statement in the white canvas */
+	background-color: #fff;
+	color: #000;
+	font: 0.69em Arial, Helvetica, sans-serif;
+}
+/* ############ END CSS ############ */

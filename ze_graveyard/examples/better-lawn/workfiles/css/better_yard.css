@@ -1,0 +1,109 @@
+/* CSS Document */
+
+body {
+	font: 1em Georgia, "Times New Roman", Times, serif;
+}
+
+.borderDiv {
+	border-left: 2px solid #006600;
+	border-right: 2px solid #006600;
+}
+
+.betterYardHeader {
+	height: 160px;
+	background-color: #006600;
+}
+
+.flashHeader {
+	margin: 5px 0 0 0;
+	padding: 5px 0 0 2px;
+}
+
+#welcomePageMain {
+	margin: 0;
+}
+
+ul#navList {
+	list-style:none;
+	margin:20px;
+	padding:0;
+	width:525px;
+}
+
+ul#navList li {
+	display:inline;
+}
+
+ul#navList li a {
+	text-decoration:none;
+	padding:5px 0;
+	width:100px;
+	background:#485e49;
+	color:#eee;
+	float:left;
+	text-align:center;
+	border-left:1px solid #fff;
+}
+
+ul#navList li a:hover {
+	background:#a2b3a1;
+	color:#000;
+}
+
+#welcomePageMain p {
+	margin-left: 50px;
+}
+
+#welcomePageMain p#welcomeFirst {
+	margin: 70px 0 0 50px;
+}
+
+#welcomePageMain img {
+	float: right;
+	margin: -63px 5px 5px 5px;
+}
+
+#servicesPageMain p#serviceFirst {
+	margin: 70px 0 0 50px;
+}
+
+#servicesPageMain img {
+	float: right;
+	margin: -57px 5px 5px 5px;
+}
+
+#servicesPageMain p {
+	margin: 0 0 10px 50px;
+}
+
+#servicesProvided {
+	margin: 0 0 10px 50px;	
+}
+
+#contactPageMain {
+	margin: 0 0 0 50px;	
+}
+
+#contactPageMain p {
+	font-weight: bold;	
+}
+
+#contactPageMain #contactFirst {
+	margin: 70px 0 0 0;	
+}
+
+#contactPageMain img {
+	float: right;
+	margin: -57px 5px 5px 5px;
+}
+
+.betterYardFooter {
+	height: 150px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #006600;
+}
+
+.betterYardFooter .footerText{
+	margin: 0 0 0 5px;
+}

@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+.prodFeatures {
+	float: left;
+	width: 43%;
+	padding: 20px 0 0 5px;	
+}
+.prodFeatures h3 {
+	margin: 3px 0 3px 0;	
+}
+.prodFeatures h4 {
+	margin: 3px 0 3px 0;	
+}
+.prodFeatures p {
+	padding: 5px 0 5px 0;	
+}
+.prodFeatures p.olHeader {
+	padding: 0;
+	margin: 5px 0 -15px 0;
+	font-weight: bold;	
+}
+.prodFeatures ol {
+	padding: 0;
+	list-style-position: inside;	
+}
+.prodFeatures p.ulHeader {
+	padding: 0;
+	margin: 5px 0 -15px 0;
+	font-weight: bold;	
+}
+.prodFeatures ul li {
+	list-style: none;
+	list-style-image: url(../images/arrows/arrow-secondary-bullet.png);
+	list-style-position: inside;
+	margin-left: -40px;	
+}

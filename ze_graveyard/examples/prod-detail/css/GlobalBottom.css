@@ -1,0 +1,57 @@
+/* #################### GLOBAL BOTTOM CSS #################### */
+/* #################### Copyright Area, Bottom Navigation, Disclaimer #################### */
+#GlobalBottom { /* very bottom gray area that holds disclaimer and copyright */
+	clear: both;
+	margin: 0 auto;
+	width: 938px;
+}
+#GlobalBottom .Disclaimer { /* disclaimer statement in the white canvas */
+	background-color: #555;
+	color: #ccc;
+	float: left;
+	font: 0.69em Arial, Helvetica, sans-serif;
+	margin: 0 50px 0 0;
+	padding: 0 50px 0 20px;
+	text-align: left;
+}
+html>body #GlobalBottom .Disclaimer { 
+	margin: 0 50px 0 20px;
+}
+#Copyright { /* container to hold copyright and footer links in gray area */
+	color: #ccc;
+	float: left;
+	font: 0.73em Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0;
+	padding: 10px 50px 0 10px;
+	width: 800px;
+}
+html>body #Copyright {
+	padding: 10px 50px 0 28px;
+}
+#Copyright ul { /* Used for displaying orange arrow as a listing bullet */
+	list-style:none;
+	margin: 0 0 0 5px;
+	padding: 10px 0 5px 0;
+}
+#Copyright ul li { 
+	display: inline;
+	margin: 0 0 10px 0;
+	padding:0 2px 0 5px;
+}
+#Copyright ul li a, #Copyright ul li a:visited { 
+	color: #ccc;
+	text-decoration: none;
+}
+#Copyright ul li a:hover{ 
+	color: #f4f4f4;
+	text-decoration: none;
+}
+#Copyright ul li.First, #Copyright ul li.Middle {
+	border-left: solid 1px #ccc;
+}
+#Copyright ul li.Last {
+	border-left: solid 1px #ccc;
+}
+/* #################### END GLOBAL BOTTOM CSS #################### */
+
