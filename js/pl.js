@@ -86,3 +86,30 @@ function addAnimation() {
     })
   });
 }
+
+// Sets carousel-items all to the same height to keep the page from jumping //
+function setCarouselItemHeight() {
+  document.querySelectorAll('.carousel').forEach(carousel => {
+      let maxHeight = 0;
+      const items = carousel.querySelectorAll('.carousel-item');
+
+      // Reset heights to auto to get natural height
+      items.forEach(item => {
+          item.style.height = 'auto';
+          const itemHeight = item.offsetHeight;
+          if (itemHeight > maxHeight) {
+              maxHeight = itemHeight;
+          }
+      });
+
+      // Set all items to the tallest height
+      items.forEach(item => {
+          item.style.height = `${maxHeight}px`;
+      });
+  });
+}
+
+// Run function on page load and window resize
+document.addEventListener('DOMContentLoaded', setCarouselItemHeight);
+window.addEventListener('resize', setCarouselItemHeight);
+
