@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 h2, h3, h4, h5 {
     font-family: "Poppins", sans-serif;
@@ -27,7 +28,7 @@ a {
     color:#AE360E;
 }
 .rad50 {
-    border-radius: 50%;
+    border-radius: 25%;
 }
 .poppins {font-family: "Poppins", sans-serif;}
 
@@ -37,7 +38,7 @@ main {
 }
 
 /*plBlue {background-color:#2C386E;}*/
-.text-shadow {text-shadow: 0px 0px 7px rgba(150,150,150,0.75);}
+.text-shadow {text-shadow: 0px 0px 7px rgba(100,100,100,0.95);}
 .plBlue {background-color:rgba(30, 51, 91, 1);}
 .plBlue-text {color:rgba(30, 51, 91, 1);}
 .plLtBlue-text {color:rgba(30, 51, 91, .8);}
@@ -132,7 +133,7 @@ nav {
 }
 .content, .events {
     width: 100%;
-    /*height: 100vh;*/
+    height: 100vh;
     background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
     position: relative;
 }
@@ -153,8 +154,10 @@ nav {
 }
 #events .content h1 {
     margin-top: 50px;
-    font-size: 2.75em!important;
+    font-size: 1.5em!important;
 }
+.events-header p {font-size:1em;}
+
 .back-video {
     /*margin-top: 150px;*/
     position: absolute;
@@ -175,6 +178,13 @@ nav {
 video {
     width: 100%;
     height: auto;
+}
+#events .events-header {
+    height: 100%!important;
+    display: inline-block;
+    background-color: #777777;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 @media (min-aspect-ratio: 16/9){
@@ -320,9 +330,10 @@ ul.ms-list > li li {
         font-size: 3.5em!important;
     }
     #events .content h1 {
-        margin-top: 60px;
-        font-size: 2.75em!important;
+        margin-top: 50px;
+        font-size: 1.5em!important;
     }
+    .events-header p {font-size:1em;}
     #twoCoreSolutions h1 {
         font-size: 2.5em;
     }
@@ -364,9 +375,10 @@ ul.ms-list > li li {
         font-size: 3.5em!important;
     }
     #events .content h1 {
-        margin-top: 75px;
-        font-size: 2.75em!important;
+        margin-top: 50px;
+        font-size: 1.75em!important;
     }
+    .events-header p {font-size:1.25em;}
     #twoCoreSolutions {
         background: #ffffff url("../images/twoCore-background.png") no-repeat 50% 100%;
     }
@@ -420,9 +432,10 @@ ul.ms-list > li li {
         font-size: 3.5em!important;
     }
     #events .content h1 {
-        margin-top: 100px;
-        font-size: 2.75em!important;
+        margin-top: 50px;
+        font-size: 2em!important;
     }
+    .events-header p {font-size:1.5em;}
     .navbar-toggler {
         right: 150px;
         top: 54px;
@@ -460,9 +473,10 @@ ul.ms-list > li li {
         font-size: 3.5em!important;
     }
     #events .content h1 {
-        margin-top: 125px;
-        font-size: 2.75em!important;
+        margin-top: 50px;
+        font-size: 2.25em!important;
     }
+    .events-header p {font-size:1.75em;}
     #twoCoreSolutions h1 {
         font-size: 4em;
     }
@@ -490,13 +504,14 @@ ul.ms-list > li li {
 @media (min-width: 1399.98px) {
     .navbar-brand {width:40%;}
     #home .hero,#home .content {min-height:775px;}
-    #events .hero,#events .content {min-height: 900px; }
+
+    #events .hero,#events .content {min-height: 965px; }
     #home .content h1 {
         margin-top: 100px;
         font-size: 3.5em!important;
     }
     #events .content h1 {
-        margin-top: -100px;
+        margin-top: -225px;
         font-size: 2.75em!important;
     }
     #twoCoreSolutions h1 {
