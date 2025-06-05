@@ -70,14 +70,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto d-flex justify-content-center">
                         <li class="nav-item me-3">
-                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="industries.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Resources
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="events.html">Upcoming Events</a></li>
+                                <li><a class="dropdown-item active" href="events.html">Upcoming Events</a></li>
                                 <li><a class="dropdown-item" href="https://blog.thepracticeconsultant.com/">Knowledge Base</a></li>
                             </ul>
                         </li>
@@ -121,18 +121,22 @@
 
 	<main id="events">
 
-        <div id="events-vid-head">
+        <div class="hero">
             <!-- The video -->
             <video autoplay muted loop plays-inline id="myVideo" class="back-video">
-            <source src="images/iStock-1412590049.mp4" type="video/mp4">
+                <source src="images/iStock-1412590049.mp4" type="video/mp4">
             </video>
 
+            <!-- Overlay for contrast -->
+            <div class="overlay"></div>
+
             <!-- Optional: some overlay text to describe the video -->
-            <div class="content" class="container events-header">
-                <h1>
-                    <span class="plBurnt-text poppins fw-semibold">2025 Conference Attendance</span>
-                </h1>            
-                <p class="py-1 text-shadow col-12 col-md-10 col-lg-8 text-black">In 2025, our Practice Consultants will be traveling to Dental conferences around the United States. We can’t wait to meet you and answer your questions about practice ownership!</p>
+            <div class="content">
+                <h1><span class="plBlue-text poppins fw-semibold">2025 Conference Attendance</span></h1>
+                            
+                <p class="text-shadow fs-3">In 2025, our Practice Consultants will be traveling to Dental conferences around the United States. We can’t wait to meet you and answer your questions about practice ownership!</p>
+                <h2>Consult. Compare. Fund.</h2>
+
             </div>
         </div>
         <div class="clearfix"></div>

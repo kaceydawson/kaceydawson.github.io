@@ -113,3 +113,22 @@ function setCarouselItemHeight() {
 document.addEventListener('DOMContentLoaded', setCarouselItemHeight);
 window.addEventListener('resize', setCarouselItemHeight);
 
+
+
+// Dynamically set height of hero on pages with heros
+function syncHeroHeight() {
+    const hero = document.querySelector('.hero');
+    const video = document.querySelector('.back-video');
+    const overlay = document.querySelector('.overlay');
+
+    const height = hero.offsetHeight;
+    //video.style.height = `${height}px`;
+    overlay.style.height = `${height}px`;
+}
+
+// Run once at load
+window.addEventListener('load', syncHeroHeight);
+
+// Also on resize
+window.addEventListener('resize', syncHeroHeight);
+
